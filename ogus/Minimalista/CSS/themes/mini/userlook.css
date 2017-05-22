@@ -1,0 +1,90 @@
+/* Pruebas de paletas */
+/***** 1) #DAA520 **** Any */
+/***** 2) #41C3B2 **** Medium */
+/***** 3) #278886 **** Medium-light */
+/***** 4) #F2E2BA **** Light Medium-light */
+/***** 5) #F44D54 **** Medium */
+
+body {
+	background-color: #f5f5f5;
+}
+
+/*
+ * Color 2
+ * @components: Buttons
+ * @nivel color: medium - light
+ *
+ */	
+.button {
+	background-color: #999999;
+}
+
+/*
+ * Color 3
+ * @components: Links
+ * @nivel color: medium
+ *
+ */
+.link, .selected-link, .link-categ, .title {
+	color: #333333;
+}
+
+/*
+ * Color 4
+ * @components: Backgound
+ * @nivel color: light
+ *
+ */
+.background {
+	background-color: #DDDDDD;
+}
+
+/*
+ * Color 5
+ * @components: Prices
+ * @nivel color: medium - dark
+ *
+ */
+.price, .logo {
+	color: #999999;
+}
+
+/*--
+GENERALES
+-------------------------------------*/
+body {
+	background-repeat: repeat;
+	color: #777;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.link-categ {
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*--
+TITULOS
+-------------------------------------*/
+.logo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+}
+.title-component {
+	font-weight: bold;
+}
+
+/*--
+BOTONES
+-------------------------------------*/
+.button {
+	color: #fff;
+}
+
+/*--
+PRECIOS
+-------------------------------------*/
+.price { 
+	font-weight: bold;
+	font-style: normal;
+}

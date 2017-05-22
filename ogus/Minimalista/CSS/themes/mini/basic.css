@@ -1,0 +1,24 @@
+/*
+ * File name: basic.css
+ * Styles for mobile devices
+ * Theme: Minimalist
+*/
+body {font-family:  Arial, Helvetica, sans-serif;font-size: 100%;min-width:300px;max-width: 960px;padding: 0 5px;margin:0px auto;background-color:#999;background-attachment:fixed;}
+@media screen and (max-width:480px) {
+    body{background-image:none !important;}
+}
+.wrapper {width: auto;background-color: #FFF; margin:0 auto;padding:0 10px;float:none; clear:both;overflow:hidden;}
+.wrapper.top{padding-top:10px;}
+.wrapper.bottom{padding-bottom:10px;}
+.ch-container {margin:0; padding:10px;}
+#searchWrap.searchWrapper {position:static;display:block;right:25px;}
+.navWrapper .ch-g1-5, 
+.navWrapper .ch-g4-5 {float:left;width:50%;display:block;}
+footer {border-top:1px dotted #000;position:relative;}
+.vipImageWrapper, 
+.vipWrapper {float:none;display:block;width:auto;}
+header {padding-top:30px;}
+.header-top{position:relative;}
+.mainContent .ch-container {padding:10px;}
+.dataEbit { float: right; padding: 10px; margin-top: -50px; padding-top: 50px;}
+	
