@@ -1,0 +1,2 @@
+# centrodph
+STATIC
