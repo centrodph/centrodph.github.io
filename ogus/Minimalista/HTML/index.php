@@ -191,16 +191,13 @@
 						MEDIOS DE PAGO
 					</div>
 					<div class="ogus-medios-pago-desc">
-EN PINTURERÍAS OGUS TE BRINDAMOS LA MEJOR ATENCIÓN Y LA COMODIDAD DE ELEGIR LA FORMA DE PAGO QUE MÁS TE CONVENGA.
+EN PINTURERÍAS OGUS TE BRINDAMOS LA MEJOR ATENCIÓN Y LA COMODIDAD DE ELEGIR LA FORMA DE PAGO QUE MÁS TE CONVENGA.<br/>
 Aceptamos pagos a través de lOs siguientes MEDIOS Y tarjetas:								
 					</div>
 					<div class="ogus-medios-pago-image">
 						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/tarjetas.png" class="img-responsive" />
 					</div>
 				</div>
-
-
-			
 			</div>
 		</div>
 	</div>
@@ -208,10 +205,62 @@ Aceptamos pagos a través de lOs siguientes MEDIOS Y tarjetas:
 <div class="ogus-footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12">
-
-					
+			<div class="col-sm-3">
+				<div class="ogus-footer-box">
+					<div class="ogus-footer-box-titulo">
+						CASA CENTRAL
+					</div>
+					<div class="ogus-footer-box-icon">
+						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-footer-1.png" class="img-responsive" />						
+					</div>
+					<div class="ogus-footer-box-desc">
+						Avenida 844 Nº 2002 · Esq. 891
+						San Francisco Solano, Quilmes.
+					</div>
+				</div>
 			</div>
+			<div class="col-sm-3">
+				<div class="ogus-footer-box">
+					<div class="ogus-footer-box-titulo">
+						ATENCIÓN AL CLIENTE
+					</div>
+					<div class="ogus-footer-box-icon">
+						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-footer-2.png" class="img-responsive" />						
+					</div>
+					<div class="ogus-footer-box-desc">
+						(011) 4212-2944 | ID 176*328
+						www.pintureriasogus.com.ar
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="ogus-footer-box">
+					<div class="ogus-footer-box-titulo">
+						TRABAJÁ EN OGUS
+					</div>
+					<div class="ogus-footer-box-icon">
+						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-footer-1.png" class="img-responsive" />						
+					</div>
+					<div class="ogus-footer-box-desc">
+						Si estás interesado en trabajar
+						con nosotros envianos tu CV.
+					</div>
+				</div>
+			</div>			
+			<div class="col-sm-3">
+				<div class="ogus-footer-box">
+					<div class="ogus-footer-box-titulo">
+						NEWSLETTER
+					</div>
+					<div class="ogus-footer-box-icon">
+						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-footer-1.png" class="img-responsive" />						
+					</div>
+					<div class="ogus-footer-box-desc">
+						Suscribite y recibí las últimas novedades
+						en productos y servicios.
+					</div>
+				</div>
+			</div>							
 		</div>
 	</div>
 </div>
