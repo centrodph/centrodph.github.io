@@ -185,17 +185,33 @@
 <div class="ogus-footer-top">
 	<div class="container">
 		<div class="row">
-			<br/>
-			<br/><br/><br/>
-			<br/><br/><br/>
-			<br/><br/><br/>
+			<div class="col-sm-12">
+				<div class="ogus-medios-pago">
+					<div class="ogus-medios-pago-titulo">
+						MEDIOS DE PAGO
+					</div>
+					<div class="ogus-medios-pago-desc">
+EN PINTURERÍAS OGUS TE BRINDAMOS LA MEJOR ATENCIÓN Y LA COMODIDAD DE ELEGIR LA FORMA DE PAGO QUE MÁS TE CONVENGA.
+Aceptamos pagos a través de lOs siguientes MEDIOS Y tarjetas:								
+					</div>
+					<div class="ogus-medios-pago-image">
+						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/tarjetas.png" class="img-responsive" />
+					</div>
+				</div>
+
+
+			
+			</div>
 		</div>
 	</div>
 </div>
 <div class="ogus-footer">
 	<div class="container">
 		<div class="row">
+			<div class="col-sm-12">
 
+					
+			</div>
 		</div>
 	</div>
 </div>

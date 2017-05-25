@@ -89,6 +89,9 @@ body {
 /*************************************************************
     FOOTER TOP
 *************************************************************/
+.ogus-footer-top {
+  background: url('https://centrodph.github.io/ogus/Minimalista/CSS/images/bg-footer-top.jpg') no-repeat center top;
+}
 /*************************************************************
     FOOTER BOTTOM
 *************************************************************/
