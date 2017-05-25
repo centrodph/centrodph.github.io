@@ -88,6 +88,69 @@
 
 
 
+
+<div class="ogus-main-content-carousel">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="ogus-carousel-home">
+					<div  class="ch-carousel" data-max-items="1">
+						<ul class="content-list">
+							<li>
+								<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/carousel1.jpg" class="img-responsive" />	
+							</li>
+							<li>	
+								<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/carousel2.jpg" class="img-responsive" />	
+							</li>							
+						</ul>
+					</div>					
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+
+<div class="clearfix"></div>
+<div class="ogus-main-content-linea">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="ogus-linea-title">
+					conocé nuestra línea de productos
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="ogus-linea-home-box">
+					<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-linea-1.png" 
+					class="img-responsive" />	
+					<span>HOGAR</span>						
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="ogus-linea-home-box">
+					<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-linea-2.png" 
+					class="img-responsive" />	
+					<span>HOGAR</span>						
+				</div>
+			</div>			
+			<div class="col-sm-4">
+				<div class="ogus-linea-home-box">
+					<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-linea-3.png" 
+					class="img-responsive" />	
+					<span>HOGAR</span>						
+				</div>
+			</div>			
+		</div>	
+	</div>
+</div>
+<div class="clearfix"></div>
+
+
+
+
 <div class="ch-g1 main wrapper" role="main">
 <div class="ch-g1 mainContent">
 <div class="ch-container">
@@ -270,8 +333,8 @@ Aceptamos pagos a través de lOs siguientes MEDIOS Y tarjetas:
 				</div>
 			</div>
 			<div class="col-sm-6">
-				<div class="ogus-copy-text">
-					<a href="" target="_blank">
+				<div class="ogus-copy-gema">
+					<a href="http://estudiogema.com/" target="_blank">
 						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/gema.png" class="img-responsive" />
 					</a>
 				</div>				
