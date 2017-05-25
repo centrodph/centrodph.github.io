@@ -102,6 +102,28 @@ body {
 .ogus-footer-top .ogus-medios-pago-desc {
   padding-bottom: 35px;
 }
+.ogus-footer {
+  padding: 30px;
+  color: #FFF;
+}
+.ogus-footer-sep {
+  height: 30px;
+}
+.ogus-footer-box .ogus-footer-box-titulo {
+  font-size: 20px;
+  color: #cad415;
+  padding-bottom: 20px;
+}
+.ogus-footer-box .ogus-footer-box-icon {
+  float: left;
+  width: 16%;
+}
+.ogus-footer-box .ogus-footer-box-desc {
+  float: left;
+  width: 84%;
+  padding-left: 2px;
+  font-size: 12px;
+}
 /*************************************************************
     FOOTER BOTTOM
 *************************************************************/

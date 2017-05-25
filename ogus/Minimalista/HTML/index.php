@@ -214,7 +214,7 @@ Aceptamos pagos a través de lOs siguientes MEDIOS Y tarjetas:
 						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-footer-1.png" class="img-responsive" />						
 					</div>
 					<div class="ogus-footer-box-desc">
-						Avenida 844 Nº 2002 · Esq. 891
+						Avenida 844 Nº 2002 · Esq. 891<br/>
 						San Francisco Solano, Quilmes.
 					</div>
 				</div>
@@ -228,7 +228,7 @@ Aceptamos pagos a través de lOs siguientes MEDIOS Y tarjetas:
 						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-footer-2.png" class="img-responsive" />						
 					</div>
 					<div class="ogus-footer-box-desc">
-						(011) 4212-2944 | ID 176*328
+						(011) 4212-2944 | ID 176*328<br/>
 						www.pintureriasogus.com.ar
 					</div>
 				</div>
@@ -242,7 +242,7 @@ Aceptamos pagos a través de lOs siguientes MEDIOS Y tarjetas:
 						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-footer-3.png" class="img-responsive" />						
 					</div>
 					<div class="ogus-footer-box-desc">
-						Si estás interesado en trabajar
+						Si estás interesado en trabajar<br/>
 						con nosotros envianos tu CV.
 					</div>
 				</div>
@@ -262,6 +262,21 @@ Aceptamos pagos a través de lOs siguientes MEDIOS Y tarjetas:
 				</div>
 			</div>							
 		</div>
+		<div class="ogus-footer-sep"></div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="ogus-copy-text">
+					© 2017 · Ogus Pinturerías S.H. · Todos los derechos reservados.
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="ogus-copy-text">
+					<a href="" target="_blank">
+						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/gema.png" class="img-responsive" />
+					</a>
+				</div>				
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -275,7 +290,6 @@ Aceptamos pagos a través de lOs siguientes MEDIOS Y tarjetas:
 
 
 
-<div class="installments-info">Todos los precios están calculados en 1 pago.</div>
 <script src="static/js/analytics_utils.js"></script>
 <script type="text/javascript">
 						try {
