@@ -186,7 +186,7 @@ html*#widget .code textarea { /*Hack IE7-*/height: 170px; width: 350px;}
 /*
  * Motors attr
  */
-.row {float: left;padding: 16px;width: 96.5%;}
+/*.row {float: left;padding: 16px;width: 96.5%;}*/
 .row .head {font-size: 1.2em;font-weight: bold;border-bottom: 1px solid #CCCCCC;margin-bottom: 8px;padding-bottom: 4px;}
 .content.fixed li {float: left;font-size:13px;width: 284px;padding: 0 0 16px 18px;margin: 8px 0;background: url(//static.mercadoshops.com/static/images/check.gif) no-repeat 0 0;border-bottom: 1px dashed #ccc;}
 

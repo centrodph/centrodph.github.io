@@ -1,19 +1,96 @@
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+.robo {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+}
 body {
   max-width: none;
   background: #002f3f;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
 }
 .wrapper {
   max-width: 1170px;
   background: none;
 }
-header {
-  background: url('https://centrodph.github.io/ogus/Minimalista/CSS/header.jpg') no-repeat;
+.ogus_header {
+  padding-top: 24px;
+  background: url('https://centrodph.github.io/ogus/Minimalista/CSS/header.jpg') no-repeat center center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale')";
+  background-size: cover;
+  color: #FFF;
+}
+.ogus_header .link {
+  color: #FFF;
 }
 .ogus_header_menu {
+  text-transform: uppercase;
   float: left;
 }
 .ogus_header_menu ul li.background {
   background: none;
-  display: inline-block;
+  float: left;
 }
+.ogus_header_menu ul li.background a {
+  margin: 0 10px;
+  line-height: 47px;
+  display: block;
+  text-decoration: none;
+}
+.ogus_header_menu ul li.background a:hover {
+  border-bottom: solid 2px #cad415;
+}
+.ogus_header_right {
+  text-transform: uppercase;
+  float: right;
+}
+.ogus_header_right a {
+  margin: 0 10px;
+  line-height: 47px;
+  display: inline-block;
+  text-decoration: none;
+}
+.ogus_header_right a:hover {
+  border-bottom: solid 2px #cad415;
+}
+.header-search {
+  max-width: 800px;
+  padding: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+.header-search .header-search-titulo {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.header-search .header-search-titulo span {
+  color: #cad415;
+}
+.header-search #searchForm .inputField {
+  width: 85%;
+  background: none;
+  float: left;
+  border: solid 2px #cad415;
+  height: 34px;
+}
+.header-search #searchForm .button {
+  width: 15%;
+  background: #cad415;
+  border: none;
+  float: left;
+  border-radius: 0;
+  background-clip: padding-box;
+  height: 34px;
+}
+/*************************************************************
+    FOOTER TOP
+*************************************************************/
+/*************************************************************
+    FOOTER BOTTOM
+*************************************************************/
+/*************************************************************
+*************************************************************/

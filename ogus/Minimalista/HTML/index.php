@@ -57,9 +57,29 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="ogus_header_right">
-					<a href="javascript:void(0);">LOGIN</a>
-					<a href="javascript:void(0);">NEWSLETTER</a>
-					<a href="javascript:void(0);">0 CART</a>
+					<a href="javascript:void(0);"  class="link">LOGIN</a>
+					<a href="javascript:void(0);"  class="link">NEWSLETTER</a>
+					<a href="/cart" class="link"> CART</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="header-search">
+					<div class="header-search-titulo">
+						BIENVENIDO A NUESTRA <span>TIENDA ONLINE</span>
+					</div>
+					<div class="header-search-box">
+						<div class="component searchBar">
+						<form id="searchForm" method="get" action="/jm/com.mercadoshops.web.frontend.page.PageController">
+						<input type="hidden" name="view" value="result">
+						<input id="search" type="search" name="q" value="" class="inputField" 
+						placeholder="¿QUÉ ESTÁS BUSCANDO?">
+						<input type="submit" value="Buscar" class="ch-btn ch-secondary button">
+						</form>
+						</div>
+						<div class="clearfix"></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -67,55 +87,7 @@
 </div>
 
 
-<header class="wrapper top">
-	<div class="ch-g1 header-top">
-	<div class="ch-container">
-	<figure class="component img-logo">
-	<a href="/" title="Inicio">
-	<img src="https://centrodph.github.io/ogus/Minimalista/CSS/logo.png" alt="ogussh" title="ogussh"/>
-	</a>
-	</figure>
-	<div id="searchWrap" class="searchWrapper clearfix">
-	<div class="component searchBar">
-	<form id="searchForm" method="get" action="/jm/com.mercadoshops.web.frontend.page.PageController">
-	<input type="hidden" name="view" value="result">
-	<input id="search" type="search" name="q" value="" class="inputField">
-	<input type="submit" value="Buscar" class="ch-btn ch-secondary button">
-	</form>
-	</div> <div id="cart" class="component cartButton">
-	<span id="mini-cart-container" class="bg-cart">
-	<a href="/cart" title="Ver Carrito" rel="nofollow" class="ch-btn ch-secondary button">Ver Carrito</a>
-	</span>
-	</div>
-	</div>
-	</div>
-	</div>
-	<div class="ch-g1 clearfix background border navWrapper">
-	<div class="ch-g1-5">
-	<div class="ch-container clearfix">
-	<a href="/pintura_qO26280686XtOcxSM" class="no-categ link ch-btn ch-secondary button">Todos los productos</a>
-	</div>
-	</div>
-	<div class="ch-g4-5">
-	<div class="ch-container clearfix">
-	<ul class="component simpleMenu clearfix">
-	<li class="first background">
-	<a href="/" title="" class="link" data-name="Inicio" data-isFirstItem="true" data-target="/" data-noFollow="false" data-linkTarget="_self">Inicio</a>
-	</li>
-	<li class="background">
-	<a href="/shipping" title="" class="link" target="_self" data-name="Pago y Env&iacute;o" data-isFirstItem="false" data-target="/shipping" data-noFollow="false" data-linkTarget="_self">Pago y Env&iacute;o</a>
-	</li>
-	<li class="background">
-	<a href="/about" title="" class="link" target="_self" data-name="NUESTRA EMPRESA" data-isFirstItem="false" data-target="/about" data-noFollow="false" data-linkTarget="_self">NUESTRA EMPRESA</a>
-	</li>
-	<li class="background">
-	<a href="/contact" title="" class="link" target="_self" data-name="Contacto" data-isFirstItem="false" data-target="/contact" data-noFollow="false" data-linkTarget="_self">Contacto</a>
-	</li>
-	</ul>
-	</div>
-	</div>
-	</div>
-</header>
+
 <div class="ch-g1 main wrapper" role="main">
 <div class="ch-g1 mainContent">
 <div class="ch-container">
@@ -206,30 +178,38 @@
 </div>
 </div>
 </div>
-<footer class="ch-g1 wrapper bottom clearfix">
-<div class="ch-container">
-<address class="component addressExtended link">
-<dl class="companyData">
-<dt>Nuestros datos</dt>
-<dd>ogussh</dd>
-<dd>893 4291 San Francisco Solano, Quilmes, Buenos Aires</dd>
-<dd>11 20781160</dd>
-<dd>
-<a href="/contact">Contáctanos</a>
-</dd>
-</dl>
-<dl class="socialData">
-<dt>
-Seguinos:
-</dt>
-<dd id="fb-button">
-</dd>
-<g:plusone size="medium" count="false" href="http://www.ogus.heisenbergstudio.com"></g:plusone>
-</dl>
-</address>
+
+
+
+
+<div class="ogus-footer-top">
+	<div class="container">
+		<div class="row">
+			<br/>
+			<br/><br/><br/>
+			<br/><br/><br/>
+			<br/><br/><br/>
+		</div>
+	</div>
 </div>
-<div class="component mshops">Powered by <a class="link" href="http://www.mercadoshops.com.ar" title="MercadoShops">MercadoShops</a></div>
-</footer>
+<div class="ogus-footer">
+	<div class="container">
+		<div class="row">
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 <div class="installments-info">Todos los precios están calculados en 1 pago.</div>
 <script src="static/js/analytics_utils.js"></script>
 <script type="text/javascript">
