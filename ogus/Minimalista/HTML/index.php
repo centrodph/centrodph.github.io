@@ -239,7 +239,7 @@ Aceptamos pagos a través de lOs siguientes MEDIOS Y tarjetas:
 						TRABAJÁ EN OGUS
 					</div>
 					<div class="ogus-footer-box-icon">
-						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-footer-1.png" class="img-responsive" />						
+						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-footer-3.png" class="img-responsive" />						
 					</div>
 					<div class="ogus-footer-box-desc">
 						Si estás interesado en trabajar
@@ -253,7 +253,7 @@ Aceptamos pagos a través de lOs siguientes MEDIOS Y tarjetas:
 						NEWSLETTER
 					</div>
 					<div class="ogus-footer-box-icon">
-						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-footer-1.png" class="img-responsive" />						
+						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-footer-4.png" class="img-responsive" />						
 					</div>
 					<div class="ogus-footer-box-desc">
 						Suscribite y recibí las últimas novedades
