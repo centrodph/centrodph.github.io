@@ -16,24 +16,19 @@
 	<meta name="keywords" content="PRODUCTO 1, ogussh" />
 	<meta name="description" content="ogussh donde comprar Pintura" />
 	<title>ogussh</title>
-	<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=jk-master-b652-2017-05-22_15-28-00&env=prod&userVersion=V2&amp;f=themes/base.css,jquery-ui-1.7.2.custom.css,common/payment.css,themes/normalize.css,themes/chico-0.10.7.css,themes/mesh-0.9.3.css&amp;r=1495495324000&amp;for=252406637"
-	/>
-	<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=jk-master-b652-2017-05-22_15-28-00&env=prod&userVersion=V2&amp;f=themes/mini/basic.css&amp;r=1495495324000&amp;for=252406637"
-	/>
-	<link rel="stylesheet" type="text/css" media="only screen and (min-width:640px) and (max-width:1024px)" href="//static.mercadoshops.com/proxy/css?v=jk-master-b652-2017-05-22_15-28-00&env=prod&userVersion=V2&amp;f=themes/mini/tablet.css&amp;r=1495495324000&amp;for=252406637"
-	/>
-	<link rel="stylesheet" type="text/css" media="only screen and (min-width:1024px)" href="//static.mercadoshops.com/proxy/css?v=jk-master-b652-2017-05-22_15-28-00&env=prod&userVersion=V2&amp;f=themes/mini/desktop.css&amp;r=1495495324000&amp;for=252406637"
-	/>
-	<!--[if lt IE 9 ]>
-			<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=jk-master-b652-2017-05-22_15-28-00&env=prod&userVersion=V2&amp;f=themes/mini/desktop.css&amp;r=1495495324000&amp;for=252406637"/>
+<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=jk-master-b654-2017-05-24_09-24-26&env=prod&userVersion=V2&amp;f=themes/base.css,chico-min-0.13.1.css,jquery-ui-1.7.2.custom.css,common/payment.css,themes/normalize.css,themes/chico-0.10.7.css,themes/mesh-0.9.3.css&amp;r=1495816936000&amp;for=252406637"/>
+<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=jk-master-b654-2017-05-24_09-24-26&env=prod&userVersion=V2&amp;f=themes/mini/basic.css&amp;r=1495816936000&amp;for=252406637"/>
+<link rel="stylesheet" type="text/css" media="only screen and (min-width:640px) and (max-width:1024px)" href="//static.mercadoshops.com/proxy/css?v=jk-master-b654-2017-05-24_09-24-26&env=prod&userVersion=V2&amp;f=themes/mini/tablet.css&amp;r=1495816936000&amp;for=252406637"/>
+<link rel="stylesheet" type="text/css" media="only screen and (min-width:1024px)" href="//static.mercadoshops.com/proxy/css?v=jk-master-b654-2017-05-24_09-24-26&env=prod&userVersion=V2&amp;f=themes/mini/desktop.css&amp;r=1495816936000&amp;for=252406637"/>
+<!--[if lt IE 9 ]>
+			<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=jk-master-b654-2017-05-24_09-24-26&env=prod&userVersion=V2&amp;f=themes/mini/desktop.css&amp;r=1495816936000&amp;for=252406637"/>
 			<![endif]-->
-	<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=jk-master-b652-2017-05-22_15-28-00&env=prod&userVersion=V2&amp;f=themes/mini/componentes.css&amp;r=1495495324000&amp;for=252406637"
-	/>
-	<link rel="stylesheet" type="text/css" media="screen" href="http://www.ogus.heisenbergstudio.com/styles/userlook.css?r=1495495324000"
-	/>
-	<link rel="stylesheet" type="text/css" media="screen" href="personalized.css" />
-	<script type="text/javascript" src="//static.mercadoshops.com/proxy/js?v=jk-master-b652-2017-05-22_15-28-00&amp;f=2012/modernizr-2.0.6.min.js&amp;"></script>
-	<script type="text/javascript" src="//static.mercadoshops.com/proxy/js?v=jk-master-b652-2017-05-22_15-28-00&amp;f=analytics_final.js&amp;userVersion=V2"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=jk-master-b654-2017-05-24_09-24-26&env=prod&userVersion=V2&amp;f=themes/mini/componentes.css&amp;r=1495816936000&amp;for=252406637"/>
+<link rel="stylesheet" type="text/css" media="screen" href="http://www.ogus.heisenbergstudio.com/styles/userlook.css?r=1495816936000"/>
+<link rel="stylesheet" type="text/css" media="screen" href="personalized.css"/>
+<script type="text/javascript" src="//static.mercadoshops.com/proxy/js?v=jk-master-b654-2017-05-24_09-24-26&amp;f=2012/modernizr-2.0.6.min.js&amp;"></script>
+ 
+<script type="text/javascript" src="//static.mercadoshops.com/proxy/js?v=jk-master-b654-2017-05-24_09-24-26&amp;f=analytics_final.js&amp;userVersion=V2"></script>
 </head>
 
 <body id="page-CONTACT">
