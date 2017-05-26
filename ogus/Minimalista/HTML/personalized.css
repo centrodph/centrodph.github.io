@@ -16,6 +16,7 @@ body {
 .wrapper {
   max-width: 1170px;
   background: none;
+  padding: 0;
 }
 .ogus_header {
   padding-top: 24px;
@@ -180,6 +181,7 @@ body {
 }
 .component .item-gallery li.background {
   height: 450px;
+  margin-bottom: 30px;
 }
 .component .item-gallery li.background article {
   padding-top: 210px;
@@ -187,7 +189,7 @@ body {
 }
 .component .item-gallery li.background article h2 {
   line-height: 25px;
-  min-height: 99px;
+  min-height: 85px;
   display: inline-block;
 }
 .component .item-gallery li.background article h2 a {
@@ -213,5 +215,11 @@ body {
   font-size: 14px;
   text-transform: uppercase;
 }
+/*************************************************************
+  CONTACTO SOBREESCRITURA
+*************************************************************/
+/*************************************************************
+  CONTACTO SOBREESCRITURA
+*************************************************************/
 /*************************************************************
 *************************************************************/

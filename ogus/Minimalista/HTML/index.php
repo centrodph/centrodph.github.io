@@ -36,7 +36,7 @@
 	<script type="text/javascript" src="//static.mercadoshops.com/proxy/js?v=jk-master-b652-2017-05-22_15-28-00&amp;f=analytics_final.js&amp;userVersion=V2"></script>
 </head>
 
-<body id="page-HOME">
+<body id="page-CONTACT">
 	<div class="ogus_header">
 		<div class="container">
 			<div class="row">
@@ -97,165 +97,75 @@
 			</div>
 		</div>
 	</div>
-	<div class="ogus-main-content-carousel">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="ogus-carousel-home">
-						<div class="ch-carousel" data-max-items="1">
-							<ul class="content-list">
-								<li>
-									<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/carousel1.jpg" class="img-responsive" />
-								</li>
-								<li>
-									<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/carousel2.jpg" class="img-responsive" />
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="clearfix"></div>
 	<div class="ch-g1 main wrapper" role="main">
 		<div class="ch-g1 mainContent">
 			<div class="ch-container">
 				<div class="ch-container oneColumn clearfix">
-					<nav class="component itemGallery clearfix">
-						<h3 class="title-component"></h3>
-						<ul class="item-gallery">
-							<li class="background ">
-								<article class="clearfix ">
-									<h2>
-										<a href="/20-off-en-linea-para-interior-1000007585xJM" 
-										title="20% OFF en linea para interior" class="title">20% OFF en linea para interior</a>
-									</h2>
-									<ul class="itemData clearfix">
-										<li>
-											<figure class="background">
-												<a class="link" title="20% OFF en linea para interior" href="/20-off-en-linea-para-interior-1000007585xJM">
-													<img class="" alt="20% OFF en linea para interior" title="20% OFF en linea para interior" src="http://mla-s1-p.mlstatic.com/777838-MLA25617433802_052017-N.jpg">
-												</a>
-											</figure>
-										</li>
-										<dl id="homePrice">
-											<dd>
-												<span class="ch-price price">$ 999<span class="decimal">,</span><sup>00</sup></span>
-											</dd>
-										</dl>										
-									</ul>
-									<div class="home-mas-info">
-										<a class="link" title="20% OFF en linea para interior" href="/20-off-en-linea-para-interior-1000007585xJM">
-													+ info
-												</a>
-									</div>
-								</article>
-							</li>
-							<li class="background ">
-								<article class="clearfix ">
-									<h2>
-										<a href="/producto--400156531xJM" title="PRODUCTO 1" class="title">PRODUCTO 1</a>
-									</h2>
-									<ul class="itemData clearfix">
-										<li>
-											<figure class="background">
-												<a class="link" title="PRODUCTO 1" href="/producto--400156531xJM">
-													<img class="" alt="PRODUCTO 1" title="PRODUCTO 1" src="http://mla-s2-p.mlstatic.com/919520-MLA25559886969_052017-N.jpg">
-												</a>
-											</figure>
-										</li>
-										<dl id="homePrice">
-											<dd>
-												<span class="ch-price price">$ 120<span class="decimal">,</span><sup>00</sup></span>
-											</dd>
-										</dl>
-									</ul>
-								</article>
-							</li>
-							<li class="background ">
-								<article class="clearfix ">
-									<h2>
-										<a href="/membracrin-membrana-en-pasta-blanca-20-lts-ogus-1000006309xJM" title="Membracrin Membrana en pasta Blanca 20 Lts Ogus"
-										    class="title">Membracrin Membrana en pasta Blanca 20 Lts Ogus</a>
-									</h2>
-									<ul class="itemData clearfix">
-										<li>
-											<figure class="background">
-												<a class="link" title="Membracrin Membrana en pasta Blanca 20 Lts Ogus" href="/membracrin-membrana-en-pasta-blanca-20-lts-ogus-1000006309xJM">
-													<img class="" alt="Membracrin Membrana en pasta Blanca 20 Lts Ogus" title="Membracrin Membrana en pasta Blanca 20 Lts Ogus"
-													    src="http://mla-s1-p.mlstatic.com/604576-MLA25611960773_052017-N.jpg">
-												</a>
-											</figure>
-										</li>
-										<dl id="homePrice">
-											<dd>
-												<span class="ch-price price">$ 1350<span class="decimal">,</span><sup>00</sup></span>
-											</dd>
-										</dl>
-									</ul>
-								</article>
-							</li>
-							<li class="background ">
-								<article class="clearfix ">
-									<h2>
-										<a href="/pinturas-para-piletas-1000007583xJM" title="Pinturas para Piletas" class="title">Pinturas para Piletas</a>
-									</h2>
-									<ul class="itemData clearfix">
-										<li>
-											<figure class="background">
-												<a class="link" title="Pinturas para Piletas" href="/pinturas-para-piletas-1000007583xJM">
-													<img class="" alt="Pinturas para Piletas" title="Pinturas para Piletas" src="http://mla-s1-p.mlstatic.com/652522-MLA25617431381_052017-N.jpg">
-												</a>
-											</figure>
-										</li>
-										<dl id="homePrice">
-											<dd>
-												<span class="ch-price price">$ 299<span class="decimal">,</span><sup>00</sup></span>
-											</dd>
-										</dl>
-									</ul>
-								</article>
-							</li>
+					<section class="component formContact">
+						<h3 class="title-component">Formulario de contacto</h3>
+						<p class="ch-form-hint">(*) Datos obligatorios</p>
+						<form action="/productQuestion" method="POST" id="frmContact" class="ch-form">
+							<input type="hidden" name="axn" value="question">
+							<input type="hidden" name="redirTo" value="">
+							<input type="hidden" name="fromURL" value="">
+							<input type="hidden" name="isProduct" value="false">
+							<input type="hidden" name="trackingCategory" value="contact">
+							<input type="hidden" name="rnd-string" value="fe2e7e31-5b07-41fd-ada0-4fb0dd87731d">
+							<input type="hidden" name="trackingCode" value="">
+							<p class="ch-form-row ch-form-required">
+								<label for="contact_name">Nombre:<em>*</em></label>
+								<input type="text" id="contact_name" name="contact_name" placeholder="Nombre">
+							</p>
+							<p class="ch-form-row ch-form-required">
+								<label for="contact_email">E-mail: <em>*</em></label>
+								<input type="email" id="contact_email" name="contact_email" placeholder="E-mail">
+							</p>
+							<p class="ch-form-row">
+								<label for="contact_phone">Teléfono:</label>
+								<input type="tel" id="contact_phone" name="contact_phone" maxlength="32" placeholder="Teléfono">
+							</p>
+							<p class="ch-form-row ch-form-required">
+								<label for="contact_msgContent">Mensaje: <em>*</em></label>
+								<textarea rows="5" cols="28" maxlength="2000" id="contact_msgContent" name="contact_content" placeholder="Mensaje"></textarea>
+							</p>
+							<div class="ms-captcha">
+							</div>
+							<p class="ch-actions">
+								<input id="contact-btn" type="submit" value="Enviar" class="ch-btn ch-primary button">
+							</p>
+						</form>
+						<div id="sending-mail" style="display:none;">
+							<p>
+								<span>
+<img src="//static.mercadoshops.com/static/images/loaderLogin.gif" alt="Cargando"/>
+</span> Estamos enviando tu mensaje.
+							</p>
+						</div>
+						<div id="mail-sent" style="display:none;">
+							<p class="ch-message ch-ok">Tu mensaje fue enviado</p>
+						</div>
+						<div id="internal-error" style="display:none;">
+							<p class="ch-message ch-error">¡Ups! Tenemos un problema.</p>
+						</div>
+					</section>
+					<div class="component promoMP payMethod clearfix">
+						<span id="promo-block" class="promo-block"></span>
+						<p class="pay-safe">Compra seguro:</p>
+						<ul class="banks clearfix">
+							<li><span class="hipotecario">Banco Hipotecario</span></li>
+							<li><span class="icbc">Banco ICBC</span></li>
+							<li><span class="macro">Banco Macro</span></li>
+							<li><span class="tshopping">Banco Itaú</span></li>
 						</ul>
-					</nav>
+						<p class="more">
+							<a class="promosOFF" href="http://www.mercadopago.com/org-img/argentina/promociones-bancos.html" target="_blank" rel="nofollow">Más información</a>
+						</p>
+					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>
-	<div class="clearfix"></div>
-	<div class="ogus-main-content-linea">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="ogus-linea-title">
-						conocé nuestra línea de productos
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-					<div class="ogus-linea-home-box pull-left">
-						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-linea-1.png" class="img-responsive" />
-						<span>HOGAR</span>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="ogus-linea-home-box">
-						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-linea-2.png" class="img-responsive" />
-						<span>AUTOMOTOR</span>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="ogus-linea-home-box pull-right">
-						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-linea-3.png" class="img-responsive" />
-						<span>INDUSTRIAL</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="clearfix"></div>
 	<div class="clearfix"></div>
 	<div class="ogus-footer-top">
 		<div class="container">
