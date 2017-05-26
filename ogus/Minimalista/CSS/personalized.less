@@ -5,15 +5,20 @@
 @repo: 'https://centrodph.github.io/ogus/Minimalista/CSS/';
 @repoimage : '@{repo}images/';
 @verde:#cad415;
+@petro:#002f3f;
+
+
+
 .robo{  font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
 }
 
 body{
-  max-width: none;
-  background: #002f3f;
+  max-width: none;  
+  background: #eeeeee;
   .robo;
+  padding: 0;
 }
 .wrapper{
   max-width: 1170px;
@@ -93,6 +98,8 @@ body{
       float: left;
       .border-radius(0);
       height: 34px;
+      color: @petro;
+      text-transform: uppercase;
     }
   }
 
@@ -114,7 +121,24 @@ body{
     CAROUSEL HOME
 *************************************************************/
 .ogus-main-content-linea{
-
+  background: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+  color: @petro;
+  text-transform: uppercase;
+  .ogus-linea-title{
+    font-size: 50px;    
+  }
+  .ogus-linea-home-box{    
+    padding: 20px 0;
+    img{
+      margin: 0 auto;
+      padding-bottom: 25px;
+    }
+    span{
+      font-size: 30px;
+    }
+  }				
 }
 /*************************************************************
     FOOTER TOP
@@ -140,6 +164,7 @@ body{
 .ogus-footer{
   padding: 30px;
   color: #FFF;
+  background: @petro;
 }
 .ogus-footer-sep{
   height: 30px;
@@ -171,6 +196,58 @@ body{
 .installments-info{
   display: none;
 }
+
+
+
+
+
+/*************************************************************
+  SOBREEESCRITURE
+*************************************************************/
+.mainContent{
+  background: #eeeeee;
+}
+.component .item-gallery{
+   li.background{
+     height: 450px;
+    article{
+      padding-top: 210px;
+      text-align: center;
+      h2{
+        line-height: 25px;
+        min-height: 99px;
+        display: inline-block;
+        a{
+          font-size: 19px;
+          font-weight: 300;
+          text-transform: uppercase;
+        }
+      }
+      figure{
+        //position: inherit;
+      }
+      .price{
+        color: @petro;
+        font-weight: 700;
+        font-size: 30px;
+      }
+      .home-mas-info{
+        padding: 17px 0;
+        text-align: center;
+        a{
+          text-decoration: none;
+          border: solid 2px @petro;
+          padding: 0 20px;
+          line-height: 30px;
+          display: inline-block;
+          font-size: 14px;
+          text-transform: uppercase; 
+        }
+      }
+    }
+   }
+}
+
 
 /*************************************************************
 *************************************************************/

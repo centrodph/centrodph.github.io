@@ -7,10 +7,11 @@
 }
 body {
   max-width: none;
-  background: #002f3f;
+  background: #eeeeee;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
+  padding: 0;
 }
 .wrapper {
   max-width: 1170px;
@@ -85,6 +86,8 @@ body {
   border-radius: 0;
   background-clip: padding-box;
   height: 34px;
+  color: #002f3f;
+  text-transform: uppercase;
 }
 /*************************************************************
     CAROUSEL HOME
@@ -98,6 +101,26 @@ body {
 /*************************************************************
     CAROUSEL HOME
 *************************************************************/
+.ogus-main-content-linea {
+  background: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+  color: #002f3f;
+  text-transform: uppercase;
+}
+.ogus-main-content-linea .ogus-linea-title {
+  font-size: 50px;
+}
+.ogus-main-content-linea .ogus-linea-home-box {
+  padding: 20px 0;
+}
+.ogus-main-content-linea .ogus-linea-home-box img {
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+.ogus-main-content-linea .ogus-linea-home-box span {
+  font-size: 30px;
+}
 /*************************************************************
     FOOTER TOP
 *************************************************************/
@@ -120,6 +143,7 @@ body {
 .ogus-footer {
   padding: 30px;
   color: #FFF;
+  background: #002f3f;
 }
 .ogus-footer-sep {
   height: 30px;
@@ -147,6 +171,47 @@ body {
 }
 .installments-info {
   display: none;
+}
+/*************************************************************
+  SOBREEESCRITURE
+*************************************************************/
+.mainContent {
+  background: #eeeeee;
+}
+.component .item-gallery li.background {
+  height: 450px;
+}
+.component .item-gallery li.background article {
+  padding-top: 210px;
+  text-align: center;
+}
+.component .item-gallery li.background article h2 {
+  line-height: 25px;
+  min-height: 99px;
+  display: inline-block;
+}
+.component .item-gallery li.background article h2 a {
+  font-size: 19px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.component .item-gallery li.background article .price {
+  color: #002f3f;
+  font-weight: 700;
+  font-size: 30px;
+}
+.component .item-gallery li.background article .home-mas-info {
+  padding: 17px 0;
+  text-align: center;
+}
+.component .item-gallery li.background article .home-mas-info a {
+  text-decoration: none;
+  border: solid 2px #002f3f;
+  padding: 0 20px;
+  line-height: 30px;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 /*************************************************************
 *************************************************************/
