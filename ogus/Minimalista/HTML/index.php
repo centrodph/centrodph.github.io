@@ -284,6 +284,8 @@
 		//]]>
 	</script>
 	<script type="text/javascript" src="//static.mercadoshops.com/proxy/js?v=jk-master-b654-2017-05-24_09-24-26&amp;f=jquery.1.7.1.min.js,cookies.js,frontend.js,i18n.js,i18n-es_AR.js,bindevents.js,components/search.js,chico-min-0.10.7.js,components/categs.js,components/responsiveMenu.js,components/menu.js,fb-like-button.js,jquery-ui-1.7.2.custom.min.js,components/promos.js,components/starred.js,include-plusone.js,hirings.js&amp;userVersion=V2"></script>
+<script type="text/javascript" src="customjs.js"></script>
+</body>	
 </body>
 
 </html>

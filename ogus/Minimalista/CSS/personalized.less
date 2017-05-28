@@ -257,8 +257,63 @@ body{
     font-size: 30px;
     color: @petro;
     font-weight: 300;
+    text-transform: uppercase;
+  }
+  .component.payMethod{
+    display: none;
+  }  
+}
+
+#contact-btn{
+  border: none;
+  background: @petro;
+  color: @verde;
+  .border-radius(0);
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  min-width: 125px;
+}
+
+#frmContact{
+
+  p.ch-form-row{
+    input{
+      height: 33px;
+      
+    }
+    input, textarea{
+      border: solid 1px @petro;
+      width: 100%;
+      font-weight: 300;
+      color: @petro;
+      text-transform: uppercase;
+      padding: 2px 5px;
+    }    
+    label{
+      display: none;
+    }
+  } 
+  .contactWrap{
+      float: left;
+      width: 45%;  
+      p{
+        margin-bottom: 25px;
+      }
+  } 
+  p.row3, p.ch-actions{
+    float: right;
+    width: 45%;
+    textarea{
+      width: 100% !important;
+      height: 118px;
+    }
+  }
+  p.ch-actions{
+    text-align: right;
   }
 }
+
 
 
 /*************************************************************

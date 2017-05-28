@@ -72,7 +72,14 @@ gulp.task('styles', function() {
         }));
 });
 
-
+gulp.task('js', function() {
+    return gulp
+        .src('Minimalista/CSS/js/*.js')
+        .pipe(gulp.dest('Minimalista/HTML/'))
+        .pipe(browserSync.reload({
+            stream: true
+        }));
+});
 
 //////////////////////////////////////////////////////
 // WATCHERS
@@ -106,7 +113,8 @@ gulp.task('browser-sync', ['php'], function () {
         }
     });
 });
-gulp.task('serve-php', ['styles', 'browser-sync'], function () {
+gulp.task('serve-php', ['styles','js', 'browser-sync'], function () {
+    gulp.watch('Minimalista/CSS/js/*.js', ['js']);
     gulp.watch('Minimalista/CSS/*.less', ['styles']);
     gulp.watch("Minimalista/HTML/*.php").on('change', browserSync.reload);
 });

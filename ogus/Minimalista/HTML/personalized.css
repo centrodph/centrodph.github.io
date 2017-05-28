@@ -222,6 +222,56 @@ body {
   font-size: 30px;
   color: #002f3f;
   font-weight: 300;
+  text-transform: uppercase;
+}
+#page-CONTACT .component.payMethod {
+  display: none;
+}
+#contact-btn {
+  border: none;
+  background: #002f3f;
+  color: #cad415;
+  border-radius: 0;
+  background-clip: padding-box;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  min-width: 125px;
+}
+#frmContact p.ch-form-row input {
+  height: 33px;
+}
+#frmContact p.ch-form-row input,
+#frmContact p.ch-form-row textarea {
+  border: solid 1px #002f3f;
+  width: 100%;
+  font-weight: 300;
+  color: #002f3f;
+  text-transform: uppercase;
+  padding: 2px 5px;
+}
+#frmContact p.ch-form-row label {
+  display: none;
+}
+#frmContact .contactWrap {
+  float: left;
+  width: 45%;
+}
+#frmContact .contactWrap p {
+  margin-bottom: 25px;
+}
+#frmContact p.row3,
+#frmContact p.ch-actions {
+  float: right;
+  width: 45%;
+}
+#frmContact p.row3 textarea,
+#frmContact p.ch-actions textarea {
+  width: 100% !important;
+  height: 118px;
+}
+#frmContact p.ch-actions {
+  text-align: right;
 }
 /*************************************************************
   CONTACTO SOBREESCRITURA
