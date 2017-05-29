@@ -179,34 +179,41 @@ body {
 .mainContent {
   background: #eeeeee;
 }
-.component .item-gallery li.background {
+.component .item-gallery li.background,
+.component .item-gallery li.row {
   height: 450px;
   margin-bottom: 30px;
 }
-.component .item-gallery li.background article {
+.component .item-gallery li.background article,
+.component .item-gallery li.row article {
   padding-top: 210px;
   text-align: center;
 }
-.component .item-gallery li.background article h2 {
+.component .item-gallery li.background article h2,
+.component .item-gallery li.row article h2 {
   line-height: 25px;
   min-height: 85px;
   display: inline-block;
 }
-.component .item-gallery li.background article h2 a {
+.component .item-gallery li.background article h2 a,
+.component .item-gallery li.row article h2 a {
   font-size: 19px;
   font-weight: 300;
   text-transform: uppercase;
 }
-.component .item-gallery li.background article .price {
+.component .item-gallery li.background article .price,
+.component .item-gallery li.row article .price {
   color: #002f3f;
   font-weight: 700;
   font-size: 30px;
 }
-.component .item-gallery li.background article .home-mas-info {
+.component .item-gallery li.background article .home-mas-info,
+.component .item-gallery li.row article .home-mas-info {
   padding: 17px 0;
   text-align: center;
 }
-.component .item-gallery li.background article .home-mas-info a {
+.component .item-gallery li.background article .home-mas-info a,
+.component .item-gallery li.row article .home-mas-info a {
   text-decoration: none;
   border: solid 2px #002f3f;
   padding: 0 20px;
@@ -271,7 +278,119 @@ body {
   height: 118px;
 }
 #frmContact p.ch-actions {
-  text-align: right;
+  text-align: right!important;
+}
+/*************************************************************
+  RESULT
+*************************************************************/
+#page-RESULT .background {
+  background: none;
+  color: #002f3f;
+}
+#page-RESULT .rowsWrapper {
+  padding-top: 30px;
+}
+.component.searchResults .component.item-gallery li.background,
+.component.searchResults .component.item-gallery li.row {
+  height: 450px;
+  margin-bottom: 30px;
+}
+.component.searchResults .component.item-gallery li.background article,
+.component.searchResults .component.item-gallery li.row article {
+  padding-top: 210px;
+  text-align: center;
+}
+.component.searchResults .component.item-gallery li.background article h2,
+.component.searchResults .component.item-gallery li.row article h2 {
+  line-height: 25px;
+  min-height: 85px;
+  display: inline-block;
+}
+.component.searchResults .component.item-gallery li.background article h2 a,
+.component.searchResults .component.item-gallery li.row article h2 a {
+  font-size: 19px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.component.searchResults .component.item-gallery li.background article .price,
+.component.searchResults .component.item-gallery li.row article .price {
+  color: #002f3f;
+  font-weight: 700;
+  font-size: 30px;
+}
+.component.searchResults .component.item-gallery li.background article .home-mas-info,
+.component.searchResults .component.item-gallery li.row article .home-mas-info {
+  padding: 17px 0;
+  text-align: center;
+}
+.component.searchResults .component.item-gallery li.background article .home-mas-info a,
+.component.searchResults .component.item-gallery li.row article .home-mas-info a {
+  text-decoration: none;
+  border: solid 2px #002f3f;
+  padding: 0 20px;
+  line-height: 30px;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.component.searchResults .component.item-gallery dl {
+  margin-bottom: 0;
+}
+.component.searchResults .component.item-list li.background,
+.component.searchResults .component.item-list li.row {
+  height: 450px;
+  margin-bottom: 30px;
+}
+.component.searchResults .component.item-list li.background article,
+.component.searchResults .component.item-list li.row article {
+  padding-top: 210px;
+  text-align: center;
+}
+.component.searchResults .component.item-list li.background article h2,
+.component.searchResults .component.item-list li.row article h2 {
+  line-height: 25px;
+  min-height: 85px;
+  display: inline-block;
+}
+.component.searchResults .component.item-list li.background article h2 a,
+.component.searchResults .component.item-list li.row article h2 a {
+  font-size: 19px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.component.searchResults .component.item-list li.background article .price,
+.component.searchResults .component.item-list li.row article .price {
+  color: #002f3f;
+  font-weight: 700;
+  font-size: 30px;
+}
+.component.searchResults .component.item-list li.background article .home-mas-info,
+.component.searchResults .component.item-list li.row article .home-mas-info {
+  padding: 17px 0;
+  text-align: center;
+}
+.component.searchResults .component.item-list li.background article .home-mas-info a,
+.component.searchResults .component.item-list li.row article .home-mas-info a {
+  text-decoration: none;
+  border: solid 2px #002f3f;
+  padding: 0 20px;
+  line-height: 30px;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.component.searchResults .component.item-list dl {
+  margin-bottom: 0;
+}
+.component.searchResults .component.item-list li.row {
+  height: auto;
+}
+.component.searchResults .component.item-list li.row article {
+  padding-top: 10px;
+  text-align: left;
+}
+.component.searchResults .component.item-list li.row article .home-mas-info {
+  display: none;
 }
 /*************************************************************
   CONTACTO SOBREESCRITURA

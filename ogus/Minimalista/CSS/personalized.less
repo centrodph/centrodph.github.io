@@ -209,7 +209,7 @@ body{
   background: #eeeeee;
 }
 .component .item-gallery{
-   li.background{
+   li.background, li.row{
      height: 450px;
      margin-bottom: 30px;
     article{
@@ -310,11 +310,45 @@ body{
     }
   }
   p.ch-actions{
-    text-align: right;
+    text-align: right!important;
   }
 }
 
+/*************************************************************
+  RESULT
+*************************************************************/
+#page-RESULT{
+  .background{
+    background: none;
+    color: @petro;
+  }
+  .rowsWrapper{
+    padding-top: 30px;
+  }
 
+
+}
+.component.searchResults .component.item-gallery{
+  .component .item-gallery;
+  dl{
+    margin-bottom: 0;
+  }
+}
+
+.component.searchResults .component.item-list{
+  .component.searchResults .component.item-gallery;
+  li.row{
+    height: auto;
+    article{
+      padding-top: 10px;
+      text-align: left;
+      .home-mas-info{
+        display: none;
+      }
+    }
+  }
+  
+}
 
 /*************************************************************
   CONTACTO SOBREESCRITURA
