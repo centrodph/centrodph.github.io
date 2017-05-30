@@ -393,6 +393,38 @@ body {
   display: none;
 }
 /*************************************************************
+  PRODUCTO SOBREESCRITURA
+*************************************************************/
+.component.vip h1 {
+  font-size: 30px;
+  color: #002f3f;
+  font-weight: 300;
+}
+.component.vip span.ch-price.price {
+  color: #002f3f;
+  font-weight: 700;
+  font-size: 30px;
+}
+#fb-like-button,
+.vipSocials,
+.PaymentList li.ShippingData,
+.PaymentList li.paymentsMP {
+  display: none;
+}
+.component.vip .ch-actions.buttonBuy a {
+  border: none;
+  background: #002f3f;
+  color: #cad415;
+  border-radius: 0;
+  background-clip: padding-box;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  min-width: 125px;
+  width: 240px;
+  font-size: 18px;
+}
+/*************************************************************
   CONTACTO SOBREESCRITURA
 *************************************************************/
 .title-component {
