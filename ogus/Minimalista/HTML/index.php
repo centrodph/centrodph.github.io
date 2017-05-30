@@ -26,19 +26,19 @@
  
  
 <title>Membracrin Membrana en pasta Blanca 20 Lts Ogus $ 1350.0 - ogussh</title>
-<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=jk-master-b655-2017-05-26_16-16-56&env=prod&userVersion=V2&amp;f=themes/base.css,common/ms.shippingCalculator.css,themes/chico-0.10.7.css,jquery-ui-1.7.2.custom.css,common/payment.css,themes/normalize.css,themes/mesh-0.9.3.css&amp;r=1496052361000&amp;for=252406637"/>
-<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=jk-master-b655-2017-05-26_16-16-56&env=prod&userVersion=V2&amp;f=themes/mini/basic.css&amp;r=1496052361000&amp;for=252406637"/>
-<link rel="stylesheet" type="text/css" media="only screen and (min-width:640px) and (max-width:1024px)" href="//static.mercadoshops.com/proxy/css?v=jk-master-b655-2017-05-26_16-16-56&env=prod&userVersion=V2&amp;f=themes/mini/tablet.css&amp;r=1496052361000&amp;for=252406637"/>
-<link rel="stylesheet" type="text/css" media="only screen and (min-width:1024px)" href="//static.mercadoshops.com/proxy/css?v=jk-master-b655-2017-05-26_16-16-56&env=prod&userVersion=V2&amp;f=themes/mini/desktop.css&amp;r=1232331231&amp;for=252406637"/>
+<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=20170529_224238&env=prod&userVersion=V2&amp;f=themes/base.css,common/ms.shippingCalculator.css,themes/chico-0.10.7.css,jquery-ui-1.7.2.custom.css,common/payment.css,themes/normalize.css,themes/mesh-0.9.3.css&amp;r=3232111&amp;for=252406637"/>
+<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=20170529_224238&env=prod&userVersion=V2&amp;f=themes/mini/basic.css&amp;r=433123123&amp;for=252406637"/>
+<link rel="stylesheet" type="text/css" media="only screen and (min-width:640px) and (max-width:1024px)" href="//static.mercadoshops.com/proxy/css?v=20170529_224238&env=prod&userVersion=V2&amp;f=themes/mini/tablet.css&amp;r=3322112&amp;for=252406637"/>
+<link rel="stylesheet" type="text/css" media="only screen and (min-width:1024px)" href="//static.mercadoshops.com/proxy/css?v=20170529_224238&env=prod&userVersion=V2&amp;f=themes/mini/desktop.css&amp;r=1496138607000&amp;for=252406637"/>
 <!--[if lt IE 9 ]>
-			<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=jk-master-b655-2017-05-26_16-16-56&env=prod&userVersion=V2&amp;f=themes/mini/desktop.css&amp;r=1496052361000&amp;for=252406637"/>
+			<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=20170529_224238&env=prod&userVersion=V2&amp;f=themes/mini/desktop.css&amp;r=1496138607000&amp;for=252406637"/>
 			<![endif]-->
-<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=jk-master-b655-2017-05-26_16-16-56&env=prod&userVersion=V2&amp;f=themes/mini/componentes.css&amp;r=1496052361000&amp;for=252406637"/>
+<link rel="stylesheet" type="text/css" media="screen" href="//static.mercadoshops.com/proxy/css?v=20170529_224238&env=prod&userVersion=V2&amp;f=themes/mini/componentes.css&amp;r=323122&amp;for=252406637"/>
 <link rel="stylesheet" type="text/css" media="screen" href="http://www.ogus.heisenbergstudio.com/styles/userlook.css?r=1496052361000"/>
 <link rel="stylesheet" type="text/css" media="screen" href="personalized.css"/>
-<script type="text/javascript" src="//static.mercadoshops.com/proxy/js?v=jk-master-b655-2017-05-26_16-16-56&amp;f=2012/modernizr-2.0.6.min.js&amp;"></script>
+<script type="text/javascript" src="//static.mercadoshops.com/proxy/js?v=20170529_224238&amp;f=2012/modernizr-2.0.6.min.js&amp;"></script>
  
-<script type="text/javascript" src="//static.mercadoshops.com/proxy/js?v=jk-master-b655-2017-05-26_16-16-56&amp;f=analytics_final.js&amp;userVersion=V2"></script>
+<script type="text/javascript" src="//static.mercadoshops.com/proxy/js?v=20170529_224238&amp;f=analytics_final.js&amp;userVersion=V2"></script>
 
 </head>
 
@@ -110,7 +110,7 @@ BIENVENIDO A NUESTRA <span>TIENDA ONLINE</span>
 <a class="link" title="Otros" href="/otros_qO26256374XtOcxSM">Otros</a>
 </li>
 <li>
-<a class="link selected" title="Membracrin Membrana en pasta Blanca 20 Lts Ogus" href="/membracrin-membrana-en-pasta-blanca-20-lts-ogus-1000006309xJM">Membracrin Membrana en pasta Blanca 20 Lts Ogus</a>
+<a class="link selected" title="ALBA PINTURA" href="/alba-pintura-1000007804xJM">ALBA PINTURA</a>
 </li>
 </ol>
 </nav><input type="hidden" id="gallerySize" value="vZm">
@@ -119,13 +119,7 @@ BIENVENIDO A NUESTRA <span>TIENDA ONLINE</span>
 <div id="picviewer" class="component picviewer clearfix">
 <ul class="clearfix">
 <li class="clearfix vip-pub-image" style="position: relative;">
-<img data-thb="http://mla-s1-p.mlstatic.com/604576-MLA25611960773_052017-B.jpg" src="http://mla-s1-p.mlstatic.com/604576-MLA25611960773_052017-B.jpg" alt="Membracrin Membrana en pasta Blanca 20 Lts Ogus" title="Membracrin Membrana en pasta Blanca 20 Lts Ogus">
-</li>
-<li class="clearfix vip-pub-image" style="position: relative;">
-<img data-thb="http://mla-s1-p.mlstatic.com/657411-MLA25611954927_052017-B.jpg" src="http://mla-s1-p.mlstatic.com/657411-MLA25611954927_052017-B.jpg" alt="Membracrin Membrana en pasta Blanca 20 Lts Ogus" title="Membracrin Membrana en pasta Blanca 20 Lts Ogus">
-</li>
-<li class="clearfix vip-pub-image" style="position: relative;">
-<img data-thb="http://mla-s2-p.mlstatic.com/982988-MLA25611967546_052017-B.jpg" src="http://mla-s2-p.mlstatic.com/982988-MLA25611967546_052017-B.jpg" alt="Membracrin Membrana en pasta Blanca 20 Lts Ogus" title="Membracrin Membrana en pasta Blanca 20 Lts Ogus">
+<img data-thb="http://mla-s1-p.mlstatic.com/743517-MLA25618784056_052017-B.jpg" src="http://mla-s1-p.mlstatic.com/743517-MLA25618784056_052017-B.jpg" alt="ALBA PINTURA" title="ALBA PINTURA">
 </li>
 </ul>
 </div>
@@ -134,9 +128,9 @@ BIENVENIDO A NUESTRA <span>TIENDA ONLINE</span>
 Compartir
 </span>
 <ul class="sharesButtons">
-<li><a target="_blank" href="http://www.facebook.com/sharer.php?u=http://www.ogus.heisenbergstudio.com/membracrin-membrana-en-pasta-blanca-20-lts-ogus-1000006309xJM" rel="nofollow" class="ch-btn ch-btn-small btn-grey social-share" title="Facebook"><i class="ch-icon-facebook"></i></a></li>
-<li><a target="_blank" href="http://twitter.com/share?url=http://www.ogus.heisenbergstudio.com/membracrin-membrana-en-pasta-blanca-20-lts-ogus-1000006309xJM&text=Membracrin Membrana en pasta Blanca 20 Lts Ogus $ 1350.0 - ogussh" rel="nofollow" class="ch-btn ch-btn-small btn-grey social-share" title="Twitter"><i class="ch-icon-twitter"></i></a></li>
-<li><a href="https://plus.google.com/share?url=http://www.ogus.heisenbergstudio.com/membracrin-membrana-en-pasta-blanca-20-lts-ogus-1000006309xJM" class="ch-btn ch-btn-small btn-grey social-share" title="Google Plus"><i class="ch-icon-gplus"></i></a></li>
+<li><a target="_blank" href="http://www.facebook.com/sharer.php?u=http://www.ogus.heisenbergstudio.com/alba-pintura-1000007804xJM" rel="nofollow" class="ch-btn ch-btn-small btn-grey social-share" title="Facebook"><i class="ch-icon-facebook"></i></a></li>
+<li><a target="_blank" href="http://twitter.com/share?url=http://www.ogus.heisenbergstudio.com/alba-pintura-1000007804xJM&text=ALBA PINTURA $ 2312.0 - ogussh" rel="nofollow" class="ch-btn ch-btn-small btn-grey social-share" title="Twitter"><i class="ch-icon-twitter"></i></a></li>
+<li><a href="https://plus.google.com/share?url=http://www.ogus.heisenbergstudio.com/alba-pintura-1000007804xJM" class="ch-btn ch-btn-small btn-grey social-share" title="Google Plus"><i class="ch-icon-gplus"></i></a></li>
 <li><a target="_blank" href="#" class="btn-widget ch-btn ch-btn-small btn-grey social-share" title="Widget"><i class="ch-icon-codewidget"></i></a></li>
 <li><a href="#" class="addthis_button_email ch-btn ch-btn-small btn-grey addMail" title="Contacto"><i class="ch-icon-mailcontact"></i></a></li>
 </ul>
@@ -146,10 +140,10 @@ Compartir
 <div id="contact" style="display:none;" class="form-contact">
 <form action="/productQuestion" method="POST" id="frmContact" class="ch-form">
 <input type="hidden" name="axn" value="question">
-<input type="hidden" name="title" id="title" value="Membracrin Membrana en pasta Blanca 20 Lts Ogus"/>
-<input type="hidden" name="fromURL" value="http://www.ogus.heisenbergstudio.com/membracrin-membrana-en-pasta-blanca-20-lts-ogus-1000006309xJM">
+<input type="hidden" name="title" id="title" value="ALBA PINTURA"/>
+<input type="hidden" name="fromURL" value="http://www.ogus.heisenbergstudio.com/alba-pintura-1000007804xJM">
 <input type="hidden" name="isProduct" value="true">
-<input type="hidden" name="itemId" value="1000006309">
+<input type="hidden" name="itemId" value="1000007804">
 <input type="hidden" name="sku" value="$SEU.escapeHtml($item.parentSku)">
 <input type="hidden" name="trackingCategory" value="vip">
 <input type="hidden" name="rnd-string" value="$rndString">
@@ -174,8 +168,8 @@ Compartir
 </p>
 <p class="ch-form-row">
 <label>Asunto:</label>
-<span class="title">Membracrin Membrana en pasta Blanca 20 Lts Ogus</span>
-<input type="hidden" value="Membracrin Membrana en pasta Blanca 20 Lts Ogus" name="contact_title"/>
+<span class="title">ALBA PINTURA</span>
+<input type="hidden" value="ALBA PINTURA" name="contact_title"/>
 </p>
 <p class="ch-form-row ch-form-required">
 <label for="contact_msgContent">Mensaje: <em>*</em></label>
@@ -190,7 +184,7 @@ Compartir
 </div>
 <input type="hidden" id="migrated" value="$item.migrated"/>
 <input type="hidden" id="siteId" value="MLA"/>
-<input type="hidden" id="price" value="1350.00"/>
+<input type="hidden" id="price" value="2312.00"/>
 <input type="hidden" id="useDecimals" value="true"/>
 <input type="hidden" id="currSymbol" value="$"/>
 <input type="hidden" id="itemCurr" value="ARS"/>
@@ -198,7 +192,7 @@ Compartir
 <div class="ch-g6-10 vipWrapper">
 <article class="component vip">
 <header>
-<h1 class="title border">Membracrin Membrana en pasta Blanca 20 Lts Ogus</h1>
+<h1 class="title border">ALBA PINTURA</h1>
 <span id="fb-like-button" class="FbLikeButton"></span>
 </header>
 <ul class="PaymentList">
@@ -206,7 +200,7 @@ Compartir
 <dl class="priceInfo clearfix ">
 <dt>Precio:</dt>
 <dd id="price-vip">
-<span class="ch-price price">$ 1350<span class="decimal">,</span><sup>00</sup></span>
+<span class="ch-price price">$ 2312<span class="decimal">,</span><sup>00</sup></span>
 </dd>
 </dl>
 </li><li class="paymentsMP  has-payment-plan ">
@@ -310,28 +304,27 @@ Ver promociones
 </ul>
 <section class="contentBtnBuy">
 <div id="my-var-container" class="clearfix"></div>
-<input type="hidden" id="itemId" name="itemId" value="1000006309">
+<input type="hidden" id="itemId" name="itemId" value="1000007804">
 <span>
 <input type="hidden" name="sku" value="$SEU.escapeHtml($item.parentSku)">
 <input type="hidden" id="shipType" class="shipType param" name="shippingType" value="N">
 <input type="hidden" id="buyNowAmount-vip" class="buyNowAmount" value="1" name="amount"/>
-<input type="hidden" id="available-stock" value="10"/>
 <p class="ch-box-error stock-error-msg">No disponemos de esa cantidad. Consultanos para más información.</p>
 </span>
 <span class="ch-actions buttonBuy">
 <form method="post" action="/cartactions" class="form-vip" id="form-cart">
 <input type="hidden" name="axn" value="add">
-<input type="hidden" name="itemId" value="1000006309">
+<input type="hidden" name="itemId" value="1000007804">
 <input type="hidden" value="">
 <input type="hidden" id="qty" name="qty" value="1">
-<a rel="1000006309" href="#" title="Agregar al carrito" data-show-ship-modal="true" data-skip-costs-selection="false" class="button ch-btn ch-primary addCart">Agregar al carrito</a>
+<a rel="1000007804" href="#" title="Agregar al carrito" data-show-ship-modal="true" data-skip-costs-selection="false" class="button ch-btn ch-primary addCart">Agregar al carrito</a>
 </form>
 </span>
 <div id="variations-container"></div>
 </section>
 <div id="widget" style="display:none">
 <div class="code">
-<textarea rows="10" cols="55"><iframe scrolling="no" src="//static.mercadoshops.com/jm/com.mercadoshops.web.widget.WidgetController?shop=252406637&item=1000006309" width="292" height="240" frameborder="0" marginwidth="10" marginheight="10"><a title="Membracrin Membrana en pasta Blanca 20 Lts Ogus" href="http://www.mercadoshops.com.ar/jm/com.mercadoshops.web.widget.WidgetController?shop=252406637&item=1000006309">Membracrin Membrana en pasta Blanca 20 Lts Ogus</a></iframe></textarea>
+<textarea rows="10" cols="55"><iframe scrolling="no" src="//static.mercadoshops.com/jm/com.mercadoshops.web.widget.WidgetController?shop=252406637&item=1000007804" width="292" height="240" frameborder="0" marginwidth="10" marginheight="10"><a title="ALBA PINTURA" href="http://www.mercadoshops.com.ar/jm/com.mercadoshops.web.widget.WidgetController?shop=252406637&item=1000007804">ALBA PINTURA</a></iframe></textarea>
 <p class="description">Copia y pega el código en tu sitio para que se vea como el cuadro de la derecha.</p>
 </div>
 <div class="iframe-blocker"></div>
@@ -339,6 +332,18 @@ Ver promociones
 </div>
 </article>
 </div>
+<nav class="component prodDescription">
+<ul>
+<li><a href="#tabDescription">Descripción del producto</a></li>
+</ul>
+<div>
+<article id="tabDescription">
+<pre>
+											vos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como
+											</pre>
+</article>
+</div>
+</nav>
 </div>
  
 </div>
@@ -444,7 +449,7 @@ en productos y servicios.
 </div>
 </div>
 <div class="installments-info">Todos los precios están calculados en 1 pago.</div>
-<script src="static/js/analytics_utils.js"></script>
+<script src="http://www.ogus.heisenbergstudio.com/static/js/analytics_utils.js"></script>
 <script type="text/javascript">
 						try {
 				/* global ga*/
@@ -473,7 +478,7 @@ en productos y servicios.
 			}
 				</script>
  
-<script type="text/javascript" src="//static.mercadoshops.com/proxy/js?v=jk-master-b655-2017-05-26_16-16-56&amp;f=jquery.1.7.1.min.js,cookies.js,frontend.js,i18n.js,i18n-es_AR.js,bindevents.js,components/search.js,chico-min-0.10.7.js,components/categs.js,components/responsiveMenu.js,components/menu.js,fb-like-button.js,jquery.loader.0.2.js,addthis.js,components/es6-promise.js,components/numeral.js,components/currencies.js,components/ms.shippingCalculator.js,components/ch.select.js,components/gallery.js,components/product-images.js,jquery-ui-1.7.2.custom.min.js,jquery.validator.0.1.js,stores_commons.js,jquery.inputidletimeout.0.1.js,validations.js,input-mask.js,checkout.js,vip.js,jquery.combo.0.1.js,MLAPI.js,contact-common.js,front/button/contact.js,captcha.js,front/button/cart.js,components/promos.js,components/product-description.js,social-app-ids.js,fb-comments.js,social-front.js,fb-front.js,include-plusone.js,hirings.js&amp;userVersion=V2"></script>
+<script type="text/javascript" src="//static.mercadoshops.com/proxy/js?v=20170529_224238&amp;f=jquery.1.7.1.min.js,cookies.js,frontend.js,i18n.js,i18n-es_AR.js,bindevents.js,components/search.js,chico-min-0.10.7.js,components/categs.js,components/responsiveMenu.js,components/menu.js,fb-like-button.js,jquery.loader.0.2.js,addthis.js,components/es6-promise.js,components/numeral.js,components/currencies.js,components/ms.shippingCalculator.js,components/ch.select.js,components/gallery.js,components/product-images.js,jquery-ui-1.7.2.custom.min.js,jquery.validator.0.1.js,stores_commons.js,jquery.inputidletimeout.0.1.js,validations.js,input-mask.js,checkout.js,vip.js,jquery.combo.0.1.js,MLAPI.js,contact-common.js,front/button/contact.js,captcha.js,front/button/cart.js,components/promos.js,components/product-description.js,social-app-ids.js,fb-comments.js,social-front.js,fb-front.js,include-plusone.js,hirings.js&amp;userVersion=V2"></script>
 <script type="text/javascript" src="customjs.js"></script>
 </body>	
 </body>

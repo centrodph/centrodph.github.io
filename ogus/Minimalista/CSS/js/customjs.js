@@ -41,13 +41,29 @@ var resultpage ={
 
 };
 
+var productopage={
+    page: $('#page-VIP'),
+    exist: function(){        
+        return ( this.page.length > 0 ) ? true : false ;
+    },  
+    moveDesc: function(){
+        $('.component.vip .contentBtnBuy').after($(".component.prodDescription.ch-tabNavigator"));        
+    },
+    init: function(){
+        this.moveDesc();
+        console.log(" producto page ");
+    }
+
+};
+
+
 $(document).ready(function(){
 
     console.log($('body').attr('id'));
     //custom clases in contacto
     if(contactopage.exist()){ contactopage.init();}
     if(resultpage.exist()){ resultpage.init();}
-
+    if(productopage.exist()){ productopage.init();}
 
 });
 
@@ -55,4 +71,8 @@ $(document).ready(function(){
 <a class="link" title="ALBA PINTURA" href="/alba-pintura-1000007804xJM">
 + info
 </a>
-</div>*/
+</div>
+
+component prodDescription ch-tabNavigator
+
+*/

@@ -411,6 +411,9 @@ body {
 .PaymentList li.paymentsMP {
   display: none;
 }
+.component.vip .ch-actions.buttonBuy {
+  text-align: left;
+}
 .component.vip .ch-actions.buttonBuy a {
   border: none;
   background: #002f3f;
@@ -423,6 +426,34 @@ body {
   min-width: 125px;
   width: 240px;
   font-size: 18px;
+  float: none;
+}
+.component.prodDescription.ch-tabNavigator * {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+}
+.component.prodDescription.ch-tabNavigator .ch-tabNavigator-triggers {
+  margin: 0;
+}
+.component.prodDescription.ch-tabNavigator .ch-tabNavigator-triggers a {
+  color: #002f3f !important;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.component.prodDescription.ch-tabNavigator pre {
+  white-space: inherit;
+  text-indent: 0;
+  font-size: 11px;
+}
+.component.vip .prodDescription {
+  padding: 30px 0;
 }
 /*************************************************************
   CONTACTO SOBREESCRITURA
