@@ -1,0 +1,570 @@
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+
+@repo: 'https://centrodph.github.io/ogus/Minimalista/CSS/';
+@repoimage : '@{repo}images/';
+@verde:#cad415;
+@petro:#002f3f;
+
+
+
+.robo{  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+}
+
+body{
+  max-width: none;  
+  background: #eeeeee;
+  .robo;
+  padding: 0;
+}
+.wrapper{
+  max-width: 1170px;
+  background: none;
+  padding: 0;
+}
+.ogus_header{
+  padding-top: 24px;
+  .backgroundCover('@{repo}header.jpg');
+  color: #FFF;
+  .link{
+    color: #FFF;
+  }
+}
+
+.ogus_header_menu{
+  text-transform: uppercase;
+  float: left;  
+   ul li.background{ 
+     background: none;
+     float: left;
+     
+     a{
+       margin: 0 10px;
+       line-height: 47px;
+       display: block;
+       text-decoration: none;
+       &:hover{
+         border-bottom: solid 2px @verde;
+       }
+     }
+   }
+}
+
+
+.ogus_header_right{
+  text-transform: uppercase;
+  float: right;
+  a{
+       margin: 0 10px;
+       line-height: 47px;
+       display: inline-block;
+       text-decoration: none;
+       &:hover{
+         border-bottom: solid 2px @verde;
+       }
+  }   
+}
+
+
+
+
+.header-search{
+  max-width: 800px;
+  padding: 30px;
+  text-align: center;
+  margin: 0 auto;
+
+  .header-search-titulo{
+    font-size: 30px;
+    padding-bottom: 20px;
+    span{
+      color: @verde;
+    }
+  }
+  #searchForm{
+    .inputField{
+      width: 85%;
+      background: none;
+      float: left;    
+      border: solid 2px @verde;  
+      height: 34px;
+    }
+    .button{
+      width: 15%;
+      background: @verde;         
+      border: none;
+      float: left;
+      .border-radius(0);
+      height: 34px;
+      color: @petro;
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+
+
+
+/*************************************************************
+    CAROUSEL HOME
+*************************************************************/
+.ogus-main-content-carousel{
+  background: #FFF;
+  ul li{
+    height:454px;
+  }
+}
+/*************************************************************
+    CAROUSEL HOME
+*************************************************************/
+.ogus-main-content-linea{
+  background: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+  color: @petro;
+  text-transform: uppercase;
+  .ogus-linea-title{
+    font-size: 50px;    
+  }
+  .ogus-linea-home-box{    
+    padding: 20px 0;
+    img{
+      margin: 0 auto;
+      padding-bottom: 25px;
+    }
+    span{
+      font-size: 30px;
+    }
+  }				
+}
+/*************************************************************
+    FOOTER TOP
+*************************************************************/
+.ogus-footer-top{
+  color: #FFF;
+  background: url('@{repoimage}bg-footer-top.jpg') no-repeat center top;
+  padding: 40px 0;
+  .ogus-medios-pago-titulo{
+    padding: 20px 0;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .ogus-medios-pago-desc{
+    padding-bottom: 35px;
+  }
+  .ogus-medios-pago-image{}
+}
+
+/*************************************************************
+    FOOTER BOTTOM
+*************************************************************/
+.ogus-footer{
+  padding: 30px;
+  color: #FFF;
+  background: @petro;
+}
+.ogus-footer-sep{
+  height: 30px;
+}
+.ogus-footer-box{
+  .ogus-footer-box-titulo{
+    font-size: 20px;
+    color: @verde;
+    padding-bottom: 20px;
+  }
+  .ogus-footer-box-icon{
+    float: left;
+    width: 16%;
+  }
+  .ogus-footer-box-desc{    
+    float: left;
+    width: 84%;    
+    padding-left: 2px;
+    font-size: 12px;
+  }
+}
+.ogus-copy-gema{
+  float: right;
+}
+.ogus-copy-text{
+  line-height: 25px;
+}
+
+.installments-info{
+  display: none;
+}
+
+
+
+
+
+/*************************************************************
+  SOBREEESCRITURE
+*************************************************************/
+.mainContent{
+  background: #eeeeee;
+}
+.component .item-gallery{
+   li.background, li.row{
+     height: 450px;
+     margin-bottom: 30px;
+    article{
+      padding-top: 210px;
+      text-align: center;
+      h2{
+        line-height: 25px;
+        min-height: 85px;
+        display: inline-block;
+        a{
+          font-size: 19px;
+          font-weight: 300;
+          text-transform: uppercase;
+        }
+      }
+      figure{
+        //position: inherit;
+      }
+      .price{
+        color: @petro;
+        font-weight: 700;
+        font-size: 30px;
+      }
+      .home-mas-info{
+        padding: 17px 0;
+        text-align: center;
+        a{
+          text-decoration: none;
+          border: solid 2px @petro;
+          padding: 0 20px;
+          line-height: 30px;
+          display: inline-block;
+          font-size: 14px;
+          text-transform: uppercase; 
+        }
+      }
+    }
+   }
+}
+/*************************************************************
+  CONTACTO SOBREESCRITURA
+*************************************************************/
+#page-CONTACT{
+  .title-component{
+    font-size: 30px;
+    color: @petro;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .component.payMethod{
+    display: none;
+  }  
+}
+
+#contact-btn{
+  border: none;
+  background: @petro;
+  color: @verde;
+  .border-radius(0);
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  min-width: 125px;
+}
+
+#frmContact{
+
+  p.ch-form-row{
+    input{
+      height: 33px;
+      
+    }
+    input, textarea{
+      border: solid 1px @petro;
+      width: 100%;
+      font-weight: 300;
+      color: @petro;
+      text-transform: uppercase;
+      padding: 2px 5px;
+    }    
+    label{
+      display: none;
+    }
+  } 
+  .contactWrap{
+      float: left;
+      width: 45%;  
+      p{
+        margin-bottom: 25px;
+      }
+  } 
+  p.row3, p.ch-actions{
+    float: right;
+    width: 45%;
+    textarea{
+      width: 100% !important;
+      height: 118px;
+    }
+  }
+  p.ch-actions{
+    text-align: right!important;
+  }
+}
+
+/*************************************************************
+  RESULT
+*************************************************************/
+#page-RESULT{
+  .background{
+    background: none;
+    color: @petro;
+  }
+  .rowsWrapper{
+    padding-top: 30px;
+  }
+
+
+}
+.component.searchResults .component.item-gallery{
+  .component .item-gallery;
+  dl{
+    margin-bottom: 0;
+  }
+}
+
+.component.searchResults .component.item-list{
+  .component.searchResults .component.item-gallery;
+  li.row{
+    height: auto;
+    article{
+      padding-top: 10px;
+      text-align: left;
+      .home-mas-info{
+        display: none;
+      }
+    }
+  }
+  
+}
+
+
+/*************************************************************
+  PRODUCTO SOBREESCRITURA
+*************************************************************/
+.component.vip h1{
+  .title-component;
+}
+.component.vip span.ch-price.price{
+  color: @petro;
+  font-weight: 700;
+  font-size: 30px;  
+}
+
+#fb-like-button,.vipSocials,.PaymentList li.ShippingData,.PaymentList li.paymentsMP{
+  display: none;
+}
+.component.vip .ch-actions.buttonBuy{
+  text-align: left;
+   a{
+    #contact-btn;
+    width: 240px;
+    font-size: 18px; 
+    float: none;
+  }
+}
+
+
+
+
+.component.prodDescription.ch-tabNavigator{
+  *{
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    .box-shadow(none);
+    .robo;
+  }
+  .ch-tabNavigator-triggers{
+    margin: 0;
+    a{
+      color: @petro!important;
+      font-weight: 700;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+  }
+  pre{
+    white-space: inherit;
+    text-indent: 0;
+    font-size: 11px;
+  }
+}
+
+.component.vip .prodDescription{
+  padding: 30px 0;
+}
+
+
+
+/*************************************************************
+  CONTACTO SOBREESCRITURA
+*************************************************************/
+.title-component {
+    font-size: 30px;
+    color: @petro;
+    font-weight: 300;
+}
+
+/*************************************************************
+*************************************************************/
+.backgroundCover(@url){
+    background: url(@url) no-repeat center center;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale')";
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+}
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+	text-shadow: @string;
+}
+.box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}
+.drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+	-webkit-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:		@x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+.inner-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+	-webkit-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:    inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:         inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+.box-sizing (@type: border-box) {
+	-webkit-box-sizing: @type;
+	-moz-box-sizing:    @type;
+	box-sizing:         @type;
+}
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+.border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+	-webkit-border-top-right-radius:    @topright;
+	-webkit-border-bottom-right-radius: @bottomright;
+	-webkit-border-bottom-left-radius:  @bottomleft;
+	-webkit-border-top-left-radius:     @topleft;
+
+	-moz-border-radius-topright:        @topright;
+	-moz-border-radius-bottomright:     @bottomright;
+	-moz-border-radius-bottomleft:      @bottomleft;
+	-moz-border-radius-topleft:         @topleft;
+
+	border-top-right-radius:            @topright;
+	border-bottom-right-radius:         @bottomright;
+	border-bottom-left-radius:          @bottomleft;
+	border-top-left-radius:             @topleft;
+
+	-moz-background-clip:    padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip:         padding-box; 
+}
+
+.opacity (@opacity: 0.5) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
+}
+
+.gradient (@startColor: #eee, @endColor: white) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+	background: -webkit-linear-gradient(top, @startColor, @endColor);
+	background: -moz-linear-gradient(top, @startColor, @endColor);
+	background: -ms-linear-gradient(top, @startColor, @endColor);
+	background: -o-linear-gradient(top, @startColor, @endColor);
+}
+.horizontal-gradient (@startColor: #eee, @endColor: white) {
+ 	background-color: @startColor;
+	background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
+	background-image: -webkit-linear-gradient(left, @startColor, @endColor);
+	background-image: -moz-linear-gradient(left, @startColor, @endColor);
+	background-image: -ms-linear-gradient(left, @startColor, @endColor);
+	background-image: -o-linear-gradient(left, @startColor, @endColor);
+}
+
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+	-webkit-animation: @name @duration @delay @ease;
+	-moz-animation:    @name @duration @delay @ease;
+	-ms-animation:     @name @duration @delay @ease;
+}
+
+.transition (@transition) {
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+	-ms-transition:     @transition; 
+	-o-transition:      @transition;  
+}
+.transform(@string){
+	-webkit-transform: @string;
+	-moz-transform: 	 @string;
+	-ms-transform: 		 @string;
+	-o-transform: 		 @string;
+}
+.scale (@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+	-o-transform: 		 scale(@factor);
+}
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: 	 rotate(@deg);
+	-ms-transform: 		 rotate(@deg);
+	-o-transform: 		 rotate(@deg);
+}
+.skew (@deg, @deg2) {
+	-webkit-transform:       skew(@deg, @deg2);
+	-moz-transform: 	 skew(@deg, @deg2);
+	-ms-transform: 		 skew(@deg, @deg2);
+	-o-transform: 		 skew(@deg, @deg2);
+}
+.translate (@x, @y:0) {
+	-webkit-transform:       translate(@x, @y);
+	-moz-transform: 	 translate(@x, @y);
+	-ms-transform: 		 translate(@x, @y);
+	-o-transform: 		 translate(@x, @y);
+}
+.translate3d (@x, @y: 0, @z: 0) {
+	-webkit-transform:       translate3d(@x, @y, @z);
+	-moz-transform: 	 translate3d(@x, @y, @z);
+	-ms-transform: 		 translate3d(@x, @y, @z);
+	-o-transform: 		 translate3d(@x, @y, @z);
+}
+.perspective (@value: 1000) {
+	-webkit-perspective: 	@value;
+	-moz-perspective: 	@value;
+	-ms-perspective: 	@value;
+	perspective: 		@value;
+}
+.transform-origin (@x:center, @y:center) {
+	-webkit-transform-origin: @x @y;
+	-moz-transform-origin:    @x @y;
+	-ms-transform-origin:     @x @y;
+	-o-transform-origin:      @x @y;
+}

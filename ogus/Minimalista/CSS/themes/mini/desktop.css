@@ -6,7 +6,7 @@
 body {font-size: 90%;background-position:center top;padding: 0 5px;}
 header {padding-top:0;}
 .header-top{position:relative;}
-#page-VIP .wrapper.main {overflow:visible; float:left;width:98%;}
+/*#page-VIP .wrapper.main {overflow:visible; float:left;width:98%;}*/
 .navWrapper .ch-g1-2{float:left;width:50%;}
 #searchWrap.searchWrapper {position:absolute;bottom:50%;margin-bottom:-20px;}
 .navWrapper .ch-g1-5{width:17%;float:left}
