@@ -1,0 +1,67 @@
+{
+    "NAV": {
+        "PRODUCTOS": "Productos",
+        "NOVEDADES": "Novedades",
+        "OFERTAS": "Ofertas",
+        "CONTACTO": "Contacto",
+        "RRHH": "RRHH",
+        "NOSOTROS": "Nosotros",
+        "SERVICIOS": "Servicios",
+        "GALERIA":"Galería",
+        "CLIENTES":"Clientes"
+    },
+    "SLIDE": {
+        "SLIDE_1": "Soluciones<br/>a lo grande.",
+        "SLIDE_2": "XXXucioTTT<br/>a lo grande."
+    },
+    "HEADER": {
+        "TEL": "(011) 4200-5848",
+        "DIR1": "Av. Calchaquí 918 - Quilmes Oeste",
+        "DIR2": "Pcia. Bs. As.",
+        "HORARIO": "Lun. a Vie. 7hs a 17hs - Sabado 7hs a 16hs"
+    },
+    "FOOTER": {
+        "COPY": "©",
+        "DERECHOS": "AirFlex Copyright."
+    },
+    "CONTACTO": {
+        "SELECCIONE": "Seleccione",
+        "SELECCIONAR_ARCHIVO" : "Seleccionar Archivo",
+        "LABEL_ADJUNTAR_CV": "Adjuntar CV",
+        "LABEL_DNI": "DNI",
+        "LABEL_ESTADO_CIVIL": "Estado Civil",
+        "LABEL_FECHA_NACIMIENTO": "Fecha de Nacimiento",
+        "LABEL_DIRIGIDO_AL_SECTOR": "Dirigido al sector",
+        "LABEL_LOCALIDAD": "Localidad",
+        "LABEL_DOMICILIO": "Domicilio",
+        "LABEL_NAME": "Nombre y Apellido",
+        "LABEL_EMAIL": "E-mail",
+        "LABEL_PHONE": "Teléfono",
+        "LABEL_CONTENT": "Mensaje",
+        "SUBMIT": "Enviar",
+        "ERROR_REQUERIDO": "Campo Requerido",
+        "MENSAJE_CORRECTO": "Su mensaje fue enviado correctamente",
+        "MENSAJE_ERROR": "Error al enviar el mensaje. Intente más tarde"
+    },
+    "VER_PRODUCTOS": "Ver Productos",
+    "ENTRAR" : "Entrar",
+    "CARGAR_MAS": "Cargar Más",
+    "SITE_TEXTO_PARALLAX_TITLE" : "Ofrecemos diferentes tipo de almohadas para complementar su sistema de descanso.",
+    "SITE_TEXTO_PARALLAX_DESCR" : "(vellón, fibra hueca, espuma, cervicales, látex y combinadas).",
+    "SITE_TITULO_MODELO" : "MODELO POSTURATTO",
+    "SITE_TITULO_DESCIPCION" : "Estructura de compuesto poliestirénico articulado  combinado con espuma de alta densidad.",
+    "SITE_DIMENSION" : "Dimensiones:",
+    "SITE_DISENIO_AND":"Diseño &",
+    "SITE_DESCANSO":"descanso.",
+    "ESTRUCTURA": {
+        "ESTRUCTURA_1":"Base amortiguante de poliéster.",
+        "ESTRUCTURA_2":"Soportes posturales articulados<br/>con bastones de poliéster",
+        "ESTRUCTURA_3":"Poliuretano espumado.<br/><strong>Alta densidad 35</strong>",
+        "ESTRUCTURA_4":"Prepolímero espumado hipersoft<br/><strong>Densidad 60 - Fórmula exclusiva<br/>Plusconfort.</strong>",
+        "ESTRUCTURA_5":"Latex sintético espumado.<br/><strong>Anti-Ácaros.</strong>",
+        "ESTRUCTURA_6":"Base amortiguante de poliéster.",
+        "ICON_1":"<strong>32cm Alto</strong><br/>En toda la línea",
+        "ICON_2":"<strong>Garantía de 10 Años</strong><br/>Con certificado de fábrica",
+        "ICON_3":"<strong>Artesanal</strong><br/>Fabricación 100%"
+    }
+}
