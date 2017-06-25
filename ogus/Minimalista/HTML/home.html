@@ -6,16 +6,16 @@
 					<div  class="ch-carousel" data-max-items="1">
 						<ul class="content-list">
 							<li>
-								<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/carousel1.jpg" class="img-responsive" />	
+								<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/carousel1.jpg" class="img-responsive" />
 							</li>
-							<li>	
-								<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/carousel2.jpg" class="img-responsive" />	
-							</li>							
+							<li>
+								<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/carousel2.jpg" class="img-responsive" />
+							</li>
 						</ul>
-					</div>					
+					</div>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</div>
 </div>
 
@@ -26,7 +26,7 @@
 	<div class="ch-g1 mainContent">
 		<div class="ch-container">
 			<div class="ch-container oneColumn clearfix">
- 	
+
 <nav class="component itemGallery clearfix">
 	<h3 class="title-component"></h3>
 		<ul class="item-gallery">
@@ -56,39 +56,39 @@
 										<p class="promoRibbonHome"><strong class="promoQtyBuy">$galleryItem.promotion.quantityTake<span class="promoQtyBuyX">x</span>$galleryItem.promotion.quantityBuy</strong></p>
 									#end
 								#end
-								
+
 							</figure>
 						</li>
-						
+
 						#set ($galleryPromotion = $galleryItem.promotion)
 													<dl id="homePrice" >
     #if ($galleryItem.hasPriceWithDiscount())<del class="ch-price price">#end
-    		
+
     <dd>
-        #if( $RegionalConfig.useDecimals($country) ) 
+        #if( $RegionalConfig.useDecimals($country) )
     		<span class="#if (!$galleryItem.hasPriceWithDiscount())ch-price#end price">$CurrencyHelper.getCurrencySymbol("$shop.locale.country", "$galleryItem.currencyId") $galleryItem.getSplitPrice()[0]<span class="decimal">,</span><sup>$galleryItem.getSplitPrice()[1]</sup></span>
         #else
     		<span class="#if (!$galleryItem.hasPriceWithDiscount())ch-price#end price">$CurrencyHelper.getCurrencySymbol("$shop.locale.country", "$galleryItem.currencyId") $galleryItem.getSplitPrice()[0]</span>
         #end
     </dd>
-    			
+
     #if ($galleryItem.hasPriceWithDiscount())</del>#end
-      
+
     #if ($galleryItem.hasPriceWithDiscount())
-		#if ($galleryItem.hasPriceWithDiscount())<ins>#end 
-							
+		#if ($galleryItem.hasPriceWithDiscount())<ins>#end
+
 	    <dd>
-	        #if( $RegionalConfig.useDecimals($country) ) 
+	        #if( $RegionalConfig.useDecimals($country) )
 	    		<span class="ch-price price">$CurrencyHelper.getCurrencySymbol("$shop.locale.country", "$galleryItem.currencyId") $galleryItem.getSplitPriceWithDiscount()[0]<span class="decimal">,</span><sup>$galleryItem.getSplitPriceWithDiscount()[1]</sup></span>
 	        #else
 	    		<span class="ch-price price">$CurrencyHelper.getCurrencySymbol("$shop.locale.country", "$galleryItem.currencyId") $galleryItem.getSplitPriceWithDiscount()[0]</span>
 	        #end
 	    </dd>
-		
-		#if ($galleryItem.hasPriceWithDiscount())</ins>#end 
+
+		#if ($galleryItem.hasPriceWithDiscount())</ins>#end
     #end
 </dl>
-												
+
 						#set ($psjItem = $galleryItem)
 													#if($shop.hasDeductions() && $psjItem && $psjItem.preferredInstallment.isInstallmentDeductionByCollector() && $psjItem.preferredInstallment.installments > 1)
 	<div class="semjuros-container">
@@ -113,7 +113,7 @@
 		<span id="semjuros-installment-text" class="semjuros ms-promo-text__lower"> $i18n.tr("Sin interés")</span>
 	</div>
 #end
-												
+
 						#if($galleryItem.hasPromotion && $galleryItem.promotion.isDiscountTypeQuantity && "AR" == "BR")
 							<p class="promoTagMlb">Leve $galleryItem.promotion.quantityTake pague $galleryItem.promotion.quantityBuy</p>
 						#end
@@ -130,7 +130,7 @@
 						<a class="link" title="$galleryItem.title" href="$galleryItem.url">
 						+ info
 						</a>
-					</div>					
+					</div>
 				</article>
 			</li>
 		#end
@@ -156,26 +156,32 @@
 		<div class="row">
 			<div class="col-sm-4">
 				<div class="ogus-linea-home-box pull-left">
-					<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-linea-1.png" 
-					class="img-responsive" />	
-					<span>HOGAR</span>						
+					<a href="javascript:void(0)">
+					<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-linea-1.png"
+					class="img-responsive" />
+					<span>HOGAR</span>
+					</a>
 				</div>
 			</div>
 			<div class="col-sm-4">
 				<div class="ogus-linea-home-box">
-					<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-linea-2.png" 
-					class="img-responsive" />	
-					<span>AUTOMOTOR</span>						
+					<a href="javascript:void(0)">
+					<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-linea-2.png"
+					class="img-responsive" />
+					<span>AUTOMOTOR</span>
+					</a>
 				</div>
-			</div>			
+			</div>
 			<div class="col-sm-4">
 				<div class="ogus-linea-home-box pull-right">
-					<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-linea-3.png" 
-					class="img-responsive" />	
-					<span>INDUSTRIAL</span>						
+					<a href="javascript:void(0)">
+					<img src="https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-linea-3.png"
+					class="img-responsive" />
+					<span>INDUSTRIAL</span>
+					</a>
 				</div>
-			</div>			
-		</div>	
+			</div>
+		</div>
 	</div>
 </div>
 <div class="clearfix"></div>
