@@ -497,7 +497,8 @@ body {
   font-size: 11px;
 }
 .component.vip .prodDescription {
-  padding: 30px 0;
+  padding: 18px;
+  border: solid 1px #cecece;
 }
 /*************************************************************
   CONTACTO SOBREESCRITURA

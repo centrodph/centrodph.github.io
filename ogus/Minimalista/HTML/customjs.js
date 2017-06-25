@@ -53,8 +53,16 @@ var productopage={
     moveDesc: function(){
         $('.component.vip .contentBtnBuy').after($(".component.prodDescription.ch-tabNavigator"));
     },
+    addProtegido: function(){
+        var t='<div class="compra-protegida"><span></span>'
+              +'Compra Protegida con Mercado Pago.<br/>'
+              +'Recibe el producto que esperabas o te devolvemos tu dinero.'
+              +'</div>';
+        $(t).insertBefore(".component.prodDescription");      
+    },
     init: function(){
         this.moveDesc();
+        this.addProtegido();
         console.log(" producto page ");
     }
 
