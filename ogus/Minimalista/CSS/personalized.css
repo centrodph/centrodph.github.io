@@ -124,6 +124,11 @@ body {
 /*************************************************************
     CAROUSEL HOME
 *************************************************************/
+.ogus-productos-destacados-title {
+  color: #002f3f;
+  font-size: 50px;
+  text-align: center;
+}
 .ogus-main-content-linea {
   background: #ffffff;
   padding: 40px 0;
@@ -156,7 +161,10 @@ body {
 *************************************************************/
 .ogus-footer-top {
   color: #FFF;
-  background: url('https://centrodph.github.io/ogus/Minimalista/CSS/images/bg-footer-top.jpg') no-repeat center top;
+  background: url('https://centrodph.github.io/ogus/Minimalista/CSS/images/bg-footer-top.jpg') no-repeat center center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale')";
+  background-size: cover;
   padding: 40px 0;
 }
 .ogus-footer-top .ogus-medios-pago-titulo {
