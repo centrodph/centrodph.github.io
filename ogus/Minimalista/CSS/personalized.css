@@ -55,6 +55,8 @@ body {
   line-height: 47px;
   display: inline-block;
   text-decoration: none;
+  position: relative;
+  padding-right: 35px;
 }
 .ogus_header_right a:hover {
   border-bottom: solid 2px #cad415;
@@ -63,15 +65,18 @@ body {
   display: inline-block;
   height: 30px;
   width: 30px;
+  position: absolute;
+  right: 0;
+  top: 7px;
 }
 .ogus_header_right span.icon-news {
-  background: url('https://centrodph.github.io/ogus/Minimalista/CSS/icon-news.png') no-repeat center center;
+  background: url('https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-news.png') no-repeat center center;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale')";
   background-size: cover;
 }
 .ogus_header_right span.icon-cart {
-  background: url('https://centrodph.github.io/ogus/Minimalista/CSS/icon-cart.png') no-repeat center center;
+  background: url('https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-cart.png') no-repeat center center;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale')";
   background-size: cover;

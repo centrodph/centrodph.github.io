@@ -62,6 +62,8 @@ body{
        line-height: 47px;
        display: inline-block;
        text-decoration: none;
+       position: relative;
+       padding-right: 35px;
        &:hover{
          border-bottom: solid 2px @verde;
        }
@@ -70,11 +72,14 @@ body{
     display: inline-block;
     height: 30px;
     width: 30px;
+    position: absolute;
+    right: 0;
+    top: 7px;
     &.icon-news{
-      .backgroundCover('@{repo}icon-news.png');
+      .backgroundCover('@{repoimage}icon-news.png');
     }
     &.icon-cart{
-      .backgroundCover('@{repo}icon-cart.png');
+      .backgroundCover('@{repoimage}icon-cart.png');
     }
   }
 }

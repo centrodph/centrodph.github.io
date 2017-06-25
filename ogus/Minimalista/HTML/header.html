@@ -1,32 +1,3 @@
-<<<<<<< HEAD
-<header class="wrapper top">
-	<div class="ch-g1 header-top">
-		<div class="ch-container">
-#if( $hasLogo )
-	<figure class="component img-logo">
-		<a href="/" title="Inicio">
-			<img src="https://centrodph.github.io/ogus/Minimalista/CSS/logo.png" alt="ogussh" title="ogussh" /></a>
-	</figure>
-#else
-	<div class="component txt-logo">
-		<a href="/" title="Inicio" class="logo">ogussh</a>
-	</div>
-#end
-			<div id="searchWrap" class="searchWrapper clearfix">
-<div class="component searchBar">
-	<form id="searchForm" method="get" action="/jm/com.mercadoshops.web.frontend.page.PageController">
-		<input type="hidden" name="view" value="result">
-		<input id="search" type="search" name="q" value="" class="inputField">
-		<input type="submit" value="Buscar" class="ch-btn ch-secondary button">
-	</form>
-</div>#if( $shopHasCart )
-	<div id="cart" class="component cartButton">
-		<span id="mini-cart-container" class="bg-cart">
-		<a href="/cart" title="Ver Carrito" rel="nofollow" class="ch-btn ch-secondary button">Ver Carrito</a>
-		</span>
-	</div>
-#end
-=======
 <div class="ogus_header">
 	<div class="container">
 		<div class="row">
@@ -36,7 +7,6 @@
 						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/logo.png" alt="ogussh" title="ogussh"/>
 					</a>
 				</div>
->>>>>>> 0c8a31bae9fb1c65ab27cd3e97214373a9ac7010
 			</div>
 			<div class="col-sm-6">
 				<div class="ogus_header_menu">
@@ -57,8 +27,8 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="ogus_header_right">
-					<a href="javascript:void(0);" class="link">NEWSLETTER</a>
-					<a href="/cart" class="link">CART</a>
+					<a href="javascript:void(0);" class="link">NEWSLETTER <span class="icon-news"></span></a>
+					<a href="javascript:void(0);" class="link">CART<span class="icon-cart"></span></a>
 				</div>
 			</div>
 		</div>
