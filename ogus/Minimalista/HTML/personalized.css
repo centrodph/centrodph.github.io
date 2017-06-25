@@ -59,6 +59,23 @@ body {
 .ogus_header_right a:hover {
   border-bottom: solid 2px #cad415;
 }
+.ogus_header_right span {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
+.ogus_header_right span.icon-news {
+  background: url('https://centrodph.github.io/ogus/Minimalista/CSS/icon-news.png') no-repeat center center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale')";
+  background-size: cover;
+}
+.ogus_header_right span.icon-cart {
+  background: url('https://centrodph.github.io/ogus/Minimalista/CSS/icon-cart.png') no-repeat center center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale')";
+  background-size: cover;
+}
 .header-search {
   max-width: 800px;
   padding: 30px;
@@ -233,6 +250,13 @@ body {
 }
 #page-CONTACT .component.payMethod {
   display: none;
+}
+#recaptcha_widget .recaptcha_logo {
+  display: none;
+}
+#recaptcha_widget #recaptcha_image {
+  padding: 0;
+  border: none;
 }
 #contact-btn {
   border: none;

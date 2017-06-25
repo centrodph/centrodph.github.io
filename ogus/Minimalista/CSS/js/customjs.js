@@ -11,19 +11,23 @@ var contactopage ={
     },
     addWrap: function(){
         $('p.row0,p.row1,p.row2',this.form).wrapAll('<div class="contactWrap" />');
-    },    
+    },
+    moveCaptcha: function(){
+      $(".ms-captcha").appendTo(".contactWrap");
+    },
     init: function(){
         this.addCustomClases();
         this.addWrap();
+        this.moveCaptcha();
         console.log("contactopage ");
     }
 
 };
 var resultpage ={
     page: $('#page-RESULT'),
-    exist: function(){        
+    exist: function(){
         return ( this.page.length > 0 ) ? true : false ;
-    },  
+    },
     addInfo: function(){
         console.log('dsadads');
         $(".searchResults .component.item-gallery li.row").each(function(index){
@@ -43,11 +47,11 @@ var resultpage ={
 
 var productopage={
     page: $('#page-VIP'),
-    exist: function(){        
+    exist: function(){
         return ( this.page.length > 0 ) ? true : false ;
-    },  
+    },
     moveDesc: function(){
-        $('.component.vip .contentBtnBuy').after($(".component.prodDescription.ch-tabNavigator"));        
+        $('.component.vip .contentBtnBuy').after($(".component.prodDescription.ch-tabNavigator"));
     },
     init: function(){
         this.moveDesc();

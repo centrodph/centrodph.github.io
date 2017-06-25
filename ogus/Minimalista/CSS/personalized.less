@@ -15,7 +15,7 @@
 }
 
 body{
-  max-width: none;  
+  max-width: none;
   background: #eeeeee;
   .robo;
   padding: 0;
@@ -36,11 +36,11 @@ body{
 
 .ogus_header_menu{
   text-transform: uppercase;
-  float: left;  
-   ul li.background{ 
+  float: left;
+   ul li.background{
      background: none;
      float: left;
-     
+
      a{
        margin: 0 10px;
        line-height: 47px;
@@ -65,7 +65,18 @@ body{
        &:hover{
          border-bottom: solid 2px @verde;
        }
-  }   
+  }
+  span{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    &.icon-news{
+      .backgroundCover('@{repo}icon-news.png');
+    }
+    &.icon-cart{
+      .backgroundCover('@{repo}icon-cart.png');
+    }
+  }
 }
 
 
@@ -88,13 +99,13 @@ body{
     .inputField{
       width: 85%;
       background: none;
-      float: left;    
-      border: solid 2px @verde;  
+      float: left;
+      border: solid 2px @verde;
       height: 34px;
     }
     .button{
       width: 15%;
-      background: @verde;         
+      background: @verde;
       border: none;
       float: left;
       .border-radius(0);
@@ -128,9 +139,9 @@ body{
   color: @petro;
   text-transform: uppercase;
   .ogus-linea-title{
-    font-size: 50px;    
+    font-size: 50px;
   }
-  .ogus-linea-home-box{    
+  .ogus-linea-home-box{
     padding: 20px 0;
     img{
       margin: 0 auto;
@@ -139,7 +150,7 @@ body{
     span{
       font-size: 30px;
     }
-  }				
+  }
 }
 /*************************************************************
     FOOTER TOP
@@ -180,9 +191,9 @@ body{
     float: left;
     width: 16%;
   }
-  .ogus-footer-box-desc{    
+  .ogus-footer-box-desc{
     float: left;
-    width: 84%;    
+    width: 84%;
     padding-left: 2px;
     font-size: 12px;
   }
@@ -243,7 +254,7 @@ body{
           line-height: 30px;
           display: inline-block;
           font-size: 14px;
-          text-transform: uppercase; 
+          text-transform: uppercase;
         }
       }
     }
@@ -261,8 +272,18 @@ body{
   }
   .component.payMethod{
     display: none;
-  }  
+  }
 }
+#recaptcha_widget{
+  .recaptcha_logo{
+    display: none;
+  }
+  #recaptcha_image{
+    padding: 0;
+    border: none;
+  }
+}
+
 
 #contact-btn{
   border: none;
@@ -280,7 +301,7 @@ body{
   p.ch-form-row{
     input{
       height: 33px;
-      
+
     }
     input, textarea{
       border: solid 1px @petro;
@@ -289,18 +310,18 @@ body{
       color: @petro;
       text-transform: uppercase;
       padding: 2px 5px;
-    }    
+    }
     label{
       display: none;
     }
-  } 
+  }
   .contactWrap{
       float: left;
-      width: 45%;  
+      width: 45%;
       p{
         margin-bottom: 25px;
       }
-  } 
+  }
   p.row3, p.ch-actions{
     float: right;
     width: 45%;
@@ -347,7 +368,7 @@ body{
       }
     }
   }
-  
+
 }
 
 
@@ -360,7 +381,7 @@ body{
 .component.vip span.ch-price.price{
   color: @petro;
   font-weight: 700;
-  font-size: 30px;  
+  font-size: 30px;
 }
 
 #fb-like-button,.vipSocials,.PaymentList li.ShippingData,.PaymentList li.paymentsMP{
@@ -371,7 +392,7 @@ body{
    a{
     #contact-btn;
     width: 240px;
-    font-size: 18px; 
+    font-size: 18px;
     float: none;
   }
 }
@@ -428,7 +449,7 @@ body{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;    
+    background-size: cover;
 }
 .text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
 	text-shadow: @string;
@@ -480,9 +501,9 @@ body{
 	border-bottom-left-radius:          @bottomleft;
 	border-top-left-radius:             @topleft;
 
-	-moz-background-clip:    padding; 
-	-webkit-background-clip: padding-box; 
-	background-clip:         padding-box; 
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
 }
 
 .opacity (@opacity: 0.5) {
@@ -515,10 +536,10 @@ body{
 }
 
 .transition (@transition) {
-	-webkit-transition: @transition;  
+	-webkit-transition: @transition;
 	-moz-transition:    @transition;
-	-ms-transition:     @transition; 
-	-o-transition:      @transition;  
+	-ms-transition:     @transition;
+	-o-transition:      @transition;
 }
 .transform(@string){
 	-webkit-transform: @string;
