@@ -55,7 +55,7 @@ var productopage={
     },
     addProtegido: function(){
         var t='<div class="compra-protegida"><span></span>'
-              +'<div class="compra-protegida-top"Compra Protegida con Mercado Pago.</div>'
+              +'<div class="compra-protegida-top">Compra Protegida con Mercado Pago.</div>'
               +'Recibe el producto que esperabas o te devolvemos tu dinero.'
               +'</div>';
         $(t).insertBefore(".component.prodDescription");
