@@ -58,7 +58,8 @@ var productopage={
               +'<div class="compra-protegida-top">Compra Protegida con Mercado Pago.</div>'
               +'Recibe el producto que esperabas o te devolvemos tu dinero.'
               +'</div>';
-        $(t).insertBefore(".component.prodDescription");
+        //$(t).insertBefore(".component.prodDescription");
+        $(t).after(".ch-actions.buttonBuy");
     },
     init: function(){
         this.moveDesc();
