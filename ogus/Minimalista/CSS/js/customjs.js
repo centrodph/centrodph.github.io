@@ -51,7 +51,7 @@ var productopage={
         return ( this.page.length > 0 ) ? true : false ;
     },
     moveDesc: function(){
-        $('.component.vip .contentBtnBuy').after($(".component.prodDescription.ch-tabNavigator"));
+        //$('.component.vip .contentBtnBuy').after($(".component.prodDescription.ch-tabNavigator"));
     },
     addProtegido: function(){
         var t='<div class="compra-protegida"><span></span>'
