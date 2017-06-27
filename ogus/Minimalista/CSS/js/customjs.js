@@ -59,7 +59,7 @@ var productopage={
               +'Recibe el producto que esperabas o te devolvemos tu dinero.'
               +'</div>';
         //$(t).insertBefore(".component.prodDescription");
-        $(t).after(".contentBtnBuy");
+        $(t).insertAfter(".contentBtnBuy");
     },
     init: function(){
         this.moveDesc();
