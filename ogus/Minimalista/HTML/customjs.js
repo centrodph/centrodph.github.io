@@ -51,14 +51,15 @@ var productopage={
         return ( this.page.length > 0 ) ? true : false ;
     },
     moveDesc: function(){
-        $('.component.vip .contentBtnBuy').after($(".component.prodDescription.ch-tabNavigator"));
+        //$('.component.vip .contentBtnBuy').after($(".component.prodDescription.ch-tabNavigator"));
     },
     addProtegido: function(){
         var t='<div class="compra-protegida"><span></span>'
               +'<div class="compra-protegida-top">Compra Protegida con Mercado Pago.</div>'
               +'Recibe el producto que esperabas o te devolvemos tu dinero.'
               +'</div>';
-        $(t).insertBefore(".component.prodDescription");
+        //$(t).insertBefore(".component.prodDescription");
+        $(t).insertAfter(".contentBtnBuy");
     },
     init: function(){
         this.moveDesc();
