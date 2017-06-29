@@ -96,10 +96,36 @@ body {
 }
 .header-search #searchForm .inputField {
   width: 85%;
+  padding-left: 10px;
   background: none;
+  background-image: url({@repoimage}icon-search.png);
+  background-position: 5px 3px;
   float: left;
   border: solid 2px #cad415;
   height: 34px;
+  color: #cad415;
+}
+.header-search #searchForm .inputField::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #cad415;
+}
+.header-search #searchForm .inputField:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #cad415;
+  opacity: 1;
+}
+.header-search #searchForm .inputField::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #cad415;
+  opacity: 1;
+}
+.header-search #searchForm .inputField:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #cad415;
+}
+.header-search #searchForm .inputField::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #cad415;
 }
 .header-search #searchForm .button {
   width: 15%;

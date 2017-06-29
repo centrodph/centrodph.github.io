@@ -103,10 +103,31 @@ body{
   #searchForm{
     .inputField{
       width: 85%;
+      padding-left: 10px;
       background: none;
+      background-image: url({@repoimage}icon-search.png);
+      background-position: 5px 3px; 
       float: left;
       border: solid 2px @verde;
       height: 34px;
+      color: @verde;
+      &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+          color: @verde;
+      }
+      &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+         color: @verde;
+         opacity:  1;
+      }
+      &::-moz-placeholder { /* Mozilla Firefox 19+ */
+         color: @verde;
+         opacity:  1;
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+         color: @verde;
+      }
+      &::-ms-input-placeholder { /* Microsoft Edge */
+         color: @verde;
+      }
     }
     .button{
       width: 15%;
