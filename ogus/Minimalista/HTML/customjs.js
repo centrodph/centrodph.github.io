@@ -80,6 +80,21 @@ $(document).ready(function(){
 
 });
 
+var newsController ={
+  hideNewsletter: function(){
+    $(".emailMarketingSubscriptionFormContainer").hide();
+  },
+  showNewsletter: function(){
+    $(".emailMarketingSubscriptionFormContainer").show();
+    newsController.init();
+  },
+  init: function(){
+    $(".emailMarketingFormTitle").click(newsController.hideNewsletter);
+    $(".emailMarketingSubscriptionFormContainer form").attr("target","_blank");
+  }
+};
+
+
 /*<div class="home-mas-info">
 <a class="link" title="ALBA PINTURA" href="/alba-pintura-1000007804xJM">
 + info

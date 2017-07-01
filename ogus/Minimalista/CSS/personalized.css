@@ -1,15 +1,15 @@
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 .robo {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Roboto' !important;
+  font-style: normal !important;
   font-weight: 300;
 }
 body {
   max-width: none;
   background: #eeeeee;
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Roboto' !important;
+  font-style: normal !important;
   font-weight: 300;
   padding: 0;
 }
@@ -505,8 +505,8 @@ body {
   background: none;
   border: none;
   box-shadow: none;
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Roboto' !important;
+  font-style: normal !important;
   font-weight: 300;
 }
 .component.prodDescription.ch-tabNavigator .ch-tabNavigator-triggers {
@@ -601,6 +601,60 @@ body {
 #page-VIP .ch-carousel-prev,
 .ch-carousel-next {
   display: none !important;
+}
+/*************************************************************
+NEWSLETTER
+*************************************************************/
+.emailMarketingSubscriptionFormContainer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100% !important;
+  margin: 0 !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+  padding-top: 12% !important;
+}
+.emailMarketingSubscriptionFormContainer form {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #002f3f;
+  padding: 10px;
+}
+.emailMarketingSubscriptionFormContainer form .emailMarketingFormTitle {
+  font-family: 'Roboto' !important;
+  font-style: normal !important;
+  font-weight: 300;
+  font-size: 15px!important;
+  position: relative;
+}
+.emailMarketingSubscriptionFormContainer form .emailMarketingFormTitle:after {
+  display: block;
+  width: 15px;
+  height: 15px;
+  content: "X";
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.emailMarketingSubscriptionFormContainer form label {
+  color: #cad415;
+  font-family: 'Roboto' !important;
+  font-style: normal !important;
+  font-weight: 300;
+}
+.emailMarketingSubscriptionFormContainer form input.submitButton {
+  width: 15%;
+  background: #cad415;
+  border: none;
+  border-radius: 0;
+  background-clip: padding-box;
+  height: 34px;
+  color: #002f3f;
+  text-transform: uppercase;
 }
 /*************************************************************
 *************************************************************/

@@ -9,8 +9,8 @@
 
 
 
-.robo{  font-family: 'Roboto';
-  font-style: normal;
+.robo{  font-family: 'Roboto' !important;
+  font-style: normal !important;
   font-weight: 300;
 }
 
@@ -560,7 +560,55 @@ body{
 }
 
 
-
+/*************************************************************
+NEWSLETTER
+*************************************************************/
+.emailMarketingSubscriptionFormContainer{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100% !important;
+  margin: 0 !important;
+  background: rgba(0, 0, 0, 0.7)!important;
+  padding-top: 12% !important;
+  form{
+    max-width: 640px;
+    margin: 0 auto;
+    background: @petro;
+    padding: 10px;
+    .emailMarketingFormTitle{
+      .robo;
+      font-size: 15px!important;
+      position: relative;
+      &:after{
+        display: block;
+        width: 15px;
+        height: 15px;
+        content: "X";
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+    label{
+      color: @verde;
+      .robo;
+    }
+    input.submitButton{
+        width: 15%;
+        background: @verde;
+        border: none;
+        .border-radius(0);
+        height: 34px;
+        color: @petro;
+        text-transform: uppercase;
+    }
+  }
+}
 
 /*************************************************************
 *************************************************************/

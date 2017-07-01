@@ -69,7 +69,7 @@
 </div>
 <div class="col-sm-4">
 <div class="ogus_header_right">
-<a href="javascript:void(0);" class="link">NEWSLETTER <span class="icon-news"></span></a>
+<a href="javascript:newsController.showNewsletter();" class="link">NEWSLETTER <span class="icon-news"></span></a>
 <a href="javascript:void(0);" class="link">CART<span class="icon-cart"></span></a>
 </div>
 </div>
@@ -467,7 +467,7 @@ en productos y servicios.
 </div>
 </div>
 </div>
-
+<script type="text/javascript" src="http://v2.envialosimple.com/form/show/AdministratorID/102822/FormID/1/format/widget"></script>
 <div class="installments-info">Todos los precios están calculados en 1 pago.</div>
 <script src="http://www.ogus.heisenbergstudio.com/static/js/analytics_utils.js"></script>
 <script type="text/javascript">
