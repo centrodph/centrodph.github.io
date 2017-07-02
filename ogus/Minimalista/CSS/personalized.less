@@ -629,15 +629,17 @@ icon-compra.png
   }
   .title-component{
     position: relative;
-    &::before{
+    &:before{
         display: block;
         position: absolute;
+        content: '';
     }
     &.icon-type-0{
-      &::before{
+      color: red;
+      &:before{
         width: 90px;
         height: 100px;
-        background: url('@repoimage'icon-medio-pago.png) no-repeat;
+        background: url('@{repoimage}icon-medio-pago.png') no-repeat;
         background-position: center top;
         background-size: cover;
       }

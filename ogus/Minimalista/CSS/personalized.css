@@ -672,5 +672,23 @@ icon-compra.png
 #page-SHIPPING #payMethod {
   padding-top: 40px;
 }
+#page-SHIPPING .title-component {
+  position: relative;
+}
+#page-SHIPPING .title-component:before {
+  display: block;
+  position: absolute;
+  content: '';
+}
+#page-SHIPPING .title-component.icon-type-0 {
+  color: red;
+}
+#page-SHIPPING .title-component.icon-type-0:before {
+  width: 90px;
+  height: 100px;
+  background: url('https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-medio-pago.png') no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
 /*************************************************************
 *************************************************************/
