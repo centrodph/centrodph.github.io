@@ -1,0 +1,615 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Estudio GEMA - www.estudiogema.com"/>
+        <title>Pinturerias OGUS</title>
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+    <style>
+    body,*{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+    }
+    #map-canvas,.overmap {
+        height: 580px;
+    }
+    .mapcontent {
+        position: relative;
+    }
+    .overmap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 35%;
+        padding-top: 20px;
+        background: rgba(25,67,82,0.9);
+        overflow: scroll;
+    }
+    .puntoitem {
+        padding: 10px;
+        line-height: 14px;
+        font-size: 13px;
+        font-weight: 400;
+        color: #cad415;
+    }
+    {
+        background: #f1f1f1;
+    }
+
+
+    .punto-title {
+        font-weight: 700;
+        font-size: 18px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+    }
+    .punto-dir, .punto-tel,.punto-email {
+      display: none;
+    }
+    .puntoitem:hover,.puntoitem.active {
+        background: #cad415;
+        cursor:pointer;
+        color: #174150;
+    }
+    .puntoitem:hover .punto-title,.puntoitem.active .punto-title {
+        color: #174150;
+    }
+
+    .infoBox {
+        padding: 10px;
+        margin-top: -50px;
+        -webkit-box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.6);
+        -moz-box-shadow:    0px 2px 7px 0px rgba(50, 50, 50, 0.6);
+        box-shadow:         0px 2px 7px 0px rgba(50, 50, 50, 0.6);
+    }
+
+    .infoBox img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .customInfo h4 {
+        padding: 0;
+        margin: 0;
+        font-weight: 700;
+        font-size: 18px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        color: #e20026;
+        padding-top: 4px;
+        line-height: 22px;
+    }
+    .customInfo p {
+        margin-bottom: 2px;
+        font-size: 12px;
+    }
+    .spanbottom{
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 6px solid #FFF;
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -19px;
+    }
+    .customInfo .iconosGrilla{
+        padding-top: 4px;
+    }
+    .resultadoFiltro {
+        display: none !important;
+    }
+</style>
+<div class="puntos-de-venta" style="display:none;">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="title-buscador">
+                                    buscador de puntos de venta
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="select-place">
+                            <select id="filterProvincia" onchange="filterMarkersProvincia(this.value);">
+                                <option value=""> Provincia</option>
+                                 <option value="2">Gran Buenos Aires</option>                            </select>
+                            </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="select-place">
+                            <select id="filterLocalidad" onchange="filterMarkers()">
+                                <option prov="def" value=""> Localidad</option>
+                                 <option prov="2"value="229">Quilmes</option> <option prov="2"value="202">Lanús</option> <option prov="2"value="190">Guillermo Enrique Hudson</option> <option prov="2"value="181">Florencio Varela</option> <option prov="2"value="156">Berazategui</option> <option prov="2"value="150">Avellaneda</option>
+                            </select>
+                            </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="iconosGrilla">
+                                    <div class="iconoMoto " data-toggle="tooltip" data-placement="top" title="" data-original-title="MOTO"   filter="8"></div>
+                                    <div class="iconoAuto " data-toggle="tooltip" data-placement="top" title="" data-original-title="AUTO"   filter="9"></div>
+                                    <div class="iconoCamion " data-toggle="tooltip" data-placement="top" title="" data-original-title="CAMIÓN"   filter="10"></div>
+                                    <div class="iconoRepuestos " data-toggle="tooltip" data-placement="top" title="" data-original-title="REPUESTOS DE AUTOS"   filter="11"></div>
+                                    <div class="iconoTaller " data-toggle="tooltip" data-placement="top" title="" data-original-title="TALLERES MECÁNICOS"   filter="12"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+</div>
+
+<div class="mapcontent">
+    <div id="map-canvas"></div>
+    <div class="overmap">
+        <div class="overmap-scroll">
+          <div class="puntoitem" id="anchor-3" rel="3">
+                    <div class="punto-title">
+                        CENTRAL                                </div>
+                    <div class="punto-dir">
+                        Av. 844 N°2002 esq. 891 San Francisco Solano, Quilmes                                </div>
+                    <div class="punto-tel">
+                        Atención : ID 176*328                                </div>
+                    <div class="punto-tel">
+                        Tel:4212-2944                                </div>
+                    <div class="punto-email">
+                        central@pintureriasogus.com.ar                                </div>
+                </div>
+                                        <div class="puntoitem" id="anchor-4" rel="4">
+                    <div class="punto-title">
+                        CALZADA                                </div>
+                    <div class="punto-dir">
+                        Av. San Martín 3503  Rafael Calzada                                </div>
+                    <div class="punto-tel">
+                        Atención : ID 176*975                                </div>
+                    <div class="punto-tel">
+                        Tel:4291-0168                                </div>
+                    <div class="punto-email">
+                        calzada@pintureriasogus.com.ar                                </div>
+                </div>
+                                        <div class="puntoitem" id="anchor-5" rel="5">
+                    <div class="punto-title">
+                        SOLANO                                </div>
+                    <div class="punto-dir">
+                        Calle 893 4291, San Francisco Solano, Quilmes                                </div>
+                    <div class="punto-tel">
+                        Atención : ID 176*5010                                </div>
+                    <div class="punto-tel">
+                        Tel:4212-3447                                </div>
+                    <div class="punto-email">
+                        solano@pintureriasogus.com.ar                                </div>
+                </div>
+                                        <div class="puntoitem" id="anchor-6" rel="6">
+                    <div class="punto-title">
+                        BERAZATEGUI                                </div>
+                    <div class="punto-dir">
+                        Av. Mitre N°844 e/ Calle 8 y 9 Berazategui                                </div>
+                    <div class="punto-tel">
+                        Atención : ID 176*3838                                </div>
+                    <div class="punto-tel">
+                        Tel:4226-4235                                </div>
+                    <div class="punto-email">
+                        berazategui@pintureriasogus.com.ar                                </div>
+                </div>
+                                        <div class="puntoitem" id="anchor-7" rel="7">
+                    <div class="punto-title">
+                        FLORENCIO VARELA                                </div>
+                    <div class="punto-dir">
+                        Tte. Gral. J. D. Perón N°1888 esq. Jujuy Florencio Varela                                </div>
+                    <div class="punto-tel">
+                        Atención : ID 176*5011                                </div>
+                    <div class="punto-tel">
+                        Tel:4255-0326                                </div>
+                    <div class="punto-email">
+                        varela@pintureriasogus.com.ar                                </div>
+                </div>
+                                        <div class="puntoitem" id="anchor-8" rel="8">
+                    <div class="punto-title">
+                        LANÚS                                </div>
+                    <div class="punto-dir">
+                        Av. San Martín N°1592 esq. Máximo Paz Lanús Oeste                                </div>
+                    <div class="punto-tel">
+                        Atención : ID 176*3493                                </div>
+                    <div class="punto-tel">
+                        Tel:4225-8612                                </div>
+                    <div class="punto-email">
+                        lanus@pintureriasogus.com.ar                                </div>
+                </div>
+                                        <div class="puntoitem" id="anchor-9" rel="9">
+                    <div class="punto-title">
+                        AVELLANEDA                                </div>
+                    <div class="punto-dir">
+                        Av. Cabildo N°1999 esq. Chile Avellaneda                                </div>
+                    <div class="punto-tel">
+                        Atención : ID 176*5012                                </div>
+                    <div class="punto-tel">
+                        Tel:4368-6839                                </div>
+                    <div class="punto-email">
+                        avellaneda@pintureriasogus.com.ar                                </div>
+                </div>
+                                        <div class="puntoitem" id="anchor-10" rel="10">
+                    <div class="punto-title">
+                        GUTIERREZ                                </div>
+                    <div class="punto-dir">
+                        Camino Gral. Belgrano N°6737 e/403 y 404 Gutierrez                                </div>
+                    <div class="punto-tel">
+                        Atención : ID 176*1069                                </div>
+                    <div class="punto-tel">
+                        Tel:(02229) 442-358                                </div>
+                    <div class="punto-email">
+                        hudson@pintureriasogus.com.ar                                </div>
+                </div>
+                                        <div class="puntoitem" id="anchor-11" rel="11">
+                    <div class="punto-title">
+                        QUILMES CENTRO                                </div>
+                    <div class="punto-dir">
+                        Mitre N°689 / 699 esq. Garibaldi Quilmes                                </div>
+                    <div class="punto-tel">
+                        Atención : Fax. 4254-5112                                </div>
+                    <div class="punto-tel">
+                        Tel:4253-3808                                </div>
+                    <div class="punto-email">
+                        quilmes@pintureriasogus.com.ar                                </div>
+                </div>
+                                </div>
+    </div>
+</div>
+<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBpxHwc_Hl_0mfLEEJeQXkXbqNIm5KwZB0&sensor=false&extension=.js'></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/googlemaps/v3-utility-library/master/infobox/src/infobox.js"></script>
+<script>
+    var repoimage ='https://centrodph.github.io/ogus/Minimalista/CSS/';
+    var repoimage : repoimage+'images/';
+
+    function findFilterType(){
+            var filter = null;
+            $(".iconosGrilla div").each(function(i,e){
+                if($(this).hasClass("on")){
+                    filter = $(this).attr("filter");
+                }
+            })
+            return filter;
+    }
+                                /**
+                                 * Ordenamiento de Select
+                                 */
+                                function ordenarSelect(options) {
+                                    var arr = options.map(function (_, o) {
+                                        return {
+                                            t: $(o).text(),
+                                            v: o.value
+                                        };
+                                    }).get();
+                                    arr.sort(function (o1, o2) {
+                                        return o1.t > o2.t ? 1 : o1.t < o2.t ? -1 : 0;
+                                    });
+                                    options.each(function (i, o) {
+                                        o.value = arr[i].v;
+                                        $(o).text(arr[i].t);
+                                    });
+                                }
+                                ordenarSelect($('select#filterProvincia option'));
+                                /**
+                                 * Map
+                                 */
+                                google.maps.event.addDomListener(window, 'load', init);
+                                var map;
+                                var gmarkers1 = [];
+                                var markers1 = [['Av. 844 N°2002 esq. 891 San Francisco Solano, Quilmes','CENTRAL', '2', '229', '3',-34.7760516,-58.305333899999994, '../../img/icon-map-b.png',1, 1, 1, 1, 1, 'ID 176*328', '4212-2944', 'central@pintureriasogus.com.ar', ],['Av. San Martín 3503  Rafael Calzada','CALZADA', '2', '229', '4',-34.7906276,-58.3552009, '../../img/icon-map-b.png',1, 1, 1, 1, 1, 'ID 176*975', '4291-0168', 'calzada@pintureriasogus.com.ar', ],['Calle 893 4291, San Francisco Solano, Quilmes','SOLANO', '2', '229', '5',-34.7792543,-58.30695479999997, '../../img/icon-map-b.png',1, 1, 1, 1, 1, 'ID 176*5010', '4212-3447', 'solano@pintureriasogus.com.ar', ],['Av. Mitre N°844 e/ Calle 8 y 9 Berazategui','BERAZATEGUI', '2', '156', '6',-34.7543884,-58.21141990000001, '../../img/icon-map-b.png',0, 0, 0, 0, 0, 'ID 176*3838', '4226-4235', 'berazategui@pintureriasogus.com.ar', ],['Tte. Gral. J. D. Perón N°1888 esq. Jujuy Florencio Varela','FLORENCIO VARELA', '2', '181', '7',-34.808972,-58.25515459999997, '../../img/icon-map-b.png',0, 0, 0, 0, 0, 'ID 176*5011', '4255-0326', 'varela@pintureriasogus.com.ar', ],['Av. San Martín N°1592 esq. Máximo Paz Lanús Oeste','LANÚS', '2', '202', '8',-34.68975289999999,-58.40219539999998, '../../img/icon-map-b.png',1, 1, 1, 1, 1, 'ID 176*3493', '4225-8612', 'lanus@pintureriasogus.com.ar', ],['Av. Cabildo N°1999 esq. Chile Avellaneda','AVELLANEDA', '2', '150', '9',-34.6730652,-58.3936928, '../../img/icon-map-b.png',1, 1, 1, 1, 1, 'ID 176*5012', '4368-6839', 'avellaneda@pintureriasogus.com.ar', ],['Camino Gral. Belgrano N°6737 e/403 y 404 Gutierrez','GUTIERREZ', '2', '190', '10',-34.8204038,-58.192366900000025, '../../img/icon-map-b.png',1, 1, 1, 1, 1, 'ID 176*1069', '(02229) 442-358', 'hudson@pintureriasogus.com.ar', ],['Mitre N°689 / 699 esq. Garibaldi Quilmes','QUILMES CENTRO', '2', '229', '11',-34.7222121,-58.25343650000002, '../../img/icon-map-b.png',1, 1, 1, 1, 1, 'Fax. 4254-5112', '4253-3808', 'quilmes@pintureriasogus.com.ar', ]];
+                                function init() {
+                                    var mapOptions = {
+                                        //center: new google.maps.LatLng(-35.52735035560518, -56.47047969326172),
+                                        center: new google.maps.LatLng(-34.7760516,-58.305333899999994),
+                                        zoom: 13,
+                                        zoomControl: true,
+                                        zoomControlOptions: {
+                                            style: google.maps.ZoomControlStyle.DEFAULT,
+                                        },
+                                        //disableDoubleClickZoom: true,
+                                        mapTypeControl: true,
+                                        mapTypeControlOptions: {
+                                            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                                        },
+                                        scaleControl: true,
+                                        scrollwheel: false,
+                                        panControl: true,
+                                        streetViewControl: true,
+                                        draggable: true,
+                                        overviewMapControl: true,
+                                        overviewMapControlOptions: {
+                                            opened: false,
+                                        },
+                                        mapTypeId: google.maps.MapTypeId.ROADMAP,
+                                        styles: []
+                                    }
+                                    var mapElement = document.getElementById('map-canvas');
+                                    map = new google.maps.Map(mapElement, mapOptions);
+                                    var locations = markers1
+                                    for (i = 0; i < locations.length; i++) {
+                                        if (locations[i][1] == 'undefined') {
+                                            description = '';
+                                        } else {
+                                            description = locations[i][1];
+                                        }
+                                        if (locations[i][2] == 'undefined') {
+                                            provincia = '';
+                                        } else {
+                                            provincia = locations[i][2];
+                                        }
+                                        if (locations[i][3] == 'undefined') {
+                                            localidad = '';
+                                        } else {
+                                            localidad = locations[i][3];
+                                        }
+                                        if (locations[i][4] == 'undefined') {
+                                            web = '';
+                                        } else {
+                                            web = locations[i][4];
+                                        }
+                                        if (locations[i][7] == 'undefined') {
+                                            markericon = '';
+                                        } else {
+                                            markericon = locations[i][7];
+                                        }
+                                        marker = new google.maps.Marker({
+                                            //icon: 'http://gema.localhost/web-wakefield//img/icon-map-b.png',
+                                            position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                                            map: map,
+                                            title: locations[i][0],
+                                            desc: description,
+                                            provincia: provincia,
+                                            localidad: localidad,
+                                            puntoid: locations[i][4],
+                                            moto: locations[i][8],
+                                            auto: locations[i][9],
+                                            camion: locations[i][10],
+                                            respuestos: locations[i][11],
+                                            taller: locations[i][12],
+                                            horario: locations[i][13],
+                                            telefono: locations[i][14],
+                                            email: locations[i][15]
+
+                                        });
+                                        gmarkers1.push(marker);
+                                        if (web.substring(0, 7) != "http://") {
+                                            link = "http://" + web;
+                                        } else {
+                                            link = web;
+                                        }
+                                        bindInfoWindow(marker, map, locations[i][0], description, provincia, localidad, web, link);
+                                    }
+                                    function bindInfoWindow(marker, map, title, desc, provincia, localidad, web, link) {
+                                        $iconImages='<div class="iconosGrilla iconosMap">';
+                                        if(marker.moto == 1){
+                                            $iconImages += '<div class="iconoMoto "></div>';
+                                        }
+                                        if(marker.auto == 1){
+                                            $iconImages += '<div class="iconoAuto "></div>';
+                                        }
+                                        if(marker.camion == 1){
+                                            $iconImages += '<div class="iconoCamion " ></div>';
+                                        }
+                                        if(marker.respuestos == 1){
+                                            $iconImages += '<div class="iconoRepuestos "></div>';
+                                        }
+                                        if(marker.taller == 1){
+                                            $iconImages += '<div class="iconoTaller "></div>';
+                                        }
+                                        $iconImages += '</div>';
+                                        marker.infobox = new InfoBox({
+                                            content: "<div class='customPlace'></div>"+
+                                            "<div class='customInfo'>"+
+                                                "<h4>" + title + "</h4>"+
+                                                "<p>" + desc + "<p>" +
+                                                "<p>" + marker.horario + "<p>" +
+                                                "<p> Tel:" + marker.telefono + "<p>" +
+                                                "<p>" + marker.email + "<p>" +
+                                                $iconImages +
+                                                "<span class='spanbottom'></span>"+
+                                            "</div>",
+                                            disableAutoPan: false,
+                                            maxWidth: 150,
+                                            alignBottom: true,
+                                            pixelOffset: new google.maps.Size(-130, -39),
+                                            zIndex: null,
+                                            boxStyle: {
+                                                background: "#FFF",
+                                                opacity: 1,
+                                                width: "280px"
+                                            },
+                                            closeBoxMargin: "0",
+                                            //closeBoxURL: "{{ asset('bundles/front/images/closemarker.png')}}",
+                                            infoBoxClearance: new google.maps.Size(1, 1)
+                                        });
+                                        google.maps.event.addListener(marker, 'click', function () {
+                                            //change icon icon-map-d.png
+                                            console.log(marker.puntoid);
+                                            map.panTo(marker.getPosition());
+                                            map.setZoom(13);
+                                            scroollTo(marker.puntoid);
+                                            $.each(gmarkers1, function (index, otra) {
+                                                if (marker !== otra) {
+                                                    //otra.setIcon('http://gema.localhost/web-wakefield//img/icon-map-b.png');
+                                                    otra.infobox.close();
+                                                }
+                                            });
+                                            //marker.setIcon('http://gema.localhost/web-wakefield//img/icon-map-d.png');
+                                            marker.infobox.open(map, marker);
+                                        });
+                                    }
+                                }
+                                filterMarkers = function () {
+                                    console.log("FILTER");
+                                    var idProv = $("#filterProvincia").val();
+                                    var idLoc = $("#filterLocalidad").val();
+                                    var c = 0;
+                                    var encontrados = [];
+                                    //RESET LOC
+                                    $("#filterLocalidad option").show();
+                                    if (idProv != "") {
+                                        $("#filterLocalidad option[prov!='" + idProv + "']").hide();
+                                    }
+                                    $("#filterLocalidad option[prov='def']").show();
+                                    for (i = 0; i < markers1.length; i++) {
+                                        marker = gmarkers1[i];
+                                        if (
+                                                (marker.provincia == idProv && marker.localidad == idLoc) //Coincide Provincia y Localidad
+                                                || (marker.provincia == idProv && idLoc == "") //Coincide Provincia
+                                                || (marker.localidad == idLoc && idProv == "") //Coincide Localidad
+                                                || (idLoc == "" && idProv == "") //No viene Prov ni loc
+                                                ) {
+                                            c++;
+                                            encontrados.push(marker);
+                                            marker.setVisible(true);
+                                        } else {
+                                            marker.setVisible(false);
+                                            marker.infobox.close();
+                                        }
+                                    }
+                                    $(".resultadoFiltro span").text(c);
+                                    $(".resultadoFiltro").show();
+                                    if (c > 0) {
+                                        map.setCenter(encontrados[0].getPosition());
+                                    }
+                                    filterALL(encontrados);
+
+                                }
+                                filterMarkersProvincia = function (prov) {
+                                    $("#filterLocalidad option").show();
+                                    if (prov != "") {
+                                        $("#filterLocalidad option[prov!='" + prov + "']").hide();
+                                    }
+                                    $("#filterLocalidad").val("");
+                                    filterMarkers();
+                                }
+                                filterMarkersType = function(id){
+                                    var id = findFilterType();
+                                    if(id==null){
+                                        return;
+                                    }
+                                    for (i = 0; i < markers1.length; i++) {
+                                        marker = gmarkers1[i];
+                                        if(marker.moto == 1 && id ==8
+                                        ||  marker.auto == 1 && id ==9
+                                        ||  marker.camion == 1 && id ==10
+                                        ||  marker.respuestos == 1 && id ==11
+                                        ||  marker.taller == 1 && id ==12 ){
+                                            encontrado = marker;
+                                            marker.setVisible(true);
+                                        } else {
+                                            marker.setVisible(false);
+                                            marker.infobox.close();
+                                        }
+                                    }
+                                }
+
+                                isFilterType = function(id,marker){
+                                        if(marker.moto == 1 && id ==8
+                                        ||  marker.auto == 1 && id ==9
+                                        ||  marker.camion == 1 && id ==10
+                                        ||  marker.respuestos == 1 && id ==11
+                                        ||  marker.taller == 1 && id ==12 ){
+                                            return true;
+                                        } else {
+                                            return false;
+                                        }
+
+                                }
+
+                                cleanLateral = function (idsArray){
+                                    console.log(idsArray);
+                                    $(".puntoitem").hide();
+                                    idsArray.forEach(function(v){
+                                        $('.puntoitem[rel="'+v+'"]').show();
+                                    });
+                                }
+
+                                filterALL = function(filtradosPorProvincia){
+                                    console.log(filtradosPorProvincia);
+                                    var idFilterType = findFilterType();
+                                    var ids = [];
+
+                                    if(idFilterType == null){
+                                        for (i = 0; i < filtradosPorProvincia.length; i++) {
+                                            marker = filtradosPorProvincia[i];
+                                            ids.push(marker.puntoid);
+                                        }
+                                        cleanLateral(ids);
+                                        return;
+                                    }
+
+                                    for (i = 0; i < filtradosPorProvincia.length; i++) {
+                                        marker = filtradosPorProvincia[i];
+                                        if(isFilterType(idFilterType, marker)){
+                                            marker.infobox.close();
+                                            marker.setVisible(true);
+                                            ids.push(marker.puntoid);
+                                        }else{
+                                            marker.setVisible(false);
+                                            marker.infobox.close();
+                                        }
+                                    }
+                                    cleanLateral(ids);
+
+                                }
+
+
+        function scroollTo(id){
+            $(".puntoitem").removeClass("active");
+            var target = $("#anchor-"+id);
+            target.addClass("active");
+            return false;
+            /*if (target.length) {
+                $('.overmap').animate({
+                scrollTop: $('.overmap').scrollTop() + target.offset().top - 20
+                }, 500);
+                return false;
+            }*/
+        }
+        function clickOnLateral(id){
+                                    for (i = 0; i < markers1.length; i++) {
+                                        marker = gmarkers1[i];
+                                        if ((marker.puntoid == id)) {//Coincide ID
+                                            google.maps.event.trigger(marker, 'click');
+                                            marker.setVisible(true);
+                                        }else{
+                                            marker.infobox.close();
+                                        }
+                                    }
+        }
+        $(".puntoitem").click(function(){
+            var r=$(this).attr("rel");
+            clickOnLateral(r);
+        })
+        $(".iconosGrilla div").click(function(){
+            if($(this).hasClass("on")){
+             $(".iconosGrilla div").removeClass("on");
+             filterMarkers();
+             return;
+            }
+            var f= $(this).attr("filter");
+            $(".iconosGrilla div").removeClass("on");
+            $(this).addClass("on");
+            filterMarkers();
+        });
+    </script>
+  </body>
+</html>

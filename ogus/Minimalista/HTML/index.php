@@ -70,7 +70,7 @@
 <div class="col-sm-4">
 <div class="ogus_header_right">
 <a href="javascript:newsController.showNewsletter();" class="link">NEWSLETTER <span class="icon-news"></span></a>
-<a href="/cart" class="link">CART<span class="icon-cart"></span></a>
+<a href="/cart" class="link">CARRITO<span class="icon-cart"></span></a>
 </div>
 </div>
 </div>
