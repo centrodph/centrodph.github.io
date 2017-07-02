@@ -41,7 +41,7 @@
 <script type="text/javascript" src="//static.mercadoshops.com/proxy/js?v=20170529_224238&amp;f=analytics_final.js&amp;userVersion=V2"></script>
 
 </head>
-<body id="page-SHIPPING">
+<body id="page-CART">
 <div class="ogus_header">
 <div class="container">
 <div class="row">
@@ -99,19 +99,111 @@ BIENVENIDO A NUESTRA <span>TIENDA ONLINE</span>
 <div class="ch-g1 mainContent">
 <div class="ch-container">
 <div class="ch-container oneColumn clearfix">
+<h3 class="title-component">Mi carrito</h3>
+<div class="ch-message-information">
+<h2 class="noProd">Aún no has agregado productos a tu carrito.</h3>
+</div>
+<div class="ch-actions">
+<a href="/" title="Seguir comprando" class="keepBuying ch-btn ch-primary button">Seguir comprando</a>
+</div>
+<script>
+	/**
+	 * @TODO Remove timeout. Load this script once jQuery is loaded.
+	 */
+	var ms = window.ms || {},
+		locale = 'es_AR',
+		siteId = locale.slice(locale.indexOf('_') + 1),
+		shippingShowMoreTrigger = document.querySelectorAll('[data-js="vip-shipping-showmore"]'),
+		shippingCalculatorContainer = document.getElementById('ms-shipping-calculator-container');
 
-<nav class="component categoriesPath">
-<ol class="clearfix">
-<li>
-<a href="/" title="">Inicio</a>
-</li>
-</ol>
-</nav>
-<section id="payMethod" class="component paymentMethods3 payMethod">
-<h3 class="title-component">Medios de Pago </h3>
-<div class="shippingPaymethodContent">
+	function toggleContainer(trigger, container) {
+		if (container.className.indexOf('ch-hide') !== -1) {
+			container.className = container.className.substr(0, container.className.indexOf('ch-hide')) + container.className.substr(container.className.indexOf('ch-hide') + 'ch-hide'.length);
+		} else {
+			container.className += ' ch-hide';
+		}
+
+		if (trigger.className.indexOf('ch-hide') !== -1) {
+			trigger.className = trigger.className.substr(0, trigger.className.indexOf('ch-hide')) + trigger.className.substr(trigger.className.indexOf('ch-hide') + 'ch-hide'.length);
+		} else {
+			trigger.className += ' ch-hide';
+		}
+	}
+
+	function initShippingCalculator() {
+		ms.shippingCalculator.init({
+			isForm: true,
+			shopId: 252406637,
+			siteId :siteId,
+			countryId: 'AR',
+			container: shippingCalculatorContainer
+		});
+	}
+
+	[].slice.call(shippingShowMoreTrigger).forEach(function (trigger) {
+		trigger.onclick = function (e) {
+			e.preventDefault();
+			toggleContainer(trigger, shippingCalculatorContainer);
+		};
+	});
+
+	// Init shipping calculator
+	if (shippingCalculatorContainer) {
+		var meliSiteId;
+
+		switch (siteId) {
+			case 'AR':
+				meliSiteId = 'MLA';
+			break;
+			case 'BR':
+				meliSiteId = 'MLB';
+			break;
+			case 'MX':
+				meliSiteId = 'MLM';
+			break;
+			case 'CO':
+				meliSiteId = 'MCO';
+			break;
+			case 'CL':
+				meliSiteId = 'MLC';
+			break;
+			case 'VE':
+				meliSiteId = 'MLV';
+			break;
+		}
+
+		// Preventing race condition (in case of `currencies.js` isn't loaded)
+		if (ms.currencies) {
+			ms.currencies.init(meliSiteId).then(function (res) {
+				if (ms.shippingCalculator) {
+					initShippingCalculator();
+				} else {
+					body.onshippingCalculatorReady = function (e) {
+						initShippingCalculator();
+					};
+				}
+	        });
+		} else {
+			document.body.oncurrenciesloaded = function (e) {
+				ms.currencies.init(meliSiteId).then(function (res) {
+					if (ms.shippingCalculator) {
+						initShippingCalculator();
+					} else {
+						body.onshippingCalculatorReady = function (e) {
+							initShippingCalculator();
+						};
+					}
+				});
+			};
+		}
+	}
+
+</script>
+
+<aside id="payMethod" class="component paymentMethods2 clearfix payMethod">
+<h3 class="title-component">Medios de Pago</h3>
 <p class="pay-safe"><span class="mpPayment">MercadoPago</span></p>
-<ul id="payMethod">
+<ul id="payMethod" class="pmethod-carrito">
 <li class="card-MLA-visa">visa</li>
 <li class="card-MLA-master">master</li>
 <li class="card-MLA-amex">amex</li>
@@ -135,16 +227,7 @@ BIENVENIDO A NUESTRA <span>TIENDA ONLINE</span>
 <li class="card-MLA-debvisa">debvisa</li>
 <li class="card-MLA-redlink">redlink</li>
 </ul>
-</div>
-<h3 class="title-component">Promociones</h3>
-<span class="announcMP"></span><a class="link" href="http://www.mercadopago.com/org-img/argentina/promociones-bancos.html" target="_blank" rel="nofollow">¡Aprovecha estas promociones con MercadoPago!</a>
-</section>
-<section class="component shippingInfo" id="paySend">
-<h3 class="title-component">Envíos</h3>
-<ul>
-<li>A convenir</li>
-</ul>
-</section>
+</aside>
 </div>
 
 </div>
@@ -250,6 +333,12 @@ en productos y servicios.
 </div>
 </div>
 <script type="text/javascript" src="http://v2.envialosimple.com/form/show/AdministratorID/102822/FormID/1/format/widget"></script>
+
+
+
+
+
+
 <script src="http://www.ogus.heisenbergstudio.com/static/js/analytics_utils.js"></script>
 <script type="text/javascript">
 						try {

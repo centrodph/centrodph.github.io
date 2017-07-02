@@ -707,4 +707,35 @@ icon-compra.png
   background-size: cover;
 }
 /*************************************************************
+  CARRITTOTO
+*************************************************************/
+#page-CART .ch-message-information {
+  background: none;
+  border: none;
+  text-align: center;
+}
+#page-CART h2.noProd {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#page-CART h2.noProd:before {
+  display: block;
+  content: '';
+  width: 55px;
+  height: 95px;
+  background: url('https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-compra.png') no-repeat;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#page-CART a.keepBuying {
+  display: inline-block;
+  background: #cad415;
+  border: none;
+  border-radius: 0;
+  background-clip: padding-box;
+  height: 34px;
+  color: #002f3f;
+  text-transform: uppercase;
+}
+/*************************************************************
 *************************************************************/

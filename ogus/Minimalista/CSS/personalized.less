@@ -670,8 +670,40 @@ icon-compra.png
       }
     }
   }
+}
 
 
+/*************************************************************
+  CARRITTOTO
+*************************************************************/
+#page-CART{
+  .ch-message-information{
+    background: none;
+    border: none;
+    text-align: center;
+  }
+  h2.noProd{
+    font-size: 18px;
+    text-transform: uppercase;
+    &:before{
+      display: block;
+      content: '';
+      width: 55px;
+      height: 95px;
+      background: url('@{repoimage}icon-compra.png') no-repeat;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+  }
+  a.keepBuying{
+    display: inline-block;
+    background: @verde;
+    border: none;
+    .border-radius(0);
+    height: 34px;
+    color: @petro;
+    text-transform: uppercase;
+  }
 
 }
 
