@@ -16,7 +16,7 @@ var contactopage ={
       $(".ms-captcha").appendTo(".contactWrap");
     },
     addSucursales: function(){
-      $('<iframe src="//centrodph.github.io/ogus/Minimalista/HTML/map.html" frameborder="0" scrolling="no" id="sucrucasles" height="580" widht="100%"></iframe>')
+      $('<iframe src="//centrodph.github.io/ogus/Minimalista/HTML/map.html" frameborder="0" scrolling="no" id="sucrucasles" height="580" widht="100%" style="width: 100%;"></iframe>')
      .insertBefore(".ogus-footer-top");
     },
     init: function(){
