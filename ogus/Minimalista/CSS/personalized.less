@@ -627,25 +627,48 @@ icon-compra.png
   #payMethod{
     padding-top: 40px;
   }
+  #paySend{
+    padding-bottom: 40px;
+  }
   .title-component{
     position: relative;
     &:before{
+        left: -90px;
+        top: 0;
         display: block;
         position: absolute;
         content: '';
     }
     &.icon-type-0{
-      color: red;
       &:before{
-        width: 90px;
-        height: 100px;
+        width: 64px;
+        height: 87px;
         background: url('@{repoimage}icon-medio-pago.png') no-repeat;
         background-position: center top;
         background-size: cover;
+
       }
     }
+    &.icon-type-1{
+      &:before{
+        width: 67px;
+        height: 64px;
+        background: url('@{repoimage}icon-promociones.png') no-repeat;
+        background-position: center top;
+        background-size: cover;
 
+      }
+    }
+    &.icon-type-2{
+      &:before{
+        width: 63px;
+        height: 66px;
+        background: url('@{repoimage}icon-envios.png') no-repeat;
+        background-position: center top;
+        background-size: cover;
 
+      }
+    }
   }
 
 

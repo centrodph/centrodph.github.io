@@ -75,7 +75,7 @@ var shippingpage={
       return ( this.page.length > 0 ) ? true : false ;
   },
   addClases: function(){
-      var c= $("#payMethod");
+      var c= $("section.component");
       console.log(c);
       $('.title-component',c).each(function(index) {
           $(this).addClass("icon-type-"+index);
