@@ -15,10 +15,15 @@ var contactopage ={
     moveCaptcha: function(){
       $(".ms-captcha").appendTo(".contactWrap");
     },
+    addSucursales: function(){
+      $('<iframe src="http://google.com" frameborder="0" scrolling="no" id="sucrucasles" height="580"></iframe>')
+     .insertBefore(".ogus-footer-top");
+    },
     init: function(){
         this.addCustomClases();
         this.addWrap();
         this.moveCaptcha();
+        this.addSucursales();
         console.log("contactopage ");
     }
 
