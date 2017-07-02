@@ -705,6 +705,48 @@ icon-compra.png
     text-transform: uppercase;
   }
 
+  .component.shipTable .tfoot{
+    margin: 0;
+    hr{
+      display: none;
+    }
+  }
+  .colTotalPrice{
+    background: none;
+    font-size: 15px;
+    line-height: 40px;
+    text-transform: uppercase;
+    #total-to-pay{
+      color: @petro;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+  .component.shipTable{
+    padding-top: 40px;
+      .ch-actions.cart{
+        float: right;
+        a,input{
+          display: inline-block;
+          background: @verde;
+          border: none;
+          .border-radius(0);
+          height: 34px;
+          color: @petro;
+          text-transform: uppercase;
+          float: left;
+          line-height: 34px;
+          padding: 0 20px;
+        }
+        a{
+          background: #b8b8b8;
+          color: #f9f9f9;
+        }
+      }
+  }
+
+
+
 }
 
 

@@ -100,12 +100,106 @@ BIENVENIDO A NUESTRA <span>TIENDA ONLINE</span>
 <div class="ch-container">
 <div class="ch-container oneColumn clearfix">
 <h3 class="title-component">Mi carrito</h3>
-<div class="ch-message-information">
-<h2 class="noProd">Aún no has agregado productos a tu carrito.</h3>
+<form data-js="zip-form" method="post" name="cartForm" id="cartForm" action="/cartactions" class="ch-form">
+<input type="hidden" name="axn" value='confirm'/>
+<input type="hidden" name="ship-cep" id="ship-cep" value=""/>
+<input type="hidden" id="ship-price" name="ship-price" value=""/>
+<input type="hidden" id="coupon" name="coupon" value=""/>
+<input type="hidden" id="shipType" name="shipType" value="N"/>
+<input type="hidden" id="withShipping" name="withShipping" value="Y"/>
+<input type="hidden" id="loggedIn" name="loggedIn" value="false"/>
+<input type="hidden" id="showFreeShipping" name="showFreeShipping" value="false"/>
+<input type="hidden" id="subTotalAmount" name="subTotalAmount" value="1649.0"/>
+<input type="hidden" id="carrier" name="carrier" value=""/>
+<input type="hidden" id="hasNewShippingCalculator" name="hasNewShippingCalculator" value="false"/>
+<input type="hidden" id="gaClientId" name="gaClientId"/>
+<div class="component shipTable">
+<ul class="carritoresp clearfix">
+<li class="filas clearfix">
+<ul class="thead clearfix">
+<li class="deleteRow"></li>
+<li class="colProd">Productos</li>
+<li class="colCant">Cantidad</li>
+<li class="colPrice">Precio</li>
+</ul>
+</li>
+<li class="filas clearfix">
+<ul class="tbody clearfix item" id="item1000011623">
+<li class="deleteRow">
+<a href="/cartactions?axn=delete&itemId=1000011623" class="delete">
+<span>Eliminar</span>
+</a>
+</li>
+<li class="colFoto">
+<img src="http://mla-s2-p.mlstatic.com/708246-MLA25641058412_062017-S.jpg" alt="LATEX INTERIOR LAVABLE TERSUAVE x 20 Lts OGUS" title="LATEX INTERIOR LAVABLE TERSUAVE x 20 Lts OGUS"/>
+</li>
+<li class="itemDesc">
+<ul class="clearfix">
+<li class="colTitulo">
+<a href="/jm/com.mercadoshops.web.frontend.page.PageController?view=vip&itemId=1000011623" class="title" title="LATEX INTERIOR LAVABLE TERSUAVE x 20 Lts OGUS">LATEX INTERIOR LAVABLE TERSUAVE x 20 Lts OGUS</a>
+<a href="/cartactions?axn=delete&itemId=1000011623" class="mobile-delete-link clearfix">
+<span>
+<img src="" class="delete" alt="Quitar"/>
+Quitar
+</span>
+</a>
+</li>
+<li class="colCant">
+<label for="itemQty-1000011623" class="lblQuantity">Cantidad:</label>
+<input class="itemQtyField" type="number" pattern="\d*" name="qty-1000011623" value="1" id="itemQty-1000011623" min="0" onkeypress="return handleKeyPress(event)" max="10" data-max-stock="10"/>
+<label>de 10</label>
+<a href="#" onClick="updateCart();" title="Actualizar" id="updCartLink">Actualizar</a>
+<span id="error-itemQty-1000011623" class="ms-cart_available-qty" style="display:none">Puedes comprar hasta 10 unidades. </span>
+</li>
+<li class="colPrice ch-price price  cart-item-price" data-cost="1649.0">
+$ 1649<sup>00</sup>
+</li>
+<input type="hidden" id="productWidth-1000011623" value="0.0"/>
+<input type="hidden" id="productHeight-1000011623" value="0.0"/>
+<input type="hidden" id="productDepth-1000011623" value="0.0"/>
+<input type="hidden" id="productWeight-1000011623" value="0.0"/>
+<input type="hidden" id="productPrice-1000011623" name="price" value="1649.0"/>
+<input type="hidden" id="freeShipping-1000011623" name="freeShipping" value="false"/>
+</ul>
+</li>
+</ul>
+<ul class="tbody clearfix item order-price-detail" id="item$item.itemId">
+<li class="colTitulo">
+Costos de envío:
+</li>
+<li class="colCant" id="ship-cost-description">
+&nbsp;
+</li>
+<li class="colPrice">
+<p class="promotionPrice">A convenir</p>
+</li>
+</ul>
+</li>
+<li class="filas clearfix">
+<ul class="tfoot clearfix">
+<hr>
+<li class="colTotalPrice">
+Total a pagar:
+<span id="total-to-pay" class="ch-price price" data-symbol="$" data-cost="1649.0">$ 1649<sup>00</sup></span>
+</li>
+</ul>
+</li>
+</ul>
+<div class="ch-actions cart">
+<a href="/" title="" class="keepBuying">Seguir comprando</a>
+<input type="submit" value="Pagar" id="newBuyCart-submit" data-all-items-free-ship="false" data-show-ship-modal="true" data-select-costs="true" data-skip-costs-selection="false" data-total-amount="1649.0" class="ch-btn ch-primary button"/>
 </div>
-<div class="ch-actions">
-<a href="/" title="Seguir comprando" class="keepBuying ch-btn ch-primary button">Seguir comprando</a>
 </div>
+</form>
+<script>
+		var img = new Image();
+		img.onload = function () {
+			document.getElementById('loggedIn').value = 'true'
+		};
+
+		img.src = '//mshops.mercadolibre.com.ar/auth-pixel';
+	</script>
+<img style="display:none;" src="/transfer-session"/>
 <script>
 	/**
 	 * @TODO Remove timeout. Load this script once jQuery is loaded.
@@ -333,6 +427,13 @@ en productos y servicios.
 </div>
 </div>
 <script type="text/javascript" src="http://v2.envialosimple.com/form/show/AdministratorID/102822/FormID/1/format/widget"></script>
+
+
+
+
+
+
+
 
 
 

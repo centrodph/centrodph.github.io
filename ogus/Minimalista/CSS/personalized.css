@@ -737,5 +737,46 @@ icon-compra.png
   color: #002f3f;
   text-transform: uppercase;
 }
+#page-CART .component.shipTable .tfoot {
+  margin: 0;
+}
+#page-CART .component.shipTable .tfoot hr {
+  display: none;
+}
+#page-CART .colTotalPrice {
+  background: none;
+  font-size: 15px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+#page-CART .colTotalPrice #total-to-pay {
+  color: #002f3f;
+  font-size: 20px;
+  font-weight: 700;
+}
+#page-CART .component.shipTable {
+  padding-top: 40px;
+}
+#page-CART .component.shipTable .ch-actions.cart {
+  float: right;
+}
+#page-CART .component.shipTable .ch-actions.cart a,
+#page-CART .component.shipTable .ch-actions.cart input {
+  display: inline-block;
+  background: #cad415;
+  border: none;
+  border-radius: 0;
+  background-clip: padding-box;
+  height: 34px;
+  color: #002f3f;
+  text-transform: uppercase;
+  float: left;
+  line-height: 34px;
+  padding: 0 20px;
+}
+#page-CART .component.shipTable .ch-actions.cart a {
+  background: #b8b8b8;
+  color: #f9f9f9;
+}
 /*************************************************************
 *************************************************************/
