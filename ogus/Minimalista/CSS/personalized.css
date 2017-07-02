@@ -657,4 +657,20 @@ NEWSLETTER
   text-transform: uppercase;
 }
 /*************************************************************
+MEDIOS DE PAGO
+icon-medio-pago.png
+icon-promociones.png
+icon-envios.png
+icon-compra.png
+*************************************************************/
+#page-SHIPPING .component.categoriesPath {
+  display: none;
+}
+#page-SHIPPING section.component {
+  padding-left: 90px;
+}
+#page-SHIPPING #payMethod {
+  padding-top: 40px;
+}
+/*************************************************************
 *************************************************************/

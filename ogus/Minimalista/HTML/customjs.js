@@ -69,6 +69,24 @@ var productopage={
 
 };
 
+var shippingpage={
+  page: $('#page-SHIPPING'),
+  exist: function(){
+      return ( this.page.length > 0 ) ? true : false ;
+  },
+  addClases: function(){
+      var c= $("#payMethod");
+      console.log(c);
+      $('.title-component',c).each(function(index) {
+          $(this).addClass("icon-type-"+index);
+      });
+  },
+  init: function(){
+      this.addClases();
+      console.log(" shipping page ");
+  }
+}
+
 
 $(document).ready(function(){
 
@@ -77,7 +95,7 @@ $(document).ready(function(){
     if(contactopage.exist()){ contactopage.init();}
     if(resultpage.exist()){ resultpage.init();}
     if(productopage.exist()){ productopage.init();}
-
+    if(shippingpage.exist()){ shippingpage.init();}
 });
 
 var newsController ={

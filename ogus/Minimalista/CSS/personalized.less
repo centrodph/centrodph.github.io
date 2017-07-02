@@ -611,6 +611,47 @@ NEWSLETTER
 }
 
 /*************************************************************
+MEDIOS DE PAGO
+icon-medio-pago.png
+icon-promociones.png
+icon-envios.png
+icon-compra.png
+*************************************************************/
+#page-SHIPPING{
+  .component.categoriesPath{
+    display: none;
+  }
+  section.component {
+    padding-left: 90px;
+  }
+  #payMethod{
+    padding-top: 40px;
+  }
+  .title-component{
+    position: relative;
+    &::before{
+        display: block;
+        position: absolute;
+    }
+    &.icon-type-0{
+      &::before{
+        width: 90px;
+        height: 100px;
+        background: url('@repoimage'icon-medio-pago.png) no-repeat;
+        background-position: center top;
+        background-size: cover;
+      }
+    }
+
+
+  }
+
+
+
+}
+
+
+/*************************************************************
 *************************************************************/
 .backgroundCover(@url){
     background: url(@url) no-repeat center center;
