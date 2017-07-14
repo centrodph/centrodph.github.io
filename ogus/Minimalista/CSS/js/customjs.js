@@ -114,6 +114,31 @@ var shippingpage={
   }
 }
 
+var homepage = {
+    page: $('#page-HOME'),
+    exist: function(){
+        return ( this.page.length > 0 ) ? true : false ;
+    },
+    sliderRotation: function(){
+      var timer = null;
+      $('#page-HOME .ch-carousel-next').hover(function(ev){
+          clearInterval(timer);
+      }, function(ev){
+          timer = setInterval( function() {
+            // Rotar slides en carrusel cada 3s
+            var nextButton = $('#page-HOME .ch-carousel-next');
+            if (nextButton.hasClass('ch-carousel-disabled')) 
+              nextButton.click();      
+            else
+              $('.ch-carousel-pages').find("[data-page='"1"']").click();
+          }, 3000);
+      });
+    },
+    init: function(){
+        this.sliderRotation();
+        console.log(" home page ");
+    }
+}
 
 $(document).ready(function(){
 
@@ -123,6 +148,7 @@ $(document).ready(function(){
     if(resultpage.exist()){ resultpage.init();}
     if(productopage.exist()){ productopage.init();}
     if(shippingpage.exist()){ shippingpage.init();}
+    if(homepage.exist()){ homepage.init();}
 });
 
 var newsController ={

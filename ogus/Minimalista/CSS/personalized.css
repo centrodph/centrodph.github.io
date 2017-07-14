@@ -197,6 +197,7 @@ body {
   }
   .ogus-main-content-carousel .ch-carousel-adaptive {
     margin: 0;
+    height: auto !important;
   }
 }
 .ogus-main-content-carousel .ogus-carousel-home {
@@ -306,6 +307,7 @@ body {
 @media screen and (max-width: 767px) {
   .ogus-footer-box .ogus-footer-box-titulo {
     padding-bottom: 15px;
+    margin-left: -13px;
   }
 }
 .ogus-footer-box .ogus-footer-box-desc {
@@ -329,7 +331,7 @@ body {
 }
 .component .item-gallery li.background,
 .component .item-gallery li.row {
-  height: 450px;
+  height: 460px !important;
   margin-bottom: 30px;
   padding: 0 15px;
 }
@@ -341,8 +343,9 @@ body {
 .component .item-gallery li.background article h2,
 .component .item-gallery li.row article h2 {
   line-height: 1;
-  min-height: 85px;
+  height: 2.3em;
   display: inline-block;
+  min-height: 1px;
 }
 .component .item-gallery li.background article h2 a,
 .component .item-gallery li.row article h2 a {
@@ -457,7 +460,7 @@ body {
 }
 .component.searchResults .component.item-gallery li.background,
 .component.searchResults .component.item-gallery li.row {
-  height: 450px;
+  height: 460px !important;
   margin-bottom: 30px;
   padding: 0 15px;
 }
@@ -469,8 +472,9 @@ body {
 .component.searchResults .component.item-gallery li.background article h2,
 .component.searchResults .component.item-gallery li.row article h2 {
   line-height: 1;
-  min-height: 85px;
+  height: 2.3em;
   display: inline-block;
+  min-height: 1px;
 }
 .component.searchResults .component.item-gallery li.background article h2 a,
 .component.searchResults .component.item-gallery li.row article h2 a {
@@ -509,7 +513,7 @@ body {
 }
 .component.searchResults .component.item-list li.background,
 .component.searchResults .component.item-list li.row {
-  height: 450px;
+  height: 460px !important;
   margin-bottom: 30px;
   padding: 0 15px;
 }
@@ -521,8 +525,9 @@ body {
 .component.searchResults .component.item-list li.background article h2,
 .component.searchResults .component.item-list li.row article h2 {
   line-height: 1;
-  min-height: 85px;
+  height: 2.3em;
   display: inline-block;
+  min-height: 1px;
 }
 .component.searchResults .component.item-list li.background article h2 a,
 .component.searchResults .component.item-list li.row article h2 a {
@@ -572,10 +577,15 @@ body {
 /*************************************************************
   PRODUCTO SOBREESCRITURA
 *************************************************************/
-.component.vip h1 {
+#page-VIP h1.title {
   font-size: 30px;
   color: #002f3f;
   font-weight: 300;
+}
+@media screen and (max-width: 639px) {
+  #page-VIP h1.title {
+    font-size: 22px !important;
+  }
 }
 .component.vip span.ch-price.price {
   color: #002f3f;
@@ -696,6 +706,7 @@ body {
 @media screen and (max-width: 639px) {
   #page-VIP .component.picviewer .ch-carousel-list li {
     float: none;
+    display: inline-block;
   }
 }
 #page-VIP .component.picviewer figure,
@@ -731,10 +742,6 @@ body {
 #page-VIP .ch-carousel-prev {
   left: 0;
   top: 30% !important;
-}
-#page-VIP .ch-carousel-prev,
-.ch-carousel-next {
-  display: none !important;
 }
 /*************************************************************
 NEWSLETTER
