@@ -67,13 +67,24 @@ var productopage={
         $(t).insertAfter(".contentBtnBuy");
     },
     resize: function() {
-      this.resize();
       var viewportWidth = $(window).width();
-      var _title = $('.component.vip h1');
-      if (viewportWidth < 640)
-        _title.insertBefore('.vipImageWrapper');
-      else
+
+      // Titulo del producto
+      var _title = $('#page-VIP h1.title'),
+        _thumbs = $('#page-VIP .ch-carousel');
+      if (viewportWidth < 640) {
+        // Mover titulo al principio del contenido
+        _title.insertBefore('#page-VIP .vipImageWrapper');
+
+        // Mover opciones de fotos debajo de la imagen
+        _thumbs.insertAfter('#page-VIP .ch-viewervip-display');
+      }
+      else {
+        // Restaurar posicion original de elementos en desktop
         _title.appendTo('.component.vip header');
+        _thumbs.insertBefore('.ch-viewervip-display');
+
+      }
     },
     init: function(){
         this.moveDesc();
