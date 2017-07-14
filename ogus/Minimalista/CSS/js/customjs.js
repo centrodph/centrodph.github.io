@@ -124,15 +124,18 @@ var homepage = {
       $('#page-HOME .ch-carousel-next').hover(function(ev){
           clearInterval(timer);
       }, function(ev){
-          timer = setInterval( function() {
-            // Rotar slides en carrusel cada 3s
-            var nextButton = $('#page-HOME .ch-carousel-next');
-            if (nextButton.hasClass('ch-carousel-disabled')) 
-              nextButton.click();      
-            else
-              $('.ch-carousel-pages').find("[data-page=1]").click();
-          }, 3000);
+          timer = this.doRotation();
       });
+    },
+    doRotation: function() {
+      setInterval( function() {
+          // Rotar slides en carrusel cada 3s
+          var nextButton = $('#page-HOME .ch-carousel-next');
+          if (nextButton.hasClass('ch-carousel-disabled')) 
+            nextButton.click();      
+          else
+            $('.ch-carousel-pages').find("[data-page=1]").click();
+        }, 3000);
     },
     init: function(){
         this.sliderRotation();
