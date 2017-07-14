@@ -132,24 +132,27 @@ var homepage = {
     //   });
     // },
     init: function(){
-        var rotate = function() { setInterval(function() {
+        var timer;
+
+        var rotate = function() { timer = setInterval(function() {
           // Rotar slides en carrusel cada 3s
           var nextButton = $('#page-HOME .ch-carousel-next');
           if (!nextButton.hasClass('ch-carousel-disabled')) 
-            nextButton.click();      
+            nextButton.click();
           else
             $('.ch-carousel-pages').find("[data-page=1]").click();
           }, 3000)
         };
 
-        rotate();
 
-        var timer = null;
         $('#page-HOME .ch-carousel').hover(function(ev){
             clearInterval(timer);
         }, function(ev){
-            timer = rotate();
+            rotate();
         });
+
+        rotate();
+
         console.log(" home page ");
     }
 }
