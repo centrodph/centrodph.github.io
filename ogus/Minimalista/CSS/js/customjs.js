@@ -74,7 +74,7 @@ var productopage={
         _title.insertBefore('.vipImageWrapper');
       else
         _title.appendTo('.component.vip header');
-    }
+    },
     init: function(){
         this.moveDesc();
         this.addProtegido();
