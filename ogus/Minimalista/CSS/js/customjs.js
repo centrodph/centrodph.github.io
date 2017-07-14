@@ -130,7 +130,7 @@ var homepage = {
             if (nextButton.hasClass('ch-carousel-disabled')) 
               nextButton.click();      
             else
-              $('.ch-carousel-pages').find("[data-page='"1"']").click();
+              $('.ch-carousel-pages').find("[data-page=1]").click();
           }, 3000);
       });
     },
