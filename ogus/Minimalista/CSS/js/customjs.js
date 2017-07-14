@@ -66,9 +66,20 @@ var productopage={
         //$(t).insertBefore(".component.prodDescription");
         $(t).insertAfter(".contentBtnBuy");
     },
+    resize: function() {
+      this.resize();
+      var viewportWidth = $(window).width();
+      var _title = $('.component.vip h1');
+      if (viewportWidth < 640)
+        _title.insertBefore('.vipImageWrapper');
+      else
+        _title.appendTo('.component.vip header');
+    }
     init: function(){
         this.moveDesc();
         this.addProtegido();
+        this.resize();
+        $(window).resize(this.resize);
         console.log(" producto page ");
     }
 

@@ -23,6 +23,9 @@ body {
   background: url('https://centrodph.github.io/ogus/Minimalista/CSS/header.jpg') no-repeat center center;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale')";
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   color: #FFF;
 }
@@ -32,6 +35,15 @@ body {
 .ogus_header_menu {
   text-transform: uppercase;
   float: left;
+}
+@media screen and (max-width: 767px) {
+  .ogus_header_menu {
+    float: none;
+    text-align: center;
+  }
+  .ogus_header_menu__nav {
+    display: inline-block;
+  }
 }
 .ogus_header_menu ul li.background {
   background: none;
@@ -48,7 +60,11 @@ body {
 }
 .ogus_header_right {
   text-transform: uppercase;
-  float: right;
+}
+@media screen and (max-width: 767px) {
+  .ogus_header_right {
+    text-align: center;
+  }
 }
 .ogus_header_right a {
   margin: 0 10px;
@@ -73,12 +89,18 @@ body {
   background: url('https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-news.png') no-repeat center center;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale')";
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 .ogus_header_right span.icon-cart {
   background: url('https://centrodph.github.io/ogus/Minimalista/CSS/images/icon-cart.png') no-repeat center center;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale')";
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 .header-search {
@@ -105,6 +127,11 @@ body {
   border: solid 2px #cad415;
   height: 34px;
   color: #cad415;
+}
+@media screen and (max-width: 767px) {
+  .header-search #searchForm .inputField {
+    width: 75%;
+  }
 }
 .header-search #searchForm .inputField::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
@@ -133,11 +160,20 @@ body {
   background: #cad415;
   border: none;
   float: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   height: 34px;
   color: #002f3f;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .header-search #searchForm .button {
+    width: 25%;
+  }
 }
 /*************************************************************
     CAROUSEL HOME
@@ -148,6 +184,24 @@ body {
 .ogus-main-content-carousel ul li {
   height: 454px;
 }
+@media screen and (max-width: 767px) {
+  .ogus-main-content-carousel ul li {
+    height: auto;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ogus-main-content-carousel .ch-carousel-next,
+  .ogus-main-content-carousel .ch-carousel-prev {
+    display: none;
+  }
+  .ogus-main-content-carousel .ch-carousel-adaptive {
+    margin: 0;
+  }
+}
+.ogus-main-content-carousel .ogus-carousel-home {
+  margin: 0 -15px;
+}
 /*************************************************************
     CAROUSEL HOME
 *************************************************************/
@@ -155,6 +209,11 @@ body {
   color: #002f3f;
   font-size: 50px;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .ogus-productos-destacados-title {
+    font-size: 28px;
+  }
 }
 .ogus-main-content-linea {
   background: #ffffff;
@@ -166,8 +225,21 @@ body {
 .ogus-main-content-linea .ogus-linea-title {
   font-size: 50px;
 }
+@media screen and (max-width: 767px) {
+  .ogus-main-content-linea .ogus-linea-title {
+    font-size: 28px;
+  }
+}
 .ogus-main-content-linea .ogus-linea-home-box {
   padding: 20px 0;
+}
+@media screen and (min-width: 1024px) {
+  .ogus-main-content-linea .ogus-linea-home-box--left {
+    float: left;
+  }
+  .ogus-main-content-linea .ogus-linea-home-box--right {
+    float: right;
+  }
 }
 .ogus-main-content-linea .ogus-linea-home-box img {
   margin: 0 auto;
@@ -191,6 +263,9 @@ body {
   background: url('https://centrodph.github.io/ogus/Minimalista/CSS/images/bg-footer-top.jpg') no-repeat center center;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='@url', sizingMethod='scale')";
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   padding: 40px 0;
 }
@@ -198,6 +273,11 @@ body {
   padding: 20px 0;
   font-size: 50px;
   font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .ogus-footer-top .ogus-medios-pago-titulo {
+    font-size: 28px;
+  }
 }
 .ogus-footer-top .ogus-medios-pago-desc {
   padding-bottom: 35px;
@@ -213,18 +293,22 @@ body {
 .ogus-footer-sep {
   height: 50px;
 }
+@media screen and (max-width: 767px) {
+  .ogus-footer-box {
+    margin-bottom: 25px;
+  }
+}
 .ogus-footer-box .ogus-footer-box-titulo {
   font-size: 20px;
   color: #cad415;
   padding-bottom: 20px;
 }
-.ogus-footer-box .ogus-footer-box-icon {
-  float: left;
-  width: 16%;
+@media screen and (max-width: 767px) {
+  .ogus-footer-box .ogus-footer-box-titulo {
+    padding-bottom: 15px;
+  }
 }
 .ogus-footer-box .ogus-footer-box-desc {
-  float: left;
-  width: 84%;
   padding-left: 2px;
   font-size: 12px;
 }
@@ -247,6 +331,7 @@ body {
 .component .item-gallery li.row {
   height: 450px;
   margin-bottom: 30px;
+  padding: 0 15px;
 }
 .component .item-gallery li.background article,
 .component .item-gallery li.row article {
@@ -255,7 +340,7 @@ body {
 }
 .component .item-gallery li.background article h2,
 .component .item-gallery li.row article h2 {
-  line-height: 25px;
+  line-height: 1;
   min-height: 85px;
   display: inline-block;
 }
@@ -264,6 +349,11 @@ body {
   font-size: 19px;
   font-weight: 300;
   text-transform: uppercase;
+}
+.component .item-gallery li.background article figure .link,
+.component .item-gallery li.row article figure .link {
+  display: inline-block;
+  position: relative;
 }
 .component .item-gallery li.background article .price,
 .component .item-gallery li.row article .price {
@@ -309,7 +399,11 @@ body {
   border: none;
   background: #002f3f;
   color: #cad415;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   font-weight: 300;
   font-size: 14px;
@@ -365,6 +459,7 @@ body {
 .component.searchResults .component.item-gallery li.row {
   height: 450px;
   margin-bottom: 30px;
+  padding: 0 15px;
 }
 .component.searchResults .component.item-gallery li.background article,
 .component.searchResults .component.item-gallery li.row article {
@@ -373,7 +468,7 @@ body {
 }
 .component.searchResults .component.item-gallery li.background article h2,
 .component.searchResults .component.item-gallery li.row article h2 {
-  line-height: 25px;
+  line-height: 1;
   min-height: 85px;
   display: inline-block;
 }
@@ -382,6 +477,11 @@ body {
   font-size: 19px;
   font-weight: 300;
   text-transform: uppercase;
+}
+.component.searchResults .component.item-gallery li.background article figure .link,
+.component.searchResults .component.item-gallery li.row article figure .link {
+  display: inline-block;
+  position: relative;
 }
 .component.searchResults .component.item-gallery li.background article .price,
 .component.searchResults .component.item-gallery li.row article .price {
@@ -411,6 +511,7 @@ body {
 .component.searchResults .component.item-list li.row {
   height: 450px;
   margin-bottom: 30px;
+  padding: 0 15px;
 }
 .component.searchResults .component.item-list li.background article,
 .component.searchResults .component.item-list li.row article {
@@ -419,7 +520,7 @@ body {
 }
 .component.searchResults .component.item-list li.background article h2,
 .component.searchResults .component.item-list li.row article h2 {
-  line-height: 25px;
+  line-height: 1;
   min-height: 85px;
   display: inline-block;
 }
@@ -428,6 +529,11 @@ body {
   font-size: 19px;
   font-weight: 300;
   text-transform: uppercase;
+}
+.component.searchResults .component.item-list li.background article figure .link,
+.component.searchResults .component.item-list li.row article figure .link {
+  display: inline-block;
+  position: relative;
 }
 .component.searchResults .component.item-list li.background article .price,
 .component.searchResults .component.item-list li.row article .price {
@@ -474,7 +580,7 @@ body {
 .component.vip span.ch-price.price {
   color: #002f3f;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 30px !important;
 }
 #fb-like-button,
 .vipSocials,
@@ -489,7 +595,11 @@ body {
   border: none;
   background: #002f3f;
   color: #cad415;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   font-weight: 300;
   font-size: 14px;
@@ -504,6 +614,8 @@ body {
   padding: 0;
   background: none;
   border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
   font-family: 'Roboto' !important;
   font-style: normal !important;
@@ -559,10 +671,20 @@ body {
 /***
 
 *****/
+@media screen and (max-width: 767px) {
+  #page-VIP .component.categoriesPath {
+    font-size: 12px;
+  }
+}
 #page-VIP .ch-carousel-list {
   max-width: 100px !important;
-  -webkit-transform: none !important;
-          transform: none !important;
+  transform: none !important;
+}
+@media screen and (max-width: 639px) {
+  #page-VIP .ch-carousel-list {
+    min-width: 100% !important;
+    text-align: center;
+  }
 }
 #page-VIP .component.picviewer .ch-carousel-list li {
   width: 75px!important;
@@ -570,6 +692,11 @@ body {
   margin: 0 2px !important;
   display: block;
   float: right;
+}
+@media screen and (max-width: 639px) {
+  #page-VIP .component.picviewer .ch-carousel-list li {
+    float: none;
+  }
 }
 #page-VIP .component.picviewer figure,
 .component.picviewer li {
@@ -590,6 +717,13 @@ body {
   display: inline;
   width: 20%;
 }
+@media screen and (max-width: 639px) {
+  #page-VIP .ch-carousel {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+}
 #page-VIP .ch-carousel-mask {
   margin: 0;
   height: 100% !important;
@@ -600,7 +734,8 @@ body {
 }
 #page-VIP .ch-carousel-prev,
 .ch-carousel-next {
-  }
+  display: none !important;
+}
 /*************************************************************
 NEWSLETTER
 *************************************************************/
@@ -649,7 +784,11 @@ NEWSLETTER
   width: 15%;
   background: #cad415;
   border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   height: 34px;
   color: #002f3f;
@@ -730,7 +869,11 @@ icon-compra.png
   display: inline-block;
   background: #cad415;
   border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   height: 34px;
   color: #002f3f;
@@ -764,7 +907,11 @@ icon-compra.png
   display: inline-block;
   background: #cad415;
   border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   height: 34px;
   color: #002f3f;

@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-2">
-				<div class="ogus_header_logo">
+				<div class="ogus_header_logo text-center">
 					<a href="/" title="Inicio">
 						<img src="https://centrodph.github.io/ogus/Minimalista/CSS/logo.png" alt="ogussh" title="ogussh"/>
 					</a>
@@ -10,7 +10,7 @@
 			</div>
 			<div class="col-sm-6">
 				<div class="ogus_header_menu">
-					<ul class="clearfix">
+					<ul class="clearfix ogus_header_menu__nav">
 						#foreach( $menuItem in $menuItemList )
 							#if( $menuItem.isFirstItem )
 							<li class="first background">
@@ -25,7 +25,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 text-right">
 				<div class="ogus_header_right">
 					<a href="javascript:newsController.showNewsletter();" class="link">NEWSLETTER <span class="icon-news"></span></a>
 					<a href="/cart" class="link">CARRITO<span class="icon-cart"></span></a>
