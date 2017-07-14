@@ -119,15 +119,6 @@ var homepage = {
     exist: function(){
         return ( this.page.length > 0 ) ? true : false ;
     },
-    sliderRotation: function(){
-      this.doRotation();
-      var timer = null;
-      $('#page-HOME .ch-carousel-next').hover(function(ev){
-          clearInterval(timer);
-      }, function(ev){
-          timer = this.doRotation();
-      });
-    },
     doRotation: function() {
       setInterval( function() {
           // Rotar slides en carrusel cada 3s
@@ -137,6 +128,15 @@ var homepage = {
           else
             $('.ch-carousel-pages').find("[data-page=1]").click();
         }, 3000);
+    },
+    sliderRotation: function(){
+      this.doRotation();
+      var timer = null;
+      $('#page-HOME .ch-carousel-next').hover(function(ev){
+          clearInterval(timer);
+      }, function(ev){
+          timer = this.doRotation();
+      });
     },
     init: function(){
         this.sliderRotation();
