@@ -135,15 +135,17 @@ var homepage = {
         var rotate = function() { setInterval(function() {
           // Rotar slides en carrusel cada 3s
           var nextButton = $('#page-HOME .ch-carousel-next');
-          if (nextButton.hasClass('ch-carousel-disabled')) 
+          if (!nextButton.hasClass('ch-carousel-disabled')) 
             nextButton.click();      
           else
             $('.ch-carousel-pages').find("[data-page=1]").click();
           }, 3000)
         };
 
+        rotate();
+
         var timer = null;
-        $('#page-HOME .ch-carousel-next').hover(function(ev){
+        $('#page-HOME .ch-carousel').hover(function(ev){
             clearInterval(timer);
         }, function(ev){
             timer = rotate();
