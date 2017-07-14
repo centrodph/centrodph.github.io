@@ -119,27 +119,35 @@ var homepage = {
     exist: function(){
         return ( this.page.length > 0 ) ? true : false ;
     },
-    doRotation: function() {
-      setInterval( function() {
+    // doRotation: function() {
+      
+    // },
+    // sliderRotation: function(){
+    //   this.doRotation();
+    //   var timer = null;
+    //   $('#page-HOME .ch-carousel-next').hover(function(ev){
+    //       clearInterval(timer);
+    //   }, function(ev){
+    //       timer = this.doRotation();
+    //   });
+    // },
+    init: function(){
+        var rotate = function() { setInterval(function() {
           // Rotar slides en carrusel cada 3s
           var nextButton = $('#page-HOME .ch-carousel-next');
           if (nextButton.hasClass('ch-carousel-disabled')) 
             nextButton.click();      
           else
             $('.ch-carousel-pages').find("[data-page=1]").click();
-        }, 3000);
-    },
-    sliderRotation: function(){
-      this.doRotation();
-      var timer = null;
-      $('#page-HOME .ch-carousel-next').hover(function(ev){
-          clearInterval(timer);
-      }, function(ev){
-          timer = this.doRotation();
-      });
-    },
-    init: function(){
-        this.sliderRotation();
+          }, 3000)
+        };
+
+        var timer = null;
+        $('#page-HOME .ch-carousel-next').hover(function(ev){
+            clearInterval(timer);
+        }, function(ev){
+            timer = rotate();
+        });
         console.log(" home page ");
     }
 }
