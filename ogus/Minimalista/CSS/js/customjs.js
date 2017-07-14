@@ -120,6 +120,7 @@ var homepage = {
         return ( this.page.length > 0 ) ? true : false ;
     },
     sliderRotation: function(){
+      this.doRotation();
       var timer = null;
       $('#page-HOME .ch-carousel-next').hover(function(ev){
           clearInterval(timer);
