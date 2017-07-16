@@ -20,15 +20,6 @@
                   font-style: normal;
                   font-weight: 400;
             }
-            @media screen and (max-width: 767px) {
-                  #sucursales {
-                        height: 1060px
-                  }
-                  .overmap {
-                    position: relative;
-                    width: 100%;
-                  }
-            }
             #map-canvas,
             .overmap {
                   height: 580px;
@@ -46,6 +37,7 @@
                   max-width: 100%;
                   padding: 20px;
                   background: rgba(25, 67, 82, 0.9);
+                  z-index: 2;
             }
             .overmap h1{
               color: #cad415;
@@ -162,6 +154,15 @@
               padding: 3px 10px;
               font-size: 15px;
               height: 30px;
+            }
+            @media screen and (max-width: 767px) {
+                  #sucursales {
+                        height: 1060px
+                  }
+                  .overmap {
+                    position: relative;
+                    width: 100%;
+                  }
             }
       </style>
 

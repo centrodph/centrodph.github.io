@@ -751,6 +751,11 @@ body {
   left: 0;
   top: 30% !important;
 }
+@media screen and (max-width: 767px) {
+  #page-VIP #sucursales {
+    height: 1060px !important;
+  }
+}
 /*************************************************************
 NEWSLETTER
 *************************************************************/
