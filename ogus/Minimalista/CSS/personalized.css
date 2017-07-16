@@ -944,5 +944,9 @@ icon-compra.png
   background: #b8b8b8;
   color: #f9f9f9;
 }
+#page-CART .component.shipTable .deleteRow {
+  float: right !important;
+  width: 50px;
+}
 /*************************************************************
 *************************************************************/
