@@ -686,6 +686,14 @@ body {
     font-size: 12px;
   }
 }
+#page-VIP .component.prodDescription {
+  display: block !important;
+}
+#page-VIP .component.prodDescription #tabDescription img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 #page-VIP .ch-carousel-list {
   max-width: 100px !important;
   transform: none !important;

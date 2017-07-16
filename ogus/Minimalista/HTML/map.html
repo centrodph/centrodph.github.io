@@ -20,7 +20,15 @@
                   font-style: normal;
                   font-weight: 400;
             }
-
+            @media screen and (max-width: 767px) {
+                  #sucursales {
+                        height: 1060px
+                  }
+                  .overmap {
+                    position: relative;
+                    width: 100%;
+                  }
+            }
             #map-canvas,
             .overmap {
                   height: 580px;
@@ -34,7 +42,8 @@
                   position: absolute;
                   top: 0;
                   left: 0;
-                  width: 35%;
+                  width: 450px;
+                  max-width: 100%;
                   padding: 20px;
                   background: rgba(25, 67, 82, 0.9);
             }
@@ -157,8 +166,6 @@
       </style>
 
       <div class="mapcontent">
-            <div id="map-canvas"></div>
-
             <div class="overmap">
                   <h1>NUESTRAS SUCURSALES</h1>
                   <div class="puntos-de-venta">
@@ -290,6 +297,9 @@
                         </div>
                   </div>
             </div>
+
+            <div id="map-canvas"></div>
+
       </div>
       <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBpxHwc_Hl_0mfLEEJeQXkXbqNIm5KwZB0&sensor=false&extension=.js'></script>
       <script type="text/javascript" src="https://cdn.rawgit.com/googlemaps/v3-utility-library/master/infobox/src/infobox.js"></script>

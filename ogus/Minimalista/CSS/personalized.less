@@ -571,12 +571,18 @@ body{
 /***
 
 *****/
-#page-VIP {
-  .component {
-    @media screen and (max-width: 767px) {
-      &.categoriesPath {
-        font-size: 12px;
-      }
+#page-VIP .component {
+  @media screen and (max-width: 767px) {
+    &.categoriesPath {
+      font-size: 12px;
+    }
+  }
+  &.prodDescription {
+    display: block !important;
+    #tabDescription img {
+      display: block;
+      max-width: 100%;
+      height: auto;
     }
   }
 }
