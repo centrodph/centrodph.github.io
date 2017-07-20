@@ -694,6 +694,10 @@ body {
   max-width: 100%;
   height: auto;
 }
+#page-VIP .component.prodDescription article#tabDescription table {
+  width: 100%;
+  height: auto;
+}
 #page-VIP .ch-carousel-list {
   max-width: 100px !important;
   transform: none !important;
@@ -752,7 +756,7 @@ body {
   top: 30% !important;
 }
 @media screen and (max-width: 767px) {
-  #page-VIP #sucursales {
+  #sucursales {
     height: 1060px !important;
   }
 }
