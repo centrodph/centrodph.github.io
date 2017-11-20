@@ -160,6 +160,20 @@ var homepage = {
 $(document).ready(function(){
 
     console.log($('body').attr('id'));
+
+    /* Menu Categorias */
+    $('.menu-categories__toggle').on('click', function(event) {
+      $(this).siblings('.menu-categories__dropdown').toggleClass('open');
+    });
+
+    $('.menu-categories__level .arrow').on('click', function(event) {
+      event.preventDefault();
+      var target = $(this).parent().data('target');
+
+      $('#'+target).toggleClass('open');
+
+    });
+
     //custom clases in contacto
     if(contactopage.exist()){ contactopage.init();}
     if(resultpage.exist()){ resultpage.init();}

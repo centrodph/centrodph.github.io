@@ -999,3 +999,249 @@ icon-compra.png
 	-ms-transform-origin:     @x @y;
 	-o-transform-origin:      @x @y;
 }
+
+  .menu-categories a {
+    color: #cad415;
+  }
+
+  .menu-categories .menu-categories__toggle {
+
+    /*padding-left: 35px;*/ border: solid 2px #cad415;
+    height: 34px;
+    color: #cad415;
+    background-color: transparent;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    padding: 0 30px 0 15px;
+    text-align-last: left;
+    position: relative;
+  }
+
+  .menu-categories .menu-categories__toggle .arrow {
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .menu-categories .menu-categories__dropdown {
+    background-color: rgb(25, 67, 82);
+    color: #cad415;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    min-width: 250px;
+    text-transform: uppercase;
+    display: none;
+    z-index: 999;
+  }
+
+  .menu-categories .menu-categories__dropdown.open {
+    display: block;
+  }
+
+  .menu-categories .menu-categories__dropdown .arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 30px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background-color: #cad415;
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  .menu-categories .menu-categories__dropdown .arrow .caret {
+    color: rgb(25, 67, 82);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+
+  .menu-categories .menu-categories__level {
+    display: block;
+    padding: 0 15px;
+    color: #cad415;
+    font-weight: 500;
+    line-height: 34px;
+    border-bottom: solid 2px #cad415;
+  }
+
+  .menu-categories .menu-categories__level.menu-categories__level--root {
+    padding-right: 30px;
+    position: relative;
+  }
+
+  .menu-categories .menu-categories__sublevel {
+    height: 0px;
+    overflow: hidden;
+    -webkit-transform: transition all .3s;
+    -ms-transform: transition all .3s;
+    -o-transform: transition all .3s;
+    transform: transition all .3s;
+  }
+
+  .menu-categories .menu-categories__sublevel.open {
+    height: auto;
+  }
+
+  .menu-categories .menu-categories__sublevel.open .caret {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  .menu-categories .menu-categories__sublevel .menu-categories__level {
+    padding-left: 30px;
+  }
+
+  // Helpers
+
+  /* content styles */
+
+.inside {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #ededed;
+  background: -webkit-gradient(linear, left top, left bottom,color-stop(0%, #f4f4f4), color-stop(100%, #ededed));
+  background: -moz-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+  background: -ms-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+}
+.inside-full-height {
+  /*
+  // if you want to give content full height give him height: 100%;
+  // with content full height you can't apply margins to the content
+  // content full height does not work in ie http://stackoverflow.com/questions/27384433/ie-display-table-cell-child-ignores-height-100
+  */
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* columns of same height styles */
+
+.row-height {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+.col-height {
+  display: table-cell;
+  float: none;
+  height: 100%;
+}
+.col-top {
+  vertical-align: top;
+}
+.col-middle {
+  vertical-align: middle;
+}
+.col-bottom {
+  vertical-align: bottom;
+}
+
+@media (min-width: 480px) {
+  .row-xs-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .col-xs-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+  }
+  .col-xs-top {
+    vertical-align: top;
+  }
+  .col-xs-middle {
+    vertical-align: middle;
+  }
+  .col-xs-bottom {
+    vertical-align: bottom;
+  }
+}
+
+@media (min-width: 768px) {
+  .row-sm-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .col-sm-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+  }
+  .col-sm-top {
+    vertical-align: top;
+  }
+  .col-sm-middle {
+    vertical-align: middle;
+  }
+  .col-sm-bottom {
+    vertical-align: bottom;
+  }
+}
+
+@media (min-width: 992px) {
+  .row-md-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .col-md-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+  }
+  .col-md-top {
+    vertical-align: top;
+  }
+  .col-md-middle {
+    vertical-align: middle;
+  }
+  .col-md-bottom {
+    vertical-align: bottom;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row-lg-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  .col-lg-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+  }
+  .col-lg-top {
+    vertical-align: top;
+  }
+  .col-lg-middle {
+    vertical-align: middle;
+  }
+  .col-lg-bottom {
+    vertical-align: bottom;
+  }
+}
