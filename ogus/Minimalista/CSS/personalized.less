@@ -1000,6 +1000,9 @@ icon-compra.png
 	-o-transform-origin:      @x @y;
 }
 
+  .menu-categories {
+    padding: 30px 0;
+  }
   .menu-categories a {
     color: #cad415;
   }
@@ -1039,6 +1042,12 @@ icon-compra.png
     text-transform: uppercase;
     display: none;
     z-index: 999;
+  }
+
+  @media (max-width: 767px) {
+    .menu-categories .menu-categories__dropdown {
+      position: relative;
+    }
   }
 
   .menu-categories .menu-categories__dropdown.open {
