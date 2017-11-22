@@ -32,44 +32,44 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="row-sm-height">
-				<div class="col-sm-2 col-sm-height col-bottom">
-					<div class="menu-categories">
-					  <button class="menu-categories__toggle">Categorías
-					  <span class="arrow"><span class="caret"></span></span></button>
-					  <ul class="menu-categories__dropdown">
-						#foreach($categoryLevel1 in $level1CategoryList)
-						  <li>
-							  #if($categoryLevel1.hasSubCategories)
-							  	<div data-target="subcat-$categoryLevel1.id" class="menu-categories__level menu-categories__level--root"><a href="$categoryLevel1.url">$categoryLevel1.name</a> <span class="arrow"><span class="caret"></span></span></div>
-							  	<div id="subcat-$categoryLevel1.id" class="menu-categories__sublevel">
-								    #foreach($categoryLevel2 in $categoryLevel1.subCategories)
-								      #if($categoryLevel2.hasSubCategories)
-								      	<div data-target="cat-$categoryLevel2.id" class="menu-categories__level menu-categories__level--root"><a href="$categoryLevel2.url">$categoryLevel1.name</a> <span class="arrow"><span class="caret"></span></span></div>
-								      	<div id="cat-$categoryLevel2.id" class="menu-categories__sublevel"
-									        #foreach($categoryLevel3 in $categoryLevel2.subCategories)
-									        <a href="$categoryLevel3.url" class="menu-categories__level">$categoryLevel3.name</a>
-									        #end
-								      	</div>
-								      #else
-								      	<a href="$categoryLevel2.url" class="menu-categories__level">$categoryLevel2.name</a>
-								      #end
-								    #end
-								</div>
-							  #else
-							   	<a href="$categoryLevel1.url" class="menu-categories__level">$categoryLevel1.name</a>
-							  #end
-						  </li>
-						#end
-					  </ul>
-					</div>
-				</div>
-				<div class="col-sm-8 col-sm-height">
-					<div class="header-search">
-						<div class="header-search-titulo">
-							BIENVENIDO A NUESTRA <span>TIENDA ONLINE</span>
+		<div class="header-search">
+			<div class="header-search-titulo text-center">
+				BIENVENIDO A NUESTRA <span>TIENDA ONLINE</span>
+			</div>
+			<div class="row">
+				<div class="row-sm-height">
+					<div class="col-sm-2 col-sm-height col-bottom">
+						<div class="menu-categories">
+						  <button class="menu-categories__toggle">Categorías
+						  <span class="arrow"><span class="caret"></span></span></button>
+						  <ul class="menu-categories__dropdown">
+							#foreach($categoryLevel1 in $level1CategoryList)
+							  <li>
+								  #if($categoryLevel1.hasSubCategories)
+								  	<div data-target="subcat-$categoryLevel1.id" class="menu-categories__level menu-categories__level--root"><a href="$categoryLevel1.url">$categoryLevel1.name</a> <span class="arrow"><span class="caret"></span></span></div>
+								  	<div id="subcat-$categoryLevel1.id" class="menu-categories__sublevel">
+									    #foreach($categoryLevel2 in $categoryLevel1.subCategories)
+									      #if($categoryLevel2.hasSubCategories)
+									      	<div data-target="cat-$categoryLevel2.id" class="menu-categories__level menu-categories__level--root"><a href="$categoryLevel2.url">$categoryLevel1.name</a> <span class="arrow"><span class="caret"></span></span></div>
+									      	<div id="cat-$categoryLevel2.id" class="menu-categories__sublevel"
+										        #foreach($categoryLevel3 in $categoryLevel2.subCategories)
+										        <a href="$categoryLevel3.url" class="menu-categories__level">$categoryLevel3.name</a>
+										        #end
+									      	</div>
+									      #else
+									      	<a href="$categoryLevel2.url" class="menu-categories__level">$categoryLevel2.name</a>
+									      #end
+									    #end
+									</div>
+								  #else
+								   	<a href="$categoryLevel1.url" class="menu-categories__level">$categoryLevel1.name</a>
+								  #end
+							  </li>
+							#end
+						  </ul>
 						</div>
+					</div>
+					<div class="col-sm-10 col-sm-height">
 						<div class="header-search-box">
 							<div class="component searchBar">
 								<form id="searchForm" method="get" action="/jm/com.mercadoshops.web.frontend.page.PageController">
@@ -87,5 +87,3 @@
 		</div>
 	</div>
 </div>
-
-<script></script>
