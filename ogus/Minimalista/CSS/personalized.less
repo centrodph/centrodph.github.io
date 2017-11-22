@@ -995,10 +995,9 @@ icon-compra.png
 .transform-origin (@x:center, @y:center) {
 	-webkit-transform-origin: @x @y;
 	-moz-transform-origin:    @x @y;
-	-ms-transform-origin:     @x @y;
-	-o-transform-origin:      @x @y;
+  -ms-transform-origin:     @x @y;
+  -o-transform-origin:      @x @y;
 }
-
   .menu-categories a {
     color: #cad415;
     display: block;
@@ -1042,11 +1041,6 @@ icon-compra.png
     z-index: 999;
   }
 
-  @media (max-width: 767px) {
-    .menu-categories .menu-categories__dropdown {
-      position: relative;
-    }
-  }
 
   .menu-categories .menu-categories__dropdown.open {
     display: block;
@@ -1084,6 +1078,7 @@ icon-compra.png
     font-weight: 500;
     line-height: 34px;
     border-bottom: solid 2px #cad415;
+    text-align: left;
   }
 
   .menu-categories .menu-categories__level.menu-categories__level--root {
@@ -1113,6 +1108,15 @@ icon-compra.png
 
   .menu-categories .menu-categories__sublevel .menu-categories__level {
     padding-left: 30px;
+  }
+
+  @media (max-width: 767px) {
+    .menu-categories {
+      margin-bottom: 30px;
+    }
+    .menu-categories .menu-categories__dropdown {
+      position: relative;
+    }
   }
 
   // Helpers
