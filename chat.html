@@ -20,6 +20,7 @@
       
       $crisp.push(["on", "message:received", (e)=>{
         console.warn(e);
+        window.postMessage(e,'*');
       }])  
       
     </script>
