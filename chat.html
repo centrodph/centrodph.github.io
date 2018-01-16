@@ -17,6 +17,11 @@
           s.async=1;
           d.getElementsByTagName("head")[0].appendChild(s);
       })();
+      
+      $crisp.push(["on", "message:received", (e)=>{
+        console.warn(e);
+      }])  
+      
     </script>
 </head>
 
