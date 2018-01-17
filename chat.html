@@ -1,12 +1,12 @@
 <html>
-
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Crisp</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Kue Chat web</title>
   <script type="text/javascript">
-      window.$crisp=[];
-      window.CRISP_WEBSITE_ID="072cdc45-40b1-4906-a5c4-a718a6b414f3";
-      window.CRISP_RUNTIME_CONFIG = {
+  window.$crisp=[];
+  
+  window.CRISP_WEBSITE_ID="072cdc45-40b1-4906-a5c4-a718a6b414f3";
+  window.CRISP_RUNTIME_CONFIG = {
         lock_maximized : true,
         lock_full_view : true
       };
@@ -17,16 +17,41 @@
           s.async=1;
           d.getElementsByTagName("head")[0].appendChild(s);
       })();
-      
+
+      /**
+       * Send message to react native
+       * This is working
+       * @type {[type]}
+       */
       $crisp.push(["on", "message:received", (e)=>{
-        console.warn(e);
-        window.postMessage('sdas','*','dsadddas');
-      }])  
-      
+        window.postMessage(JSON.stringify(e),'*');
+      }]);
+
+      /**
+       * TODO: Receiving message from the React Native part.
+       * This is not working
+       * @type {[type]}
+       */
+       function receiveMessage(event){
+         console.warn("Testing comunication!!!!")
+       }
+       window.addEventListener("message", receiveMessage, false);
+
+
+
+      /**
+       * called fron KueChatWeb using
+       * injectedJavaScript:https://facebook.github.io/react-native/docs/webview.html#injectjavascript
+       * @method setUser
+       * @param  {[type]} email    [description]
+       * @param  {[type]} nickname [description]
+       */
+      function setUser(email, nickname){
+        $crisp.push(["set", "user:email", [email]]);
+        $crisp.push(["set", "user:nickname", [nickname]]);
+      }
     </script>
 </head>
-
 <body>
-    Loading
 </body>
 </html>
